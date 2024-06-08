@@ -12,6 +12,7 @@ const Sidebar = () => {
 	
 	<Box
 		width={{base: "100vw", md: "80vw"}}
+		alignItems={"center"}
 		borderTop={"1px solid"}
 		borderColor={"whiteAlpha.300"}
 		py={4}
