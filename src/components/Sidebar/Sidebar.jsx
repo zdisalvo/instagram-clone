@@ -10,17 +10,23 @@ const Sidebar = () => {
 	const { handleLogout, isLoggingOut } = useLogout();
 	return (
 	
-		<Box
-      width={"100vw"}
-      borderTop={"1px solid"}
-      borderColor={"whiteAlpha.300"}
-      py={4}
-      position={"fixed"}
-      bottom={0}
-      left={0}
-      px={{ base: 2, md: 4 }}
-      bg={"gray.900"}
-      zIndex={10}
+	<Box
+		width={{base: "100vw", md: "80vw"}}
+		borderTop={"1px solid"}
+		borderColor={"whiteAlpha.300"}
+		py={4}
+		position={"fixed"}
+		bottom={0}
+
+		left={{ base: 0, md: "50%" }} // Center horizontally on medium and larger screens
+      	transform={{ base: "none", md: "translateX(-50%)" }} // Center horizontally on medium and larger screens
+      
+
+		//left={0}
+		px={{ base: 2, md: 4 }}
+		bg={"gray.900"}
+		zIndex={10}
+
     >
       <Flex direction={"row"} justifyContent={"space-between"} alignItems={"center"} w='full'>
         <Link to={"/"} as={RouterLink} pl={2} display={{ base: "none", md: "flex" }} cursor='pointer'>
