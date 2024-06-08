@@ -9,21 +9,21 @@ import SidebarItems from "./SidebarItems";
 const Sidebar = () => {
 	const { handleLogout, isLoggingOut } = useLogout();
 	return (
-	
+	<Flex justifyContent={center} alignItems={center}>
 	<Box
-		width={{base: "100vw", md: "80vw"}}
-		alignItems={"center"}
+		width={{base: "100vw", md: "70vw"}}
+		//alignItems={"center"}
 		borderTop={"1px solid"}
 		borderColor={"whiteAlpha.300"}
 		py={4}
 		position={"fixed"}
 		bottom={0}
 
-		left={{ base: 0, md: "50%" }} // Center horizontally on medium and larger screens
-      	transform={{ base: "none", md: "translateX(-50%)" }} // Center horizontally on medium and larger screens
+		//left={{ base: 0, md: "50%" }} // Center horizontally on medium and larger screens
+      	//transform={{ base: "none", md: "translateX(-50%)" }} // Center horizontally on medium and larger screens
       
 
-		//left={0}
+		left={0}
 		px={{ base: 2, md: 4 }}
 		bg={"gray.900"}
 		zIndex={10}
@@ -83,6 +83,7 @@ const Sidebar = () => {
         </Tooltip>
       </Flex>
     </Box>
+	</Flex>
 	);
 };
 
