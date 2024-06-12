@@ -1,41 +1,58 @@
-import { Box, Container, Flex, Skeleton, SkeletonCircle, Text, VStack } from "@chakra-ui/react";
-import FeedPost from "./FeedPost";
+import React, { useEffect, useRef } from "react";
+import { Box, Spinner } from "@chakra-ui/react";
+import ProfilePost from "../Profile/ProfilePost";
 import useGetUserPostsFeed from "../../hooks/useGetUserPostsFeed";
 
-const UserFeedPosts = ({ username }) => {
-	const { isLoading, posts } = useGetUserPostsFeed(username);
-	
-	return (
-		<Container maxW={"container.sm"} py={10} px={2}>
-			{isLoading &&
-				[0, 1, 2].map((_, idx) => (
-					<VStack key={idx} gap={4} alignItems={"flex-start"} mb={10}>
-						<Flex gap='2'>
-							<SkeletonCircle size='10' />
-							<VStack gap={2} alignItems={"flex-start"}>
-								<Skeleton height='10px' w={"200px"} />
-								<Skeleton height='10px' w={"200px"} />
-							</VStack>
-						</Flex>
-						<Skeleton w={"full"}>
-							<Box h={"400px"}>contents wrapped</Box>
-						</Skeleton>
-					</VStack>
-					
-				))}
+const UserFeedPosts = ({ username, postId }) => {
+  const { isLoading, posts } = useGetUserPostsFeed(username, postId);
+  const postRef = useRef(null);
 
-			{!isLoading && posts.length > 0 && posts.map((post) => <FeedPost key={post.id} post={post} />)}
-			{!isLoading && posts.length === 0 && (
-				<>
-					<Text fontSize={"md"} color={"red.400"}>
-						This user has no posts.
-						
-					</Text>
-					
-				</>
-			)}
-		</Container>
-	);
+  useEffect(() => {
+    const handleScroll = () => {
+      const bottom = window.innerHeight + window.scrollY >= document.documentElement.offsetHeight;
+      console.log("reached bottom:", bottom);
+      if (bottom) {
+        window.removeEventListener("scroll", handleScroll); // Remove event listener when reaching the bottom
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll); // Cleanup: remove event listener when unmounting
+    };
+  }, [postId, posts]);
+
+  useEffect(() => {
+    if (postId && postRef.current && posts.length > 0) {
+      const scrollToPost = () => {
+        const postIndex = posts.findIndex((post) => post.id === postId);
+        if (postIndex !== -1) {
+          const postElement = document.getElementById(postId);
+          if (postElement) {
+            postElement.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      };
+      // Call scrollToPost asynchronously to ensure that the DOM is updated before scrolling
+      setTimeout(scrollToPost, 0);
+    }
+  }, [postId, posts]);
+
+  return (
+    <Box>
+      {isLoading ? (
+        <Spinner size="xl" />
+      ) : posts.length > 1 ? (
+        posts.map((post) => (
+			<ProfilePost 
+			key={post.id} 
+			post={post} 
+			ref={post.id === postId ? postRef : null} id={post.id} />
+        ))
+      ) : null}
+    </Box>
+  );
 };
 
 export default UserFeedPosts;
