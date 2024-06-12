@@ -22,7 +22,6 @@ import { firestore, storage } from "../../firebase/firebase";
 import { arrayRemove, deleteDoc, doc, updateDoc } from "firebase/firestore";
 import usePostStore from "../../store/postStore";
 import Caption from "../Comment/Caption";
-import { useHistory } from "react-router-dom";
 
 const ProfilePost = ({ post }) => {
 	const userProfile = useUserProfileStore((state) => state.userProfile);
@@ -31,7 +30,6 @@ const ProfilePost = ({ post }) => {
 	const [isDeleting, setIsDeleting] = useState(false);
 	const deletePost = usePostStore((state) => state.deletePost);
 	const decrementPostsCount = useUserProfileStore((state) => state.deletePost);
-	const history = useHistory();
 
 	const handleDeletePost = async () => {
 		if (!window.confirm("Are you sure you want to delete this post?")) return;
@@ -58,7 +56,7 @@ const ProfilePost = ({ post }) => {
 	};
 
 	const handlePostClick = () => {
-		history.push(`/${userProfile.username}/feed`);
+		window.location.href = `/${userProfile.username}/feed`;
 	};
 
 	return (
