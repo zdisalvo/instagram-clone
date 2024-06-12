@@ -1,9 +1,9 @@
 import { Box, Container, Flex, Skeleton, SkeletonCircle, Text, VStack } from "@chakra-ui/react";
 import FeedPost from "./FeedPost";
-import useGetFeedPosts from "../../hooks/useGetFeedPosts";
+import useGetUserPostsFeed from "../../hooks/useGetUserPostsFeed";
 
-const FeedPosts = () => {
-	const { isLoading, posts } = useGetFeedPosts();
+const UserFeedPosts = ({username}) => {
+	const { isLoading, posts } = useGetUserPostsFeed(username);
 
 	return (
 		<Container maxW={"container.sm"} py={10} px={2}>
@@ -27,13 +27,12 @@ const FeedPosts = () => {
 			{!isLoading && posts.length === 0 && (
 				<>
 					<Text fontSize={"md"} color={"red.400"}>
-						Follow some people to see their posts in your feed.
+						This user has no posts.
 					</Text>
-					
 				</>
 			)}
 		</Container>
 	);
 };
 
-export default FeedPosts;
+export default UserFeedPosts;
