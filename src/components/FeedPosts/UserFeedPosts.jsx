@@ -2,9 +2,9 @@ import { Box, Container, Flex, Skeleton, SkeletonCircle, Text, VStack } from "@c
 import FeedPost from "./FeedPost";
 import useGetUserPostsFeed from "../../hooks/useGetUserPostsFeed";
 
-const UserFeedPosts = ({username}) => {
+const UserFeedPosts = ({ username }) => {
 	const { isLoading, posts } = useGetUserPostsFeed(username);
-
+	
 	return (
 		<Container maxW={"container.sm"} py={10} px={2}>
 			{isLoading &&
@@ -21,6 +21,7 @@ const UserFeedPosts = ({username}) => {
 							<Box h={"400px"}>contents wrapped</Box>
 						</Skeleton>
 					</VStack>
+					
 				))}
 
 			{!isLoading && posts.length > 0 && posts.map((post) => <FeedPost key={post.id} post={post} />)}
@@ -28,7 +29,9 @@ const UserFeedPosts = ({username}) => {
 				<>
 					<Text fontSize={"md"} color={"red.400"}>
 						This user has no posts.
+						
 					</Text>
+					
 				</>
 			)}
 		</Container>

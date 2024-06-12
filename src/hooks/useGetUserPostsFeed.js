@@ -4,12 +4,14 @@ import { firestore } from "../firebase/firebase";
 import useAuthStore from "../store/authStore";
 import useShowToast from "./useShowToast";
 import usePostStore from "../store/postStore";
+import useGetUserProfileByUsername from "./useGetUserProfileByUsername";
 
 const useGetUserPostsFeed = (username) => {
   const [isLoading, setIsLoading] = useState(true);
   const { posts, setPosts } = usePostStore();
   const showToast = useShowToast();
   const authUser = useAuthStore((state) => state.user);
+  const { isLoading: profileLoading, userProfile } = useGetUserProfileByUsername(username);
 
   useEffect(() => {
     const getUserPosts = async () => {
@@ -17,7 +19,7 @@ const useGetUserPostsFeed = (username) => {
       try {
         const q = query(
           collection(firestore, "posts"),
-          where("username", "==", username)
+          where("createdBy", "==", userProfile.uid)
         );
         const querySnapshot = await getDocs(q);
         const userPosts = [];
@@ -34,7 +36,8 @@ const useGetUserPostsFeed = (username) => {
     };
 
     if (username) getUserPosts();
-  }, [username, showToast, setPosts, authUser]);
+    // if (username) console.log(posts.length);
+  }, [username, showToast, setPosts, authUser, profileLoading, userProfile]);
 
   return { isLoading, posts };
 };
