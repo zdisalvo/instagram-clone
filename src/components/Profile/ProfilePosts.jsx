@@ -29,7 +29,7 @@ const ProfilePosts = () => {
 			{!isLoading && (
 				<>
 					{posts.map((post) => (
-						<ProfilePost post={post} key={post.id} />
+						<ProfilePost post={post} key={post.id} onClick={() => handlePostClick(post.id)} />
 					))}
 				</>
 			)}
