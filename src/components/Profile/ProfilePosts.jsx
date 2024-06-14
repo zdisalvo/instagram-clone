@@ -1,9 +1,15 @@
 import { Box, Flex, Grid, Skeleton, Text, VStack } from "@chakra-ui/react";
 import ProfilePost from "./ProfilePost";
 import useGetUserPosts from "../../hooks/useGetUserPosts";
+import { useNavigate } from "react-router-dom";
 
-const ProfilePosts = () => {
+const ProfilePosts = ({username}) => {
 	const { isLoading, posts } = useGetUserPosts();
+	const navigate = useNavigate();
+
+	const handlePostClick = (postId) => {
+		navigate(`/${username}/feed`, { state: { postId } });
+	};
 
 	const noPostsFound = !isLoading && posts.length === 0;
 	if (noPostsFound) return <NoPostsFound />;
@@ -34,7 +40,7 @@ const ProfilePosts = () => {
 				</>
 			)}
 		</Grid>
-	);
+	);		
 };
 
 export default ProfilePosts;
