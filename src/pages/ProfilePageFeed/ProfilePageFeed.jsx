@@ -4,6 +4,8 @@ import { useParams, useLocation } from "react-router-dom";
 import UserFeedPosts from "../../components/FeedPosts/UserFeedPosts";
 import SuggestedUsers from "../../components/SuggestedUsers/SuggestedUsers";
 import ErrorBoundary from "../../components/ErrorBoundary/ErrorBoundary";
+import ProfileFeed from "../../components/Profile/ProfileFeed";
+import UserFeed from "../../components/FeedPosts/UserFeed";
 
 const ProfilePageFeed = () => {
   const { username } = useParams();
@@ -17,7 +19,7 @@ const ProfilePageFeed = () => {
       <Container maxW={"container.lg"}>
         <Flex gap={20}>
           <Box flex={2} py={10}>
-            <UserFeedPosts username={username} postId={postId} />
+            <UserFeed username={username} postId={postId} />
           </Box>
           <Box flex={3} mr={20} display={{ base: "none", lg: "block" }} maxW={"300px"}>
             <SuggestedUsers />
