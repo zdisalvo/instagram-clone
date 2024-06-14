@@ -1,5 +1,5 @@
+import React, { useEffect, useRef, useState } from "react";
 import { Box, Container, Flex, Skeleton, SkeletonCircle, Text, VStack } from "@chakra-ui/react";
-import React, { useEffect, useRef } from "react";
 import FeedPost from "./FeedPost";
 import useGetUserFeed from "../../hooks/useGetUserFeed";
 import { useLocation, useParams } from "react-router-dom";
@@ -10,12 +10,26 @@ const UserFeed = () => {
   const postId = location.state?.postId;
   const { isLoading, posts } = useGetUserFeed(username);
   const postRefs = useRef({});
+  const [shouldScroll, setShouldScroll] = useState(false);
 
   useEffect(() => {
-    if (postId && postRefs.current[postId]) {
+    if (!isLoading && postId && postRefs.current[postId]) {
       postRefs.current[postId].scrollIntoView({ behavior: "smooth" });
+      setShouldScroll(false); // Reset to false after scrolling
     }
-  }, [posts, postId]);
+  }, [posts, postId, isLoading]);
+
+  useEffect(() => {
+    if (!isLoading) {
+      // Once posts are loaded, check if postId exists
+      if (postId && postRefs.current[postId]) {
+        postRefs.current[postId].scrollIntoView({ behavior: "smooth" });
+        setShouldScroll(false); // Reset to false after scrolling
+      }
+    } else {
+      setShouldScroll(true); // Set to true to attempt scrolling once posts are loaded
+    }
+  }, [isLoading]);
 
   return (
     <Container maxW={"container.sm"} py={10} px={2}>
@@ -50,6 +64,9 @@ const UserFeed = () => {
           Follow some people to see their posts in your feed.
         </Text>
       )}
+
+      {/* Conditional rendering for scroll attempt when posts are loaded */}
+      {shouldScroll && <div style={{ visibility: "hidden", height: 0 }} ref={(el) => el && el.scrollIntoView({ behavior: "smooth" })}></div>}
     </Container>
   );
 };
