@@ -88,7 +88,7 @@ const PostHeader = ({ post, creatorProfile }) => {
             {isFollowing ? "Unfollow" : "Follow"}
           </Button>
         </Box>
-        {authUser?.uid === userProfile?.uid && (
+        {authUser?.uid === post.createdBy?.uid && (
           <Box cursor={"pointer"}>
             <Button
               size={"xs"}
