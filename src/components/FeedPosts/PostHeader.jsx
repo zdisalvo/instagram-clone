@@ -12,7 +12,7 @@ import usePostStore from "../../store/postStore";
 import useUserProfileStore from "../../store/userProfileStore"; 
 import useShowToast from "../../hooks/useShowToast"; 
 import { firestore, storage } from "../../firebase/firebase"; 
-import { MdDelete } from "react-icons/md";
+
 
 const PostHeader = ({ post, creatorProfile }) => {
   const { handleFollowUser, isFollowing, isUpdating } = useFollowUser(post.createdBy);
