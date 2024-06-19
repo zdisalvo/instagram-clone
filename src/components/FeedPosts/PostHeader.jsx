@@ -23,6 +23,9 @@ const PostHeader = ({ post, creatorProfile }) => {
   const deletePost = usePostStore((state) => state.deletePost);
   const decrementPostsCount = useUserProfileStore((state) => state.decrementPostsCount);
 
+  console.log(authUser.uid);
+  console.log(userProfile.uid);
+
   const handleDeletePost = async () => {
     if (!window.confirm("Are you sure you want to delete this post?")) return;
     if (isDeleting) return;
