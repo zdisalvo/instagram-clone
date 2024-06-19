@@ -1,91 +1,107 @@
-import { Avatar, AvatarGroup, Button, Flex, Text, VStack, useDisclosure } from "@chakra-ui/react";
-import useUserProfileStore from "../../store/userProfileStore";
-import useAuthStore from "../../store/authStore";
-import EditProfile from "./EditProfile";
+import { Avatar, Box, Button, Flex, Skeleton, SkeletonCircle } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { MdDelete } from "react-icons/md";
+import { doc, deleteDoc, updateDoc, arrayRemove } from "firebase/firestore";
+import { ref, deleteObject } from "firebase/storage";
 import useFollowUser from "../../hooks/useFollowUser";
+import { timeAgo } from "../../utils/timeAgo";
+import useGetUserProfileById from "../../hooks/useGetUserProfileById";
+import useAuthStore from "../../store/authStore"; 
+import usePostStore from "../../store/postStore"; 
+import useUserProfileStore from "../../store/sserProfileStore";
+import useShowToast from "../../hooks/useShowToast"; 
+import { firestore, storage } from "../../firebase/firebase"; 
 
-const ProfileHeader = () => {
-	const { userProfile } = useUserProfileStore();
-	const authUser = useAuthStore((state) => state.user);
-	const { isOpen, onOpen, onClose } = useDisclosure();
-	const { isFollowing, isUpdating, handleFollowUser } = useFollowUser(userProfile?.uid);
-	const visitingOwnProfileAndAuth = authUser && authUser.username === userProfile.username;
-	const visitingAnotherProfileAndAuth = authUser && authUser.username !== userProfile.username;
+const PostHeader = ({ post, creatorProfile }) => {
+  const { handleFollowUser, isFollowing, isUpdating } = useFollowUser(post.createdBy);
+  const { userProfile } = useGetUserProfileById(post.createdBy);
+  const authUser = useAuthStore((state) => state.user);
+  const showToast = useShowToast();
+  const [isDeleting, setIsDeleting] = useState(false);
+  const deletePost = usePostStore((state) => state.deletePost);
+  const decrementPostsCount = useUserProfileStore((state) => state.decrementPostsCount);
 
-	return (
-		<Flex gap={{ base: 4, sm: 10 }} py={10} direction={{ base: "column", sm: "row" }}>
-			<AvatarGroup size={{ base: "xl", md: "2xl" }} justifySelf={"center"} alignSelf={"flex-start"} mx={"auto"}>
-				<Avatar src={userProfile.profilePicURL} alt='As a programmer logo' />
-			</AvatarGroup>
+  const handleDeletePost = async () => {
+    if (!window.confirm("Are you sure you want to delete this post?")) return;
+    if (isDeleting) return;
 
-			<VStack alignItems={"start"} gap={2} mx={"auto"} flex={1}>
-				<Flex
-					gap={4}
-					direction={{ base: "column", sm: "row" }}
-					justifyContent={{ base: "center", sm: "flex-start" }}
-					alignItems={"center"}
-					w={"full"}
-				>
-					<Text fontSize={{ base: "sm", md: "lg" }}>{userProfile.username}</Text>
-					{visitingOwnProfileAndAuth && (
-						<Flex gap={4} alignItems={"center"} justifyContent={"center"}>
-							<Button
-								bg={"white"}
-								color={"black"}
-								_hover={{ bg: "whiteAlpha.800" }}
-								size={{ base: "xs", md: "sm" }}
-								onClick={onOpen}
-							>
-								Edit Profile
-							</Button>
-						</Flex>
-					)}
-					{visitingAnotherProfileAndAuth && (
-						<Flex gap={4} alignItems={"center"} justifyContent={"center"}>
-							<Button
-								bg={"blue.500"}
-								color={"white"}
-								_hover={{ bg: "blue.600" }}
-								size={{ base: "xs", md: "sm" }}
-								onClick={handleFollowUser}
-								isLoading={isUpdating}
-							>
-								{isFollowing ? "Unfollow" : "Follow"}
-							</Button>
-						</Flex>
-					)}
-				</Flex>
+    setIsDeleting(true);
+    try {
+      const imageRef = ref(storage, `posts/${post.id}`);
+      await deleteObject(imageRef);
+      await deleteDoc(doc(firestore, "posts", post.id));
 
-				<Flex alignItems={"center"} gap={{ base: 2, sm: 4 }}>
-					<Text fontSize={{ base: "xs", md: "sm" }}>
-						<Text as='span' fontWeight={"bold"} mr={1}>
-							{userProfile.posts.length}
-						</Text>
-						Posts
-					</Text>
-					<Text fontSize={{ base: "xs", md: "sm" }}>
-						<Text as='span' fontWeight={"bold"} mr={1}>
-							{userProfile.followers.length}
-						</Text>
-						Followers
-					</Text>
-					<Text fontSize={{ base: "xs", md: "sm" }}>
-						<Text as='span' fontWeight={"bold"} mr={1}>
-							{userProfile.following.length}
-						</Text>
-						Following
-					</Text>
-				</Flex>
-				<Flex alignItems={"center"} gap={4}>
-					<Text fontSize={"sm"} fontWeight={"bold"}>
-						{userProfile.fullName}
-					</Text>
-				</Flex>
-				<Text fontSize={"sm"}>{userProfile.bio}</Text>
-			</VStack>
-			{isOpen && <EditProfile isOpen={isOpen} onClose={onClose} />}
-		</Flex>
-	);
+      await updateDoc(doc(firestore, "users", authUser.uid), {
+        posts: arrayRemove(post.id),
+      });
+
+      deletePost(post.id);
+      decrementPostsCount();
+      showToast("Success", "Post deleted successfully", "success");
+    } catch (error) {
+      showToast("Error", error.message, "error");
+    } finally {
+      setIsDeleting(false);
+    }
+  };
+
+  return (
+    <Flex justifyContent={"space-between"} alignItems={"center"} w={"full"} my={2}>
+      <Flex alignItems={"center"} gap={2}>
+        {creatorProfile ? (
+          <Link to={`/${creatorProfile.username}`}>
+            <Avatar src={creatorProfile.profilePicURL} alt='user profile pic' size={"sm"} />
+          </Link>
+        ) : (
+          <SkeletonCircle size='10' />
+        )}
+
+        <Flex fontSize={12} fontWeight={"bold"} gap='2'>
+          {creatorProfile ? (
+            <Link to={`/${creatorProfile.username}`}>{creatorProfile.username}</Link>
+          ) : (
+            <Skeleton w={"100px"} h={"10px"} />
+          )}
+          <Box color={"gray.500"}>• {timeAgo(post.createdAt)}</Box>
+        </Flex>
+      </Flex>
+      <Flex alignItems={"center"} gap={2}>
+        <Box cursor={"pointer"}>
+          <Button
+            size={"xs"}
+            bg={"transparent"}
+            fontSize={12}
+            color={"blue.500"}
+            fontWeight={"bold"}
+            _hover={{
+              color: "white",
+            }}
+            transition={"0.2s ease-in-out"}
+            onClick={handleFollowUser}
+            isLoading={isUpdating}
+          >
+            {isFollowing ? "Unfollow" : "Follow"}
+          </Button>
+        </Box>
+        {authUser?.uid === creatorProfile?.uid && (
+          <Box cursor={"pointer"}>
+            <Button
+              size={"xs"}
+              bg={"transparent"}
+              _hover={{ bg: "whiteAlpha.300", color: "red.600" }}
+              borderRadius={4}
+              p={1}
+              onClick={handleDeletePost}
+              isLoading={isDeleting}
+            >
+              <MdDelete size={20} cursor='pointer' />
+            </Button>
+          </Box>
+        )}
+      </Flex>
+    </Flex>
+  );
 };
 
-export default ProfileHeader;
+export default PostHeader;
