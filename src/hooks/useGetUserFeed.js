@@ -17,6 +17,7 @@ const useGetUserFeed = (username) => {
 
 	useEffect(() => {
 		const getFeedPosts = async () => {
+            if (!userProfile) return;
 			setIsLoading(true);
 			if (authUser.following.length === 0) {
 				setIsLoading(false);
