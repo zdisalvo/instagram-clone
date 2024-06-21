@@ -6,7 +6,7 @@ const FeedPostsOrig = () => {
   const { isLoading, posts } = useGetFeedPosts();
 
   return (
-    <Container py={6}  px={0} w={['100vw', null, '68vh']} >
+    <Container py={6}  px={0} w={['100vw', null, '60vh']} >
       {isLoading &&
         [0, 1, 2].map((_, idx) => (
           <VStack key={idx} gap={4} alignItems={"flex-start"} mb={10}>
