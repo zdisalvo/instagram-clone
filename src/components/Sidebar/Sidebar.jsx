@@ -27,13 +27,15 @@ const Sidebar = () => {
 		py={4}
 		position={"fixed"}
 		bottom={0}
+    
+    mx={0}
 
 		left={{ base: 0, md: "50%" }} // Center horizontally on medium and larger screens
       	transform={{ base: "none", md: "translateX(-50%)" }} // Center horizontally on medium and larger screens
       
 
 		//left={0}
-		px={{ base: 2, md: 2 }}
+		px={{ base: 0, md: 2 }}
 		bg={"gray.900"}
 		zIndex={10}
 
