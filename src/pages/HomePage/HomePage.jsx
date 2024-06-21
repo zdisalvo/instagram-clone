@@ -9,7 +9,7 @@ const HomePage = () => {
 			px={0}
 			mx={0}
 			height={{base: "90vh", md: "80vh"}}
-			width={{base: "100vw", md: "65vw"}}
+			width={{base: "100vw", md: "70vw"}}
 			
 			bottom={{base: "10vh", md: "60px"}}
 

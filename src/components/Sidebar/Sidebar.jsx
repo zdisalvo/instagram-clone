@@ -41,7 +41,7 @@ const Sidebar = () => {
 
     >
       <Flex direction={"row"} justifyContent={"center"} alignItems={"center"} w='full' height="100%" gap={4}>
-        <Link to={"/"} as={RouterLink} pl={2} display={{ base: "none", md: "flex" }} cursor='pointer' >
+        <Link ml={2} to={"/"} as={RouterLink} pl={2} display={{ base: "none", md: "flex" }} cursor='pointer' >
           <InstagramLogo />
         </Link>
         <Link
@@ -70,6 +70,7 @@ const Sidebar = () => {
           ml={1}
           openDelay={500}
           display={{ base: "block", md: "none" }}
+          mr={2}
         >
           <Flex
             onClick={handleLogout}

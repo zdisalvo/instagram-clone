@@ -52,8 +52,8 @@ const PostHeader = ({ post, creatorProfile }) => {
   };
 
   return (
-    <Flex justifyContent={"space-between"} alignItems={"center"} px={0} mx={0} w={"100vw"} my={2}>
-      <Flex alignItems={"center"} gap={2}>
+    <Flex justifyContent={"space-between"} alignItems={"center"} px={0} mx={0} maxWidth={"100vw"} my={2}>
+      <Flex alignItems={"center"} gap={2} m='3'>
         {userProfile ? (
           <Link to={`/${userProfile.username}`}>
             <Avatar src={userProfile.profilePicURL} alt='user profile pic' size={"sm"} />
@@ -62,16 +62,16 @@ const PostHeader = ({ post, creatorProfile }) => {
           <SkeletonCircle size='10' />
         )}
 
-        <Flex fontSize={12} fontWeight={"bold"} gap='2'>
+        <Flex fontSize={12} fontWeight={"bold"} gap='2' >
           {creatorProfile ? (
-            <Link to={`/${userProfile.username}`}>{userProfile.username}</Link>
+            <Link to={`/${userProfile.username}`} >{userProfile.username}</Link>
           ) : (
             <Skeleton w={"100px"} h={"10px"} />
           )}
           <Box color={"gray.500"}>• {timeAgo(post.createdAt)}</Box>
         </Flex>
       </Flex>
-      <Flex alignItems={"center"} gap={2}>
+      <Flex alignItems={"center"} gap={2} m={3}>
         <Box cursor={"pointer"}>
           <Button
             size={"xs"}

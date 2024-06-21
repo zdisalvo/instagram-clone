@@ -13,7 +13,7 @@ const FeedPost = forwardRef(({ post }, ref) => {
         //h={{ base: "auto", md: "70%" }}
         maxW={{ base: "100vw", md: "container.md" }}
         //maxW="container.md"
-        marginBottom={{ base: "10vh", md: "40px" }}
+        marginBottom={{ base: "7vh", md: "30px" }}
         maxH={{ base: "auto", md: "80%" }}
         px={0}
         mx={0}
