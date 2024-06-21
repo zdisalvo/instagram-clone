@@ -4,19 +4,19 @@ import SuggestedUsers from "../../components/SuggestedUsers/SuggestedUsers";
 
 const HomePage = () => {
 	return (
-		<Container p={0} py={{base: "20", md: "none"}} maxW="100vw" m={0}>
+		<Container p={0} maxW={{base: "100vw", md: "100vw"}} m={0}>
 			<Box
-			// px={0}
-			// mx="auto"
-			// height={{ base: "90vh", md: "auto" }}
-			// width={{ base: "100vw", md: "65vw" }}
-			// bottom={{ base: "10vh", md: "60px" }}
-			// left={0}
-			// transform="none"
-			// display="flex"
-			// flexDirection="column"
-			// justifyContent="center"
-			// alignItems="center"
+			px={0}
+			mx="auto"
+			height={{ base: "100vh", md: "auto" }}
+			width={{ base: "100vw", md: "65vw" }}
+			bottom={{ base: "10vh", md: "60px" }}
+			left={0}
+			transform="none"
+			display="flex"
+			flexDirection="column"
+			justifyContent={{base: "none", md: "center"}}
+			alignItems="center"
       
 		>
 
