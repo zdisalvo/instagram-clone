@@ -14,17 +14,19 @@ const ProfilePage = () => {
   if (userNotFound) return <UserNotFound />;
 
   return (
-    <Container px={0} maxW="100vw" maxH="100vh" mx={0} py={20} my={20}>
-      <Box
-        px={0}
-        mx="auto"
-        height={{ base: "90vh", md: "auto" }}
-        width={{ base: "100vw", md: "65vw" }}
-        bottom={{ base: "10vh", md: "60px" }}
-        left={0}
-        
-        justifyContent="center"
-        
+    <Container p={0} maxW={{base: "100vw", md: "100vw"}} m={0}>
+			<Box
+			px={0}
+			mx="auto"
+			height={{ base: "100vh", md: "auto" }}
+			width={{ base: "100vw", md: "65vw" }}
+			bottom={{ base: "10vh", md: "60px" }}
+			left={0}
+			transform="none"
+			display="flex"
+			flexDirection="column"
+			justifyContent={{base: "none", md: "center"}}
+			alignItems="center"
       >
         <Flex py={1} px={0} w="full" flexDirection="column" alignItems="center">
           {!isLoading && userProfile && <ProfileHeader />}
