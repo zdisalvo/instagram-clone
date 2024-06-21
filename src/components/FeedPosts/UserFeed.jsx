@@ -32,7 +32,22 @@ const UserFeed = () => {
   }, [isLoading]);
 
   return (
-    <Container maxW={"container.sm"} py={10} px={2}>
+    <Container p={0} maxW="100vw" m={0}>
+			<Box
+			px={0}
+			mx={0}
+			height={{base: "90vh", md: "80vh"}}
+			width={{base: "100vw", md: "70vw"}}
+			
+			bottom={{base: "10vh", md: "60px"}}
+
+			// left={{ base: 0, md: "30%" }} 
+			// transform={{ base: "none", md: "translateX(-30%)" }} 
+
+			left={{ base: 0, md: "0%" }} 
+			transform={{ base: "none", md: "none" }} 
+      
+		>
       {isLoading &&
         [0, 1, 2].map((_, idx) => (
           <VStack key={idx} gap={4} alignItems={"flex-start"} mb={10}>
@@ -67,6 +82,7 @@ const UserFeed = () => {
 
       {/* Conditional rendering for scroll attempt when posts are loaded */}
       {shouldScroll && <div style={{ visibility: "hidden", height: 0 }} ref={(el) => el && el.scrollIntoView({ behavior: "smooth" })}></div>}
+      </Box>
     </Container>
   );
 };
