@@ -26,7 +26,7 @@ const ProfilePage = () => {
         display="flex"
         flexDirection="column"
         justifyContent="center"
-        alignItems="center"
+        
       >
         <Flex py={1} px={0} w="full" flexDirection="column" alignItems="center">
           {!isLoading && userProfile && <ProfileHeader />}
