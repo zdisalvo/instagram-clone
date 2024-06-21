@@ -36,8 +36,8 @@ const UserFeed = () => {
 			<Box
 			px={0}
 			mx={0}
-			height={{base: "90vh", md: "80vh"}}
-			width={{base: "100vw", md: "70vw"}}
+			height={{base: "90vh", md: "auto"}}
+			width={{base: "100vw", md: "27vw"}}
 			
 			bottom={{base: "10vh", md: "60px"}}
 
@@ -74,11 +74,7 @@ const UserFeed = () => {
         ))
       }
 
-      {!isLoading && posts.length === 0 && (
-        <Text fontSize={"md"} color={"red.400"}>
-          Follow some people to see their posts in your feed.
-        </Text>
-      )}
+      
 
       {/* Conditional rendering for scroll attempt when posts are loaded */}
       {shouldScroll && <div style={{ visibility: "hidden", height: 0 }} ref={(el) => el && el.scrollIntoView({ behavior: "smooth" })}></div>}

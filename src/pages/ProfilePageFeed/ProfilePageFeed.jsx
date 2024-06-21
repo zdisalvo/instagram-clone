@@ -16,9 +16,9 @@ const ProfilePageFeed = () => {
 
   return (
     <ErrorBoundary>
-      <Container maxW={"container.lg"}>
+      <Container maxW={"70vw"}>
         <Flex gap={20}>
-          <Box flex={2} py={10}>
+          <Box flex={2} py={2} ml={20}>
             <UserFeed username={username} postId={postId} />
           </Box>
           <Box flex={3} mr={20} display={{ base: "none", lg: "block" }} maxW={"300px"}>
