@@ -4,10 +4,10 @@ import SuggestedUsers from "../../components/SuggestedUsers/SuggestedUsers";
 
 const HomePage = () => {
 	return (
-		<Container>
+		<Container p={0}>
 			<Box
-			height={{base: "90vh", md: "90vh"}}
-			width={{base: "100vw", md: "70vw"}}
+			height={{base: "90vh", md: "80vh"}}
+			width={{base: "100vw", md: "65vw"}}
 			
 			bottom={{base: "10vh", md: "60px"}}
 
@@ -19,7 +19,7 @@ const HomePage = () => {
 				<Box flex={2} py={0}>
 					<FeedPostsOrig />
 				</Box>
-				<Box flex={3} mr={{base: "none", md: "20"}} display={{ base: "none", lg: "block" }} maxW={{base: "200px", md: "300px"}}>
+				<Box flex={3} mr={{base: "none", md: "20"}} display={{ base: "none", lg: "block" }} maxW={{base: "200px", lg: "300px"}}>
 					<SuggestedUsers />
 				</Box>
 			</Flex>

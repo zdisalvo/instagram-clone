@@ -6,7 +6,7 @@ const FeedPostsOrig = () => {
   const { isLoading, posts } = useGetFeedPosts();
 
   return (
-    <Container py={10} px={2} w={['100vw', null, 'container.sm']}>
+    <Container py={6}  px={0} w={['100vw', null, '68vh']} >
       {isLoading &&
         [0, 1, 2].map((_, idx) => (
           <VStack key={idx} gap={4} alignItems={"flex-start"} mb={10}>
@@ -23,7 +23,7 @@ const FeedPostsOrig = () => {
           </VStack>
         ))}
       
-      {!isLoading && posts.length > 0 && posts.map((post) => <FeedPost key={post.id} post={post} />)}
+      {!isLoading && posts.length > 0 && posts.map((post) => <FeedPost key={post.id} post={post}  />)}
       
       {!isLoading && posts.length === 0 && (
         <>
