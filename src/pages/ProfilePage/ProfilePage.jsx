@@ -14,7 +14,7 @@ const ProfilePage = () => {
   if (userNotFound) return <UserNotFound />;
 
   return (
-    <Container p={0} maxW="100vw" m={0}>
+    <Container maxW='container.lg' py={5} mx={0}>
       <Box
         px={0}
         mx="auto"
