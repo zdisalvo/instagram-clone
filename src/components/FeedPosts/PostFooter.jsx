@@ -60,7 +60,7 @@ const PostFooter = ({ post, isProfilePage, creatorProfile }) => {
 			)}
 
 			{authUser && (
-				<Flex alignItems={"center"} gap={2} justifyContent={"space-between"} w={"full"}>
+				<Flex alignItems={"center"} gap={2} justifyContent={"space-between"} px={0} w={"full"}>
 					<InputGroup>
 						<Input
 							variant={"flushed"}
