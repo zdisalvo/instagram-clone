@@ -13,7 +13,7 @@ const ProfileHeader = () => {
 	const visitingAnotherProfileAndAuth = authUser && authUser.username !== userProfile.username;
 
 	return (
-		<Flex gap={{ base: 4, sm: 10 }} py={10} direction={{ base: "column", sm: "row" }}>
+		<Flex gap={{ base: 4, sm: 10 }} py={0} direction={{ base: "column", sm: "column" }}>
 			<AvatarGroup size={{ base: "xl", md: "2xl" }} justifySelf={"center"} alignSelf={"flex-start"} mx={"auto"}>
 				<Avatar src={userProfile.profilePicURL} alt='As a programmer logo' />
 			</AvatarGroup>
