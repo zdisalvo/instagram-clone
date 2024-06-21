@@ -5,7 +5,7 @@ import SuggestedUsers from "../../components/SuggestedUsers/SuggestedUsers";
 const HomePage = () => {
 	return (
 		<Container maxW={"container.lg"}>
-			<Flex gap={20}>
+			<Flex gap={0}>
 				<Box flex={2} py={10}>
 					<FeedPostsOrig />
 				</Box>
