@@ -23,10 +23,10 @@ const ProfilePage = () => {
         bottom={{ base: "10vh", md: "60px" }}
         left={0}
         transform="none"
-        display="flex"
+        
         flexDirection="column"
         justifyContent="center"
-        alignItems="center"
+        
       >
         <Flex py={1} px={0} w="full" flexDirection="column" alignItems="center">
           {!isLoading && userProfile && <ProfileHeader />}
