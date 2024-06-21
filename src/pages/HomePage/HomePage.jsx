@@ -19,7 +19,7 @@ const HomePage = () => {
 				<Box flex={2} py={0}>
 					<FeedPostsOrig />
 				</Box>
-				<Box flex={3} mr={20} display={{ base: "none", lg: "block" }} maxW={"300px"}>
+				<Box flex={3} mr={{base: "none", md: "20"}} display={{ base: "none", lg: "block" }} maxW={{base: "200px", md: "300px"}}>
 					<SuggestedUsers />
 				</Box>
 			</Flex>
