@@ -15,8 +15,9 @@ import { firestore, storage } from "../../firebase/firebase";
 
 
 const PostHeader = ({ post, creatorProfile }) => {
-  const { handleFollowUser, isFollowing, isUpdating } = useFollowUser(post.createdBy);
+  
   const { userProfile } = useGetUserProfileById(post.createdBy);
+  const { handleFollowUser, isFollowing, isUpdating } = useFollowUser(post.createdBy);
   const authUser = useAuthStore((state) => state.user);
   const showToast = useShowToast();
   const [isDeleting, setIsDeleting] = useState(false);
@@ -81,7 +82,7 @@ const PostHeader = ({ post, creatorProfile }) => {
             _hover={{
               color: "white",
             }}
-            transition={"0.2s ease-in-out"}
+            //transition={"0.2s ease-in-out"}
             onClick={handleFollowUser}
             isLoading={isUpdating}
           >
