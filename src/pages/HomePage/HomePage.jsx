@@ -4,7 +4,7 @@ import SuggestedUsers from "../../components/SuggestedUsers/SuggestedUsers";
 
 const HomePage = () => {
 	return (
-		<Container p={0} py={1} maxW="100vw" m={0}>
+		<Container p={0} py={{base: "20", md: "none"}} maxW="100vw" m={0}>
 			<Box
 			px={0}
 			mx="auto"
