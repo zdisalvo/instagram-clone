@@ -4,7 +4,7 @@ import SuggestedUsers from "../../components/SuggestedUsers/SuggestedUsers";
 
 const HomePage = () => {
 	return (
-		<Container p={0} maxW="100vw" m={0}>
+		<Container p={0} py={1} maxW="100vw" m={0}>
 			<Box
 			px={0}
 			mx="auto"
@@ -23,7 +23,7 @@ const HomePage = () => {
 			<Flex gap={20} px={0} mx={0} 
 				justifyContent="center"
 				>
-				<Box flex={2} py={0} px={0} ml={20}>
+				<Box flex={2} py={0} px={0} ml={{base: "none", md: "20"}}>
 					<FeedPostsOrig />
 				</Box>
 				<Box px={0} ml={0} flex={3} mr={{base: "none", md: "20"}} display={{ base: "none", lg: "block" }} maxW={{base: "20vw", lg: "20vw"}}>
