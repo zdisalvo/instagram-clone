@@ -16,7 +16,7 @@ const ProfilePageFeed = () => {
 
   return (
     <ErrorBoundary>
-      <Container maxW={"70vw"}>
+      <Container maxW={"100vw"}>
         <Flex gap={20}>
           <Box flex={2} py={2} ml={20}>
             <UserFeed username={username} postId={postId} />
