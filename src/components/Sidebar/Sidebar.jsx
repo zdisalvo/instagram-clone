@@ -18,7 +18,7 @@ const Sidebar = () => {
 	return (
 	
 	<Box
-		height={{base: "10vh", md: "60px"}}
+		height={{base: "20vh", md: "60px"}}
 		width={{base: "100vw", md: "70vw"}}
 		//alignItems={"center"}
 		//justifyContent={"center"}
