@@ -52,7 +52,7 @@ const PostHeader = ({ post, creatorProfile }) => {
   };
 
   return (
-    <Flex justifyContent={"space-between"} alignItems={"center"} px={0} w={"100vw"} my={2}>
+    <Flex justifyContent={"space-between"} alignItems={"center"} px={0} mx={0} w={"100vw"} my={2}>
       <Flex alignItems={"center"} gap={2}>
         {userProfile ? (
           <Link to={`/${userProfile.username}`}>

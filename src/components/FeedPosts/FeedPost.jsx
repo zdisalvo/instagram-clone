@@ -16,9 +16,10 @@ const FeedPost = forwardRef(({ post }, ref) => {
         marginBottom={{ base: "10vh", md: "40px" }}
         maxH={{ base: "auto", md: "80%" }}
         px={0}
+        mx={0}
       >
       <PostHeader post={post} creatorProfile={userProfile} />
-      <Box my={2} borderRadius={4} overflow={"hidden"} px={0}>
+      <Box my={2} borderRadius={4} overflow={"hidden"} px={0} mx={0}>
         <Image src={post.imageURL} alt={"FEED POST IMG"} width="100%" height="auto"/>
       </Box>
       <PostFooter post={post} creatorProfile={userProfile} />
