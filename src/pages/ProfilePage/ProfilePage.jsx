@@ -22,9 +22,7 @@ const ProfilePage = () => {
         width={{ base: "100vw", md: "65vw" }}
         bottom={{ base: "10vh", md: "60px" }}
         left={0}
-        transform="none"
         
-        flexDirection="column"
         justifyContent="center"
         
       >
