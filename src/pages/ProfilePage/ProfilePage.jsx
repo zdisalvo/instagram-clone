@@ -14,13 +14,13 @@ const ProfilePage = () => {
   if (userNotFound) return <UserNotFound />;
 
   return (
-    <Container p={0} maxW={{base: "100vw", md: "100vw"}} m={0}>
+    <Container p={0} maxW={{base: "100vw", md: "100vw"}}  m={0}>
 			<Box
 			px={0}
 			mx="auto"
 			height={{ base: "100vh", md: "auto" }}
 			width={{ base: "100vw", md: "65vw" }}
-			bottom={{ base: "10vh", md: "60px" }}
+			marginBottom={{ base: "10vh", md: "60px" }}
 			left={0}
 			transform="none"
 			display="flex"
