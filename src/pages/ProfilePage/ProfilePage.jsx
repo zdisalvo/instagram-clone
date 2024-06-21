@@ -14,7 +14,7 @@ const ProfilePage = () => {
   if (userNotFound) return <UserNotFound />;
 
   return (
-    <Container maxW='container.lg' py={5} mx={0}>
+    <Container p={0} maxW="100vw" m={0} py={20} my={20}>
       <Box
         px={0}
         mx="auto"
@@ -26,7 +26,7 @@ const ProfilePage = () => {
         display="flex"
         flexDirection="column"
         justifyContent="center"
-        
+        alignItems="center"
       >
         <Flex py={1} px={0} w="full" flexDirection="column" alignItems="center">
           {!isLoading && userProfile && <ProfileHeader />}
