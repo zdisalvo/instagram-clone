@@ -33,7 +33,7 @@ const UserFeed = () => {
     <Container mx={0} px={0}>
       {isLoading &&
         [0, 1, 2].map((_, idx) => (
-          <VStack key={idx} gap={0} alignItems={"flex-start"} mb={{base: "10vh", md: "60px"}}>
+          <VStack key={idx} gap={0} alignItems={"flex-start"} mb={{base: "13vh", md: "60px"}}>
             <Flex gap="0">
               <SkeletonCircle size="10" />
               <VStack gap={0} alignItems={"flex-start"}>
