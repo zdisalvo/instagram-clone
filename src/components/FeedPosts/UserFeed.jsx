@@ -39,8 +39,8 @@ const UserFeed = () => {
             <Flex gap="0">
               <SkeletonCircle size="10" />
               <VStack gap={0} alignItems={"flex-start"}>
-                <Skeleton height="10px" w={"200px"} />
-                <Skeleton height="10px" w={"200px"} />
+                <Skeleton height="10px" w={{base: "100vw", md: "200px"}} />
+                <Skeleton height="10px" w={{base: "100vw", md: "200px"}} />
               </VStack>
             </Flex>
             <Skeleton w={"full"}>
