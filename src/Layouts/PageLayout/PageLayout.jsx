@@ -27,7 +27,7 @@ const PageLayout = ({ children }) => {
 			{/* Navbar */}
 			{canRenderNavbar ? <Navbar /> : null}
 			{/* the page content on the right */}
-			<Box flex={1} w={{ base: "100vw", md: "100vw" }} mx={0}>
+			<Box flex={1} w={{ base: "100vw", md: "100vw" }} h={{base: "calc"}} mx={0}>
 				{children}
 			</Box>
 		</Flex>
