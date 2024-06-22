@@ -16,7 +16,7 @@ const ProfilePageFeed = () => {
 
   return (
     
-      <Container p={0} maxW={{base: "100vw", md: "100vw"}} m={0} pb={{base: "12vh", md: "20px"}}>
+      <Container p={0} maxW={{base: "100vw", md: "100vw"}} m={0} mb={{base: "12vh", md: "20px"}}>
 			<Box
         px={0}
         mx="auto"
