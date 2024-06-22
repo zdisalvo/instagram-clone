@@ -32,7 +32,7 @@ const PostFooter = ({ post, isProfilePage, creatorProfile }) => {
 				</Box>
 			</Flex>
 			<Text fontWeight={600} fontSize={"sm"}>
-				{likes} likes
+				{likes === 1 ? `${likes} like` : `${likes} likes`}
 			</Text>
 
 			{isProfilePage && (
