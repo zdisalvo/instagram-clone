@@ -30,11 +30,13 @@ const ProfilePageFeed = () => {
         justifyContent={{base: "none", md: "center"}}
         alignItems="center"
       >
-        <Flex gap={20}>
-          <Box flex={2} py={2} ml={20}>
+        <Flex gap={20} px={0} mx={0} 
+				justifyContent="center"
+				>
+          <Box flex={2} py={0} px={0} ml={{base: "none", md: "20"}}>
             <UserFeed username={username} postId={postId} />
           </Box>
-          <Box flex={3} mr={20} display={{ base: "none", lg: "block" }} maxW={"300px"}>
+          <Box px={0} ml={0} flex={3} mr={{base: "none", md: "20"}} display={{ base: "none", lg: "block" }} maxW={{base: "20vw", lg: "20vw"}}>
             <SuggestedUsers />
           </Box>
         </Flex>
