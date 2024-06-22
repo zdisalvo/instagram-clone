@@ -12,12 +12,12 @@ const UserFeed = () => {
   const postRefs = useRef({});
   const [shouldScroll, setShouldScroll] = useState(false);
 
-  useEffect(() => {
-    if (!isLoading && postId && postRefs.current[postId]) {
-      postRefs.current[postId].scrollIntoView({ behavior: "smooth" });
-      setShouldScroll(false); // Reset to false after scrolling
-    }
-  }, [posts, postId, isLoading]);
+  // useEffect(() => {
+  //   if (!isLoading && postId && postRefs.current[postId]) {
+  //     postRefs.current[postId].scrollIntoView({ behavior: "smooth" });
+  //     setShouldScroll(false); // Reset to false after scrolling
+  //   }
+  // }, [posts, postId, isLoading]);
 
   useEffect(() => {
     if (!isLoading) {
