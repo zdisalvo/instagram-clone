@@ -21,8 +21,8 @@ const PostFooter = ({ post, isProfilePage, creatorProfile }) => {
 	};
 
 	return (
-		<Box mb={10} marginTop={"auto"} px={0} mx={0} >
-			<Flex alignItems={"center"} gap={4} px={0} pt={0} mb={2} mt={4} mx={3}>
+		<Box mb={10} marginTop={"auto"} px={0} mx={3} >
+			<Flex alignItems={"center"} gap={4} px={0} pt={0} mb={2} mt={4}>
 				<Box onClick={handleLikePost} cursor={"pointer"} fontSize={18}>
 					{!isLiked ? <NotificationsLogo /> : <UnlikeLogo />}
 				</Box>
@@ -31,26 +31,26 @@ const PostFooter = ({ post, isProfilePage, creatorProfile }) => {
 					<CommentLogo />
 				</Box>
 			</Flex>
-			<Text fontWeight={600} fontSize={"sm"} mx={3}>
+			<Text fontWeight={600} fontSize={"sm"}>
 				{likes} likes
 			</Text>
 
 			{isProfilePage && (
-				<Text fontSize='12' color={"gray"} mx={3}>
+				<Text fontSize='12' color={"gray"}>
 					Posted {timeAgo(post.createdAt)}
 				</Text>
 			)}
 
 			{!isProfilePage && (
 				<>
-					<Text fontSize='sm' fontWeight={700} mx={3}>
+					<Text fontSize='sm' fontWeight={700}>
 						{creatorProfile?.username}{" "}
 						<Text as='span' fontWeight={400}>
 							{post.caption}
 						</Text>
 					</Text>
 					{post.comments.length > 0 && (
-						<Text fontSize='sm' color={"gray"} cursor={"pointer"} onClick={onOpen} mx={3}>
+						<Text fontSize='sm' color={"gray"} cursor={"pointer"} onClick={onOpen}>
 							View all {post.comments.length} comments
 						</Text>
 					)}
@@ -60,12 +60,12 @@ const PostFooter = ({ post, isProfilePage, creatorProfile }) => {
 			)}
 
 			{authUser && (
-				<Flex alignItems={"center"} gap={2} justifyContent={"space-between"} px={0} w={"full"} mx={0}>
-					<InputGroup mx={0}>
+				<Flex alignItems={"center"} gap={2} justifyContent={"space-between"} px={0} w={"full"}>
+					<InputGroup>
 						<Input
 							variant={"flushed"}
 							placeholder={"Add a comment..."}
-							fontSize={14}
+							fontSize={16}
 							onChange={(e) => setComment(e.target.value)}
 							value={comment}
 							ref={commentRef}
