@@ -20,16 +20,14 @@ const UserFeed = () => {
   // }, [posts, postId, isLoading]);
 
   useEffect(() => {
-    if (!isLoading) {
-      // Once posts are loaded, check if postId exists
-      if (postId && postRefs.current[postId]) {
+    if (!isLoading && postId && postRefs.current[postId]) {
+      // Using setTimeout to ensure DOM is fully updated
+      setTimeout(() => {
         postRefs.current[postId].scrollIntoView({ behavior: "smooth" });
-        setShouldScroll(false); // Reset to false after scrolling
-      }
-    } else {
-      setShouldScroll(true); // Set to true to attempt scrolling once posts are loaded
+      }, 100); // Adjust delay as necessary
+      setShouldScroll(false); // Reset to false after scrolling
     }
-  }, [isLoading]);
+  }, [isLoading, postId, posts]);
 
   return (
     <Container mx={0} px={0}>
