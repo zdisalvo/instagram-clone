@@ -23,7 +23,7 @@ const UserFeed = () => {
     if (!isLoading && postId && postRefs.current[postId]) {
       // Using setTimeout to ensure DOM is fully updated
       setTimeout(() => {
-        postRefs.current[postId].scrollIntoView({ behavior: "smooth" });
+        postRefs.current[postId].scrollIntoView();
       }, 500); // Adjust delay as necessary
       setShouldScroll(false); // Reset to false after scrolling
     }
