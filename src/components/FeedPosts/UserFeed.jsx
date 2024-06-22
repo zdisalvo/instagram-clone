@@ -24,7 +24,7 @@ const UserFeed = () => {
       // Using setTimeout to ensure DOM is fully updated
       setTimeout(() => {
         postRefs.current[postId].scrollIntoView({ behavior: "smooth" });
-      }, 100); // Adjust delay as necessary
+      }, 500); // Adjust delay as necessary
       setShouldScroll(false); // Reset to false after scrolling
     }
   }, [isLoading, postId, posts]);
