@@ -15,7 +15,7 @@ const ProfilePageFeed = () => {
   const postId = searchParams.get("postId");
 
   return (
-    <ErrorBoundary>
+    
       <Container p={0} maxW={{base: "100vw", md: "100vw"}} m={0} pb={{base: "10vh", md: "20px"}}>
 			<Box
         px={0}
@@ -42,7 +42,7 @@ const ProfilePageFeed = () => {
         </Flex>
         </Box>
       </Container>
-    </ErrorBoundary>
+    
   );
 };
 

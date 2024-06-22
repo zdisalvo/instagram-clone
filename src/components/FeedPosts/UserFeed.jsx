@@ -32,7 +32,7 @@ const UserFeed = () => {
   }, [isLoading]);
 
   return (
-    <Container>
+    <Container mx={0} px={0}>
       {isLoading &&
         [0, 1, 2].map((_, idx) => (
           <VStack key={idx} gap={0} alignItems={"flex-start"} mb={{base: "10vh", md: "60px"}}>
