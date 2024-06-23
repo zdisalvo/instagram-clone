@@ -6,10 +6,12 @@ import SuggestedUsers from "../../components/SuggestedUsers/SuggestedUsers";
 import ErrorBoundary from "../../components/ErrorBoundary/ErrorBoundary";
 import ProfileFeed from "../../components/Profile/ProfileFeed";
 import UserFeed from "../../components/FeedPosts/UserFeed";
+import useAuthStore from "../../store/authStore";
 
 const ProfilePageFeed = () => {
   const { username } = useParams();
   const location = useLocation();
+  const authUser = useAuthStore((state) => state.user);
   
   const searchParams = new URLSearchParams(location.search);
   const postId = searchParams.get("postId");
@@ -37,7 +39,9 @@ const ProfilePageFeed = () => {
             <UserFeed username={username} postId={postId} />
           </Box>
           <Box px={0} ml={0} flex={3} mr={{base: "none", md: "20"}} display={{ base: "none", lg: "block" }} maxW={{base: "20vw", lg: "20vw"}}>
+            {authUser && (
             <SuggestedUsers />
+            )}
           </Box>
         </Flex>
         </Box>
