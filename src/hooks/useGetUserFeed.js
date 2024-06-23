@@ -19,11 +19,11 @@ const useGetUserFeed = (username) => {
 		const getFeedPosts = async () => {
             if (!userProfile) return;
 			setIsLoading(true);
-			if (authUser.following.length === 0) {
-				setIsLoading(false);
-				setPosts([]);
-				return;
-			}
+			// if (authUser.following.length === 0) {
+			// 	setIsLoading(false);
+			// 	setPosts([]);
+			// 	return;
+			// }
 			const q = query(collection(firestore, "posts"), where("createdBy", "==", userProfile.uid));
 			try {
 				const querySnapshot = await getDocs(q);
@@ -42,7 +42,7 @@ const useGetUserFeed = (username) => {
 			}
 		};
 
-		if (authUser) getFeedPosts();
+		getFeedPosts();
 	}, [authUser, showToast, setPosts, setUserProfile, userProfileLoading]);
 
 	return { isLoading, posts };

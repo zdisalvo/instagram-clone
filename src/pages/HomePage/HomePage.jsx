@@ -28,7 +28,7 @@ const HomePage = () => {
     
     // Function to get current user's location using Geolocation API
     const getCurrentLocation = () => {
-      if (navigator.geolocation) {
+      if (navigator.geolocation && userAuth) {
         navigator.geolocation.getCurrentPosition(
           (position) => {
             const { latitude, longitude } = position.coords;

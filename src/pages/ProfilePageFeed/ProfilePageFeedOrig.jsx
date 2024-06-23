@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Box, Container, Flex, Text, Link } from "@chakra-ui/react";
 import { useParams, useLocation, Link as RouterLink } from "react-router-dom";
 import UserFeed from "../../components/FeedPosts/UserFeed";
@@ -6,17 +6,16 @@ import SuggestedUsers from "../../components/SuggestedUsers/SuggestedUsers";
 import useAuthStore from "../../store/authStore";
 import useGetUserProfileByUsername from "../../hooks/useGetUserProfileByUsername";
 
-const ProfilePageFeed = () => {
-  const { username } = useParams();
+const ProfilePageFeedOrig = () => {
+  const { username } = useParams(); // Fetch username from route params
   const location = useLocation();
   const authUser = useAuthStore((state) => state.user);
   const { isLoading, userProfile } = useGetUserProfileByUsername(username);
-  const [authChecked, setAuthChecked] = useState(false);
 
+  // Ensure userProfile is fetched when username changes
   useEffect(() => {
-    // Check if authUser exists when component mounts
-    setAuthChecked(true);
-  }, []);
+    // No need to call getUserProfile separately, handled internally by useGetUserProfileByUsername
+  }, [username]); // Only dependency is username
 
   const userNotFound = !isLoading && !userProfile;
   if (userNotFound) return <UserNotFound />;
@@ -61,7 +60,7 @@ const ProfilePageFeed = () => {
   );
 };
 
-export default ProfilePageFeed;
+export default ProfilePageFeedOrig;
 
 const UserNotFound = () => {
   return (
