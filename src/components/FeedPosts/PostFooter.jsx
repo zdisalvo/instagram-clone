@@ -21,8 +21,8 @@ const PostFooter = ({ post, isProfilePage, creatorProfile }) => {
 	};
 
 	return (
-		<Box mb={10} marginTop={"auto"} px={0} mx={3} >
-			<Flex alignItems={"center"} gap={4} px={0} pt={0} mb={2} mt={4}>
+		<Box mb={3} marginTop={"auto"} px={0} mx={3} >
+			<Flex alignItems={"center"} gap={4} px={0} pt={0} mb={1} mt={4}>
 				<Box onClick={handleLikePost} cursor={"pointer"} fontSize={18}>
 					{!isLiked ? <NotificationsLogo /> : <UnlikeLogo />}
 				</Box>
@@ -31,7 +31,7 @@ const PostFooter = ({ post, isProfilePage, creatorProfile }) => {
 					<CommentLogo />
 				</Box>
 			</Flex>
-			<Text fontWeight={600} fontSize={"sm"}>
+			<Text fontWeight={600} fontSize={"sm"} mb={1}>
 				{likes === 1 ? `${likes} like` : `${likes} likes`}
 			</Text>
 
@@ -43,14 +43,14 @@ const PostFooter = ({ post, isProfilePage, creatorProfile }) => {
 
 			{!isProfilePage && (
 				<>
-					<Text fontSize='sm' fontWeight={700}>
+					<Text fontSize='sm' fontWeight={700} mb={1}>
 						{creatorProfile?.username}{" "}
 						<Text as='span' fontWeight={400}>
 							{post.caption}
 						</Text>
 					</Text>
 					{post.comments.length > 0 && (
-						<Text fontSize='sm' color={"gray"} cursor={"pointer"} onClick={onOpen}>
+						<Text fontSize='sm' color={"gray"} cursor={"pointer"} onClick={onOpen} >
 							View all {post.comments.length} comments
 						</Text>
 					)}

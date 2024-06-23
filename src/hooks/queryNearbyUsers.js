@@ -8,7 +8,7 @@ const queryNearbyUsers = async (latitude, longitude, radiusInMeters) => {
   const center = [latitude, longitude];
   const radiusInKm = radiusInMeters / 1000; // Convert radius to kilometers
 
-  //console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+  console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
 
 
   // Calculate geohashes for querying
@@ -75,11 +75,12 @@ const lonDegrees = longitudeDegrees(radiusInKm, latitude);
     
     // Calculate distance (optional, depending on your needs)
     const distance = geofireCommon.distanceBetween(center, userLocation);
+    const distanceMiles = .62137 * distance;
 
     nearbyUsers.push({
       userId: doc.id,
       location: userLocation,
-      distance: distance,
+      distance: distanceMiles,
       userData: userData
 
     });

@@ -131,7 +131,7 @@ function useCreatePost() {
 	const { pathname } = useLocation();
 
 	const handleCreatePost = async (selectedFile, caption) => {
-		if (isLoading) return;
+		if (isLoading || !authUser || !userProfile) return;
 		if (!selectedFile) throw new Error("Please select an image");
 		setIsLoading(true);
 		const newPost = {
