@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import {
   Box,
   Button,
@@ -16,16 +16,20 @@ import {
 } from "@chakra-ui/react";
 import useAuthStore from "../../store/authStore";
 import useCreateSparkProfile from "../../hooks/useCreateSparkProfile";
+import useGetSparkProfileById from "../../hooks/useGetSparkProfileById";
 
 const CreateSpark = () => {
   const authUser = useAuthStore((state) => state.user);
 
   if (!authUser) return;
 
+  const {sparkProfile} = useGetSparkProfileById(authUser?.uid);
+
   const { isUpdating, editSparkProfile} = useCreateSparkProfile();
   
 
   const [formData, setFormData] = useState({
+    name: "",
     birthday: "",
     work: "",
     school: "",
@@ -34,7 +38,7 @@ const CreateSpark = () => {
     location: "",
     hometown: "",
     ethnicity: "",
-    height: "",
+    height: 0,
     exercise: "",
     education_level: "",
     drinking: "",
@@ -53,6 +57,15 @@ const CreateSpark = () => {
   });
 
   const [preview, setPreview] = useState(null); // Added for profile picture preview
+
+  useEffect(() => {
+    if (sparkProfile) {
+      setFormData((prevState) => ({
+        ...prevState,
+        ...sparkProfile,
+      }));
+    }
+  }, [sparkProfile]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -86,8 +99,13 @@ const CreateSpark = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await editSparkProfile(formData);
-    console.log("Profile updated", formData);
+    const filteredData = Object.fromEntries(
+      Object.entries(formData).filter(
+        ([key, value]) => value !== "" && value !== null && value !== undefined
+      )
+    );
+    await editSparkProfile(filteredData);
+    console.log("Profile updated", filteredData);
   };
 
 //   const handleSubmit = async () => {
@@ -106,6 +124,11 @@ const CreateSpark = () => {
       </Heading>
       <Box as="form" onSubmit={handleSubmit} p={4} boxShadow="md" borderRadius="md">
         <Stack spacing={4}>
+        <FormControl id="name">
+            <FormLabel>Name</FormLabel>
+            <Input type="text" name="name" value={formData.name || (sparkProfile ? sparkProfile.name : "")} onChange={handleChange} />
+          </FormControl>
+
           <FormControl id="profile-pic">
             <FormLabel>Profile Picture</FormLabel>
             <Input type="file" accept="image/*" onChange={handleFileChange} />
@@ -119,7 +142,7 @@ const CreateSpark = () => {
             <Input
               type="date"
               name="birthday"
-              value={formData.birthday}
+              value={formData.birthday || (sparkProfile ? sparkProfile.birthday : "")}
               onChange={handleChange}
             />
           </FormControl>
