@@ -18,6 +18,10 @@ import useAuthStore from "../../store/authStore";
 import useCreateSparkProfile from "../../hooks/useCreateSparkProfile";
 import useGetSparkProfileById from "../../hooks/useGetSparkProfileById";
 
+
+const emojiOptions = ["🎨", "🎵", "⚽️ Soccer", "🎮", "📚", "🍔", "✈️", "🏕️", "🎥", "🖥️", "💃", "🧘", "🏋️", "🎧", "🧩"];
+
+
 const CreateSpark = () => {
   const authUser = useAuthStore((state) => state.user);
 
@@ -116,6 +120,21 @@ const CreateSpark = () => {
 //         showToast("Error", error.message, "error");
 //     }
 // };
+
+const handleEmojiClick = (emoji) => {
+    setFormData((prevState) => {
+      const currentInterests = [...prevState.interests];
+      if (currentInterests.includes(emoji)) {
+        // Remove the emoji if it's already selected
+        return { ...prevState, interests: currentInterests.filter((e) => e !== emoji) };
+      } else if (currentInterests.length < 7) {
+        // Add the emoji if less than 7 are selected
+        return { ...prevState, interests: [...currentInterests, emoji] };
+      } else {
+        return prevState; // Do nothing if already 7 are selected
+      }
+    });
+  };
 
   return (
     <Container maxW="container.md" mb={{ base: "10vh", md: "60px" }}>
@@ -364,16 +383,18 @@ const CreateSpark = () => {
 
           <FormControl id="interests">
             <FormLabel>Interests</FormLabel>
-            <Textarea
-              name="interests"
-              value={formData.interests.join(", ")}
-              onChange={(e) =>
-                setFormData((prevState) => ({
-                  ...prevState,
-                  interests: e.target.value.split(",").map((interest) => interest.trim()),
-                }))
-              }
-            />
+            <Box display="flex" flexWrap="wrap">
+              {emojiOptions.map((emoji) => (
+                <Button
+                  key={emoji}
+                  onClick={() => handleEmojiClick(emoji)}
+                  colorScheme={formData.interests.includes(emoji) ? "blue" : "gray"}
+                  m={1}
+                >
+                  {emoji}
+                </Button>
+              ))}
+            </Box>
           </FormControl>
 
           <Button type="submit" colorScheme="blue"
