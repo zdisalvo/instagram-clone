@@ -149,28 +149,30 @@ const CreateSpark = () => {
 
           <FormControl id="work">
             <FormLabel>Work</FormLabel>
-            <Input type="text" name="work" value={formData.work} onChange={handleChange} />
+            <Input type="text" name="work" value={formData.work || (sparkProfile ? sparkProfile.work : "")} onChange={handleChange} />
           </FormControl>
 
           <FormControl id="school">
             <FormLabel>School</FormLabel>
-            <Input type="text" name="school" value={formData.school} onChange={handleChange} />
+            <Input type="text" name="school" value={formData.school || (sparkProfile ? sparkProfile.school : "")} onChange={handleChange} />
           </FormControl>
 
           <FormControl id="gender">
             <FormLabel>Gender</FormLabel>
-            <Select name="gender" value={formData.gender} onChange={handleChange}>
+            <Select name="gender" value={formData.gender || (sparkProfile ? sparkProfile.gender : "")} onChange={handleChange}>
               <option value="">Select gender</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
-              <option value="other">Other</option>
+              <option value="other">Transfemale</option>
+              <option value="other">Transmale</option>
+              <option value="other">Non-binary</option>
             </Select>
           </FormControl>
 
           <FormControl id="interested_in">
             <FormLabel>Interested In</FormLabel>
             <CheckboxGroup
-              value={formData.interested_in}
+              value={formData.interested_in || (sparkProfile ? sparkProfile.interested_in : "")}
               onChange={(values) => handleCheckboxChange("interested_in", values)}
             >
               <Stack direction="row">
@@ -186,7 +188,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="location"
-              value={formData.location}
+              value={formData.location || (sparkProfile ? sparkProfile.location : "")}
               onChange={handleChange}
             />
           </FormControl>
@@ -196,7 +198,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="hometown"
-              value={formData.hometown}
+              value={formData.hometown || (sparkProfile ? sparkProfile.hometown : "")}
               onChange={handleChange}
             />
           </FormControl>
@@ -206,7 +208,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="ethnicity"
-              value={formData.ethnicity}
+              value={formData.ethnicity || (sparkProfile ? sparkProfile.ethnicity : "")}
               onChange={handleChange}
             />
           </FormControl>
@@ -216,7 +218,7 @@ const CreateSpark = () => {
             <Input
               type="number"
               name="height"
-              value={formData.height}
+              value={formData.height || (sparkProfile ? sparkProfile.height : "")}
               onChange={handleChange}
             />
           </FormControl>
@@ -226,7 +228,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="exercise"
-              value={formData.exercise}
+              value={formData.exercise || (sparkProfile ? sparkProfile.exercies : "")}
               onChange={handleChange}
             />
           </FormControl>
@@ -236,7 +238,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="education_level"
-              value={formData.education_level}
+              value={formData.education_level || (sparkProfile ? sparkProfile.education_level : "")}
               onChange={handleChange}
             />
           </FormControl>
@@ -246,7 +248,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="drinking"
-              value={formData.drinking}
+              value={formData.drinking || (sparkProfile ? sparkProfile.drinking : "")}
               onChange={handleChange}
             />
           </FormControl>
