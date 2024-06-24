@@ -34,8 +34,9 @@ const useSignUpWithEmailAndPassword = () => {
 			if (newUser) {
 				const spark = {
 					uid: newUser.user.uid,
+					name: "",
 					created: false,
-					birthday: Date,
+					birthday: "",
 					work: "",
 					school: "",
 					gender: "",
@@ -43,7 +44,7 @@ const useSignUpWithEmailAndPassword = () => {
 					location: "",
 					hometown: "",
 					ethnicity: "",
-					height: 0,
+					height: "",
 					exercise: "",
 					education_level: "",
 					drinking: "",
@@ -59,6 +60,7 @@ const useSignUpWithEmailAndPassword = () => {
 					languages: [],
 					photos: [],
 					interests: [],
+					profilePic: null,
 				}
 
 				const userDoc = {
@@ -73,11 +75,17 @@ const useSignUpWithEmailAndPassword = () => {
 					posts: [],
 					createdAt: Date.now(),
 					geohash: "",
-					spark: spark,
+					spark: false,
 				};
+				await setDoc(doc(firestore, "spark", newUser.user.uid), spark);
+				localStorage.setItem("spark-profile", JSON.stringify(spark));
+
 				await setDoc(doc(firestore, "users", newUser.user.uid), userDoc);
 				localStorage.setItem("user-info", JSON.stringify(userDoc));
 				loginUser(userDoc);
+
+				
+				
 			}
 		} catch (error) {
 			showToast("Error", error.message, "error");
