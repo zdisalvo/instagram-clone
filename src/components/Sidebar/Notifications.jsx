@@ -1,5 +1,6 @@
-import { Box, Flex, Tooltip } from "@chakra-ui/react";
+import { Box, Link, Tooltip } from "@chakra-ui/react";
 import { NotificationsLogo } from "../../assets/constants";
+import { Link as RouterLink } from "react-router-dom";
 
 const Notifications = () => {
 	return (
@@ -11,7 +12,10 @@ const Notifications = () => {
 			openDelay={500}
 			display={{ base: "block", md: "none" }}
 		>
-			<Flex
+			<Link
+				display={"flex"}
+				to={"/spark"}
+				as={RouterLink}
 				alignItems={"center"}
 				gap={4}
 				_hover={{ bg: "whiteAlpha.400" }}
@@ -22,7 +26,7 @@ const Notifications = () => {
 			>
 				<NotificationsLogo />
 				<Box display={{ base: "none", md: "block" }}>Notifications</Box>
-			</Flex>
+			</Link>
 		</Tooltip>
 	);
 };

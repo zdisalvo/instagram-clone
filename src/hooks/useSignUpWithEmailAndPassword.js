@@ -32,6 +32,35 @@ const useSignUpWithEmailAndPassword = () => {
 				return;
 			}
 			if (newUser) {
+				const spark = {
+					uid: newUser.user.uid,
+					created: false,
+					birthday: Date,
+					work: "",
+					school: "",
+					gender: "",
+					interested_in: [],
+					location: "",
+					hometown: "",
+					ethnicity: "",
+					height: 0,
+					exercise: "",
+					education_level: "",
+					drinking: "",
+					smoking: "",
+					cannabis: "",
+					looking_for: "",
+					family_plans: "",
+					have_kids: "",
+					star_sign: "",
+					politics: "",
+					religion: "",
+					pronouns: [],
+					languages: [],
+					photos: [],
+					interests: [],
+				}
+
 				const userDoc = {
 					uid: newUser.user.uid,
 					email: inputs.email,
@@ -44,6 +73,7 @@ const useSignUpWithEmailAndPassword = () => {
 					posts: [],
 					createdAt: Date.now(),
 					geohash: "",
+					spark: spark,
 				};
 				await setDoc(doc(firestore, "users", newUser.user.uid), userDoc);
 				localStorage.setItem("user-info", JSON.stringify(userDoc));
