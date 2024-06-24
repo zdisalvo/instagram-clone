@@ -34,7 +34,7 @@ const CreateSpark = () => {
     location: "",
     hometown: "",
     ethnicity: "",
-    height: 0,
+    height: "",
     exercise: "",
     education_level: "",
     drinking: "",

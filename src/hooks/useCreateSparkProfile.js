@@ -15,40 +15,41 @@ const useCreateSparkProfile = () => {
 	const setAuthUser = useAuthStore((state) => state.setUser);
 	const setUserProfile = useUserProfileStore((state) => state.setUserProfile);
 
-    const sparkUser = useGetSparkProfileById(authUser.uid);
+    const {sparkUser} = useGetSparkProfileById(authUser?.uid); 
     const setSparkProfile = useSparkStore((state) => state.setSparkProfile);
 
 	const showToast = useShowToast();
 
-	const editSparkProfile = async (inputs, selectedFile) => {
+	const editSparkProfile = async (inputs) => {
 		if (isUpdating || !authUser) return;
 		setIsUpdating(true);
 
-		const storageRef = ref(storage, `sparkProfilePics/${authUser.uid}`);
+		//const storageRef = ref(storage, `sparkProfilePics/${authUser.uid}`);
 		const userDocRef = doc(firestore, "users", authUser.uid);
         const sparkDocRef = doc(firestore, "spark", authUser.uid);
 
 		let URL = "";
 		try {
-			if (selectedFile) {
-				await uploadString(storageRef, selectedFile, "data_url");
-				URL = await getDownloadURL(ref(storage, `sparkProfilePics/${authUser.uid}`));
-			}
+			// if (selectedFile) {
+			// 	await uploadString(storageRef, selectedFile, "data_url");
+			// 	URL = await getDownloadURL(ref(storage, `sparkProfilePics/${authUser.uid}`));
+			// }
+            
 
 			const updatedSpark = {
 				...sparkUser,
-                uid: authUser.uid,
-                name: inputs.name || (authUser && sparkUser.name) || '',
+                //uid: authUser.uid,
+                name: inputs.name || sparkUser.name || '',
                 created: true,
                 birthday: inputs.birthday || (authUser && sparkUser.birthday) || '',
                 work: inputs.work || (authUser && sparkUser.work) || '',
                 school: inputs.school || (authUser && sparkUser.school) || '',
                 gender: inputs.gender || (authUser && sparkUser.gender) || '',
-                interested_in: inputs.interested_in ? inputs.interested_in.split(',') : (authUser && sparkUser.interested_in) || [],
+                interested_in: inputs.interested_in ? inputs.interested_in : (authUser && sparkUser.interested_in) || [],
                 location: inputs.location || (authUser && sparkUser.location) || '',
                 hometown: inputs.hometown || (authUser && sparkUser.hometown) || '',
                 ethnicity: inputs.ethnicity || (authUser && sparkUser.ethnicity) || '',
-                height: parseInt(inputs.height, 10) || (authUser && sparkUser.height) || 0,
+                height: inputs.height || (authUser && sparkUser.height) || '',
                 exercise: inputs.exercise || (authUser && sparkUser.exercise) || '',
                 education_level: inputs.education_level || (authUser && sparkUser.education_level) || '',
                 drinking: inputs.drinking || (authUser && sparkUser.drinking) || '',
@@ -60,17 +61,27 @@ const useCreateSparkProfile = () => {
                 star_sign: inputs.star_sign || (authUser && sparkUser.star_sign) || '',
                 politics: inputs.politics || (authUser && sparkUser.politics) || '',
                 religion: inputs.religion || (authUser && sparkUser.religion) || '',
-                pronouns: inputs.pronouns ? inputs.pronouns.split(',') : (authUser && sparkUser.pronouns) || [],
-                languages: inputs.languages ? inputs.languages.split(',') : (authUser && sparkUser.languages) || [],
+                pronouns: inputs.pronouns ? inputs.pronouns : (authUser && sparkUser.pronouns) || [],
+                languages: inputs.languages ? inputs.languages : (authUser && sparkUser.languages) || [],
                 photos: (authUser && authUser.spark.photos) || [],
-                interests: inputs.interests ? inputs.interests.split(',') : (authUser && sparkUser.interests) || [],
+                interests: inputs.interests ? inputs.interests : (authUser && sparkUser.interests) || [],
              
 			};
 
+            const updatedUser = {
+				...authUser,
+				spark: true,
+			};
+
 			await updateDoc(sparkDocRef, updatedSpark);
-			localStorage.setItem("spark-info", JSON.stringify(updatedUser));
+			localStorage.setItem("spark-info", JSON.stringify(updatedSpark));
 			setSparkProfile(updatedSpark);
-			//setUserProfile(updatedUser);
+			
+            await updateDoc(userDocRef, updatedUser);
+			localStorage.setItem("user-info", JSON.stringify(updatedUser));
+			setAuthUser(updatedUser);
+			setUserProfile(updatedUser);
+
 			showToast("Success", "Profile updated successfully", "success");
 		} catch (error) {
 			showToast("Error", error.message, "error");
