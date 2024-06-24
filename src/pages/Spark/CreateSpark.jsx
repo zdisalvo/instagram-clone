@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState } from "react";
 import {
   Box,
   Button,
@@ -6,31 +6,55 @@ import {
   FormControl,
   FormLabel,
   Input,
-  Select,
+  Select as ChakraSelect,
   Stack,
   Checkbox,
   CheckboxGroup,
-  Textarea,
-  Heading,
   Image,
+  Heading,
 } from "@chakra-ui/react";
 import useAuthStore from "../../store/authStore";
 import useCreateSparkProfile from "../../hooks/useCreateSparkProfile";
 import useGetSparkProfileById from "../../hooks/useGetSparkProfileById";
+import Select from "react-select";
+import languagesData from "../../../languages/languages.json"
 
+const emojiOptions = [
+  "🎨",
+  "🎵",
+  "⚽️",
+  "🎮",
+  "📚",
+  "🍔",
+  "✈️",
+  "🏕️",
+  "🎥",
+  "🖥️",
+  "💃",
+  "🧘",
+  "🏋️",
+  "🎧",
+  "🧩",
+];
 
-const emojiOptions = ["🎨", "🎵", "⚽️ Soccer", "🎮", "📚", "🍔", "✈️", "🏕️", "🎥", "🖥️", "💃", "🧘", "🏋️", "🎧", "🧩"];
+const predefinedLanguages = languagesData.map((language) => ({
+    label: language.name,
+    value: language.name,
+  }));
 
+const genderOptions = [
+  { value: "male", label: "Male" },
+  { value: "female", label: "Female" },
+  { value: "other", label: "Other" },
+];
 
 const CreateSpark = () => {
   const authUser = useAuthStore((state) => state.user);
 
-  if (!authUser) return;
+  if (!authUser) return null;
 
-  const {sparkProfile} = useGetSparkProfileById(authUser?.uid);
-
-  const { isUpdating, editSparkProfile} = useCreateSparkProfile();
-  
+  const { sparkProfile } = useGetSparkProfileById(authUser?.uid);
+  const { isUpdating, editSparkProfile } = useCreateSparkProfile();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -42,7 +66,7 @@ const CreateSpark = () => {
     location: "",
     hometown: "",
     ethnicity: "",
-    height: 0,
+    height: "",
     exercise: "",
     education_level: "",
     drinking: "",
@@ -57,19 +81,10 @@ const CreateSpark = () => {
     pronouns: [],
     languages: [],
     interests: [],
-    profilePic: null, // Added for profile picture
+    profilePic: null,
   });
 
-  const [preview, setPreview] = useState(null); // Added for profile picture preview
-
-  useEffect(() => {
-    if (sparkProfile) {
-      setFormData((prevState) => ({
-        ...prevState,
-        ...sparkProfile,
-      }));
-    }
-  }, [sparkProfile]);
+  const [preview, setPreview] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -103,25 +118,11 @@ const CreateSpark = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const filteredData = Object.fromEntries(
-      Object.entries(formData).filter(
-        ([key, value]) => value !== "" && value !== null && value !== undefined
-      )
-    );
-    await editSparkProfile(filteredData);
-    console.log("Profile updated", filteredData);
+    await editSparkProfile(formData);
+    console.log("Profile updated", formData);
   };
 
-//   const handleSubmit = async () => {
-//     try {
-//         await editSparkProfile(inputs, selectedFile);
-//         setSelectedFile(null);
-//     } catch (error) {
-//         showToast("Error", error.message, "error");
-//     }
-// };
-
-const handleEmojiClick = (emoji) => {
+  const handleEmojiClick = (emoji) => {
     setFormData((prevState) => {
       const currentInterests = [...prevState.interests];
       if (currentInterests.includes(emoji)) {
@@ -136,6 +137,26 @@ const handleEmojiClick = (emoji) => {
     });
   };
 
+  const handleLanguageChange = (selectedOptions) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      languages: selectedOptions.map((option) => option.value),
+    }));
+  };
+
+  const handleGenderChange = (selectedOption) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      gender: selectedOption.value,
+    }));
+  };
+
+  // Prepare language options
+//   const languageOptions = allLanguages.map((language) => ({
+//     label: language.name,
+//     value: language.name,
+//   }));
+
   return (
     <Container maxW="container.md" mb={{ base: "10vh", md: "60px" }}>
       <Heading as="h1" textAlign="center" mb={6}>
@@ -143,9 +164,14 @@ const handleEmojiClick = (emoji) => {
       </Heading>
       <Box as="form" onSubmit={handleSubmit} p={4} boxShadow="md" borderRadius="md">
         <Stack spacing={4}>
-        <FormControl id="name">
+          <FormControl id="name">
             <FormLabel>Name</FormLabel>
-            <Input type="text" name="name" value={formData.name || (sparkProfile ? sparkProfile.name : "")} onChange={handleChange} />
+            <Input
+              type="text"
+              name="name"
+              value={formData.name || (sparkProfile ? sparkProfile.name : "")}
+              onChange={handleChange}
+            />
           </FormControl>
 
           <FormControl id="profile-pic">
@@ -168,30 +194,28 @@ const handleEmojiClick = (emoji) => {
 
           <FormControl id="work">
             <FormLabel>Work</FormLabel>
-            <Input type="text" name="work" value={formData.work || (sparkProfile ? sparkProfile.work : "")} onChange={handleChange} />
+            <Input type="text" name="work" value={formData.work} onChange={handleChange} />
           </FormControl>
 
           <FormControl id="school">
             <FormLabel>School</FormLabel>
-            <Input type="text" name="school" value={formData.school || (sparkProfile ? sparkProfile.school : "")} onChange={handleChange} />
+            <Input type="text" name="school" value={formData.school} onChange={handleChange} />
           </FormControl>
 
           <FormControl id="gender">
             <FormLabel>Gender</FormLabel>
-            <Select name="gender" value={formData.gender || (sparkProfile ? sparkProfile.gender : "")} onChange={handleChange}>
-              <option value="">Select gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Transfemale</option>
-              <option value="other">Transmale</option>
-              <option value="other">Non-binary</option>
-            </Select>
+            <Select
+              name="gender"
+              value={genderOptions.find((option) => option.value === formData.gender)}
+              options={genderOptions}
+              onChange={handleGenderChange}
+            />
           </FormControl>
 
           <FormControl id="interested_in">
             <FormLabel>Interested In</FormLabel>
             <CheckboxGroup
-              value={formData.interested_in || (sparkProfile ? sparkProfile.interested_in : "")}
+              value={formData.interested_in}
               onChange={(values) => handleCheckboxChange("interested_in", values)}
             >
               <Stack direction="row">
@@ -204,12 +228,7 @@ const handleEmojiClick = (emoji) => {
 
           <FormControl id="location">
             <FormLabel>Location</FormLabel>
-            <Input
-              type="text"
-              name="location"
-              value={formData.location || (sparkProfile ? sparkProfile.location : "")}
-              onChange={handleChange}
-            />
+            <Input type="text" name="location" value={formData.location} onChange={handleChange} />
           </FormControl>
 
           <FormControl id="hometown">
@@ -217,7 +236,7 @@ const handleEmojiClick = (emoji) => {
             <Input
               type="text"
               name="hometown"
-              value={formData.hometown || (sparkProfile ? sparkProfile.hometown : "")}
+              value={formData.hometown}
               onChange={handleChange}
             />
           </FormControl>
@@ -227,7 +246,7 @@ const handleEmojiClick = (emoji) => {
             <Input
               type="text"
               name="ethnicity"
-              value={formData.ethnicity || (sparkProfile ? sparkProfile.ethnicity : "")}
+              value={formData.ethnicity}
               onChange={handleChange}
             />
           </FormControl>
@@ -237,7 +256,7 @@ const handleEmojiClick = (emoji) => {
             <Input
               type="number"
               name="height"
-              value={formData.height || (sparkProfile ? sparkProfile.height : "")}
+              value={formData.height}
               onChange={handleChange}
             />
           </FormControl>
@@ -247,7 +266,7 @@ const handleEmojiClick = (emoji) => {
             <Input
               type="text"
               name="exercise"
-              value={formData.exercise || (sparkProfile ? sparkProfile.exercies : "")}
+              value={formData.exercise}
               onChange={handleChange}
             />
           </FormControl>
@@ -257,7 +276,7 @@ const handleEmojiClick = (emoji) => {
             <Input
               type="text"
               name="education_level"
-              value={formData.education_level || (sparkProfile ? sparkProfile.education_level : "")}
+              value={formData.education_level}
               onChange={handleChange}
             />
           </FormControl>
@@ -267,7 +286,7 @@ const handleEmojiClick = (emoji) => {
             <Input
               type="text"
               name="drinking"
-              value={formData.drinking || (sparkProfile ? sparkProfile.drinking : "")}
+              value={formData.drinking}
               onChange={handleChange}
             />
           </FormControl>
@@ -354,30 +373,53 @@ const handleEmojiClick = (emoji) => {
 
           <FormControl id="pronouns">
             <FormLabel>Pronouns</FormLabel>
-            <CheckboxGroup
-              value={formData.pronouns}
-              onChange={(values) => handleCheckboxChange("pronouns", values)}
-            >
-              <Stack direction="row">
-                <Checkbox value="he/him">He/Him</Checkbox>
-                <Checkbox value="she/her">She/Her</Checkbox>
-                <Checkbox value="they/them">They/Them</Checkbox>
-                <Checkbox value="other">Other</Checkbox>
-              </Stack>
-            </CheckboxGroup>
+            <Select
+              isMulti
+              name="pronouns"
+              options={[
+                { value: "he/him", label: "he/him" },
+                { value: "she/her", label: "she/her" },
+                { value: "they/them", label: "they/them" },
+              ]}
+              value={formData.pronouns.map((pronoun) => ({ label: pronoun, value: pronoun }))}
+              onChange={(selectedOptions) =>
+                setFormData((prevState) => ({
+                  ...prevState,
+                  pronouns: selectedOptions ? selectedOptions.map((option) => option.value) : [],
+                }))
+              }
+            />
           </FormControl>
 
           <FormControl id="languages">
             <FormLabel>Languages</FormLabel>
-            <Textarea
+            <Select
+              isMulti
               name="languages"
-              value={formData.languages.join(", ")}
-              onChange={(e) =>
-                setFormData((prevState) => ({
-                  ...prevState,
-                  languages: e.target.value.split(",").map((lang) => lang.trim()),
-                }))
-              }
+
+              styles={{
+                control: (provided) => ({
+                  ...provided,
+                  borderColor: 'blue', // Customizing border color
+                  boxShadow: 'none', // Removing box shadow
+                }),
+                option: (provided, state) => ({
+                  ...provided,
+                  backgroundColor: state.isSelected ? 'blue' : 'white', // Customizing option background color
+                  color: state.isSelected ? 'white' : 'black', // Customizing option text color
+                }),
+                input: (provided) => ({
+                  ...provided,
+                  color: 'black', // Customizing input text color
+                }),
+              }}
+
+              options={predefinedLanguages}
+              className="basic-multi-select"
+              classNamePrefix="select"
+              value={formData.languages.map((lang) => ({ label: lang, value: lang }))}
+              onChange={handleLanguageChange}
+              placeholder="Type or select languages..."
             />
           </FormControl>
 
@@ -397,10 +439,8 @@ const handleEmojiClick = (emoji) => {
             </Box>
           </FormControl>
 
-          <Button type="submit" colorScheme="blue"
-          onClick={handleSubmit}
-          isLoading={isUpdating}>
-            Sign Up
+          <Button type="submit" colorScheme="teal" isLoading={isUpdating}>
+            Update Profile
           </Button>
         </Stack>
       </Box>
