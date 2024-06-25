@@ -265,7 +265,7 @@ const CreateSpark = () => {
             <Input
               type="date"
               name="birthday"
-              value={formData.birthday || (sparkProfile ? sparkProfile.birthday : "")}
+              value={formData.birthday}
               onChange={handleChange}
             />
           </FormControl>
@@ -275,7 +275,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="work"
-              value={formData.work || (sparkProfile ? sparkProfile.work : "")}
+              value={formData.work}
               onChange={handleChange}
             />
           </FormControl>
@@ -285,7 +285,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="school"
-              value={formData.school || (sparkProfile ? sparkProfile.school : "")}
+              value={formData.school}
               onChange={handleChange}
             />
           </FormControl>
@@ -336,7 +336,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="location"
-              value={formData.location || (sparkProfile ? sparkProfile.location : "")}
+              value={formData.location}
               onChange={handleChange}
             />
           </FormControl>
@@ -346,7 +346,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="hometown"
-              value={formData.hometown || (sparkProfile ? sparkProfile.hometown : "")}
+              value={formData.hometown}
               onChange={handleChange}
             />
           </FormControl>
@@ -356,7 +356,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="ethnicity"
-              value={formData.ethnicity || (sparkProfile ? sparkProfile.ethnicity : "")}
+              value={formData.ethnicity}
               onChange={handleChange}
             />
           </FormControl>
@@ -366,7 +366,7 @@ const CreateSpark = () => {
             <Input
               type="number"
               name="height"
-              value={formData.height || (sparkProfile ? sparkProfile.height : "")}
+              value={formData.height}
               onChange={handleChange}
             />
           </FormControl>
@@ -376,7 +376,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="exercise"
-              value={formData.exercise || (sparkProfile ? sparkProfile.exercise : "")}
+              value={formData.exercise}
               onChange={handleChange}
             />
           </FormControl>
@@ -386,7 +386,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="education_level"
-              value={formData.education_level || (sparkProfile ? sparkProfile.education_level : "")}
+              value={formData.education_level}
               onChange={handleChange}
             />
           </FormControl>
@@ -396,7 +396,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="drinking"
-              value={formData.drinking || (sparkProfile ? sparkProfile.drinking : "")}
+              value={formData.drinking}
               onChange={handleChange}
             />
           </FormControl>
@@ -406,7 +406,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="smoking"
-              value={formData.smoking || (sparkProfile ? sparkProfile.smoking : "")}
+              value={formData.smoking}
               onChange={handleChange}
             />
           </FormControl>
@@ -416,7 +416,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="cannabis"
-              value={formData.cannabis || (sparkProfile ? sparkProfile.cannabis : "")}
+              value={formData.cannabis}
               onChange={handleChange}
             />
           </FormControl>
@@ -426,7 +426,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="looking_for"
-              value={formData.looking_for || (sparkProfile ? sparkProfile.looking_for : "")}
+              value={formData.looking_for}
               onChange={handleChange}
             />
           </FormControl>
@@ -436,7 +436,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="family_plans"
-              value={formData.family_plans || (sparkProfile ? sparkProfile.family_plans : "")}
+              value={formData.family_plans}
               onChange={handleChange}
             />
           </FormControl>
@@ -446,7 +446,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="have_kids"
-              value={formData.have_kids || (sparkProfile ? sparkProfile.have_kids : "")}
+              value={formData.have_kids}
               onChange={handleChange}
             />
           </FormControl>
@@ -456,7 +456,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="star_sign"
-              value={formData.star_sign || (sparkProfile ? sparkProfile.star_sign : "")}
+              value={formData.star_sign}
               onChange={handleChange}
             />
           </FormControl>
@@ -466,7 +466,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="politics"
-              value={formData.politics || (sparkProfile ? sparkProfile.politics : "")}
+              value={formData.politics}
               onChange={handleChange}
             />
           </FormControl>
@@ -476,7 +476,7 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="religion"
-              value={formData.religion || (sparkProfile ? sparkProfile.religion : "")}
+              value={formData.religion}
               onChange={handleChange}
             />
           </FormControl>
@@ -569,7 +569,7 @@ const CreateSpark = () => {
       }),
     }}
     options={predefinedLanguages}
-    value={(formData.languages || (sparkProfile ? sparkProfile.languages : "")).map((lang) => ({ label: lang, value: lang }))}
+    value={(formData.languages).map((lang) => ({ label: lang, value: lang }))}
     onChange={handleLanguageChange}
     filterOption={filterLanguages}
     placeholder="Type or select languages..."
