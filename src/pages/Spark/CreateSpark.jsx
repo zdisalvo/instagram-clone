@@ -8,8 +8,6 @@ import {
   Input,
   Select as ChakraSelect,
   Stack,
-  Checkbox,
-  CheckboxGroup,
   Image,
   Heading,
 } from "@chakra-ui/react";
@@ -18,9 +16,6 @@ import useCreateSparkProfile from "../../hooks/useCreateSparkProfile";
 import useGetSparkProfileById from "../../hooks/useGetSparkProfileById";
 import Select from "react-select";
 import languagesData from "../../../languages/languages.json";
-
-
-
 
 
 const CreateSpark = () => {
@@ -263,7 +258,7 @@ const CreateSpark = () => {
               key={gender}
               onClick={() => handleGenderClick(gender)}
               colorScheme={formData.gender === gender ? "orange" : "gray"}
-              variant={formData.gender === gender ? "solid" : "outline"}
+              variant={formData.gender === gender ? "outline" : "outline"}
               m={1}
             >
               {gender}
@@ -280,7 +275,9 @@ const CreateSpark = () => {
                   key={interestedIn}
                   onClick={() => handleInterestedInClick(interestedIn)}
                   colorScheme={formData.interested_in.includes(interestedIn) ? "orange" : "gray"}
-                  variant={formData.interested_in.includes(interestedIn) ? "solid" : "outline"}
+                  variant="outline" // Always use "outline" variant
+                    color="white" // Set text color to white
+                    borderColor={formData.interested_in.includes(interestedIn) ? "orange" : "gray"} // Border color based on selection
                   m={1}
                 >
                   {interestedIn}
@@ -460,35 +457,80 @@ const CreateSpark = () => {
           </FormControl>
 
           <FormControl id="languages">
-            <FormLabel>Languages</FormLabel>
-            <Select
-              isMulti
-              name="languages"
+  <FormLabel>Languages</FormLabel>
+  <Select
+    isMulti
+    name="languages"
+    styles={{
+      control: (provided, state) => ({
+        ...provided,
+        backgroundColor: 'black', // Background color of the select box
+        color: 'grey', // Text color of the select box
+        borderColor: state.isFocused ? 'sandybrown' : 'grey', // Border color when focused or hovered
+        boxShadow: 'none', // Removing box shadow
+        '&:hover': {
+          borderColor: 'sandybrown', // Border color on hover
+        },
+      }),
+    //   clearIndicator: (provided) => ({
+    //     ...provided,
+    //     color: 'white', // Change color to white
+    //   }),
+      multiValue: provided => ({
+        ...provided,
+        backgroundColor: '#333333', // Background color of selected value
+        color: 'white', // Text color of selected value
+      }),
+      multiValueLabel: provided => ({
+        ...provided,
+        color: 'white', // Text color of label in selected value
+      }),
+      multiValueRemove: (provided, state) => ({
+        ...provided,
+        color: 'white', // Color of remove icon in selected value
+        '&:hover': {
+          backgroundColor: '#333333', // Background color on hover for remove icon
+          color: 'sandybrown', // Text color on hover for remove icon
+        },
+      }),
+      option: (provided, state) => ({
+        ...provided,
+        backgroundColor: state.isSelected ? '#333333' : 'black', // Customizing option background color for selected state
+        
+        color: state.isSelected ? 'sandybrown' : 'grey', // Customizing option text color
+        //fontWeight: state.isSelected ? 'bold' : 'normal', // Setting font weight when selected
+        '&:hover': {
+          backgroundColor: '#333333', // Background color on hover
+          color: 'sandybrown', // Text color on hover
+          //fontWeight: 'bold',
+        },
+      }),
+      input: (provided) => ({
+        ...provided,
+        color: 'grey', // Customizing input text color
+      }),
+      menu: (provided) => ({
+        ...provided,
+        backgroundColor: 'black', // Background color of the dropdown menu
+        marginTop: 0, // Removing the default margin-top
+        borderRadius: 0, // Removing default border radius
+        boxShadow: 'none', // Removing box shadow
+        borderWidth: 0, // Removing border width
+      }),
+      singleValue: (provided) => ({
+        ...provided,
+        color: 'grey', // Color of the single selected value
+        backgroundColor: '#333333'
+      }),
+    }}
+    options={predefinedLanguages}
+    value={(formData.languages || (sparkProfile ? sparkProfile.languages : "")).map((lang) => ({ label: lang, value: lang }))}
+    onChange={handleLanguageChange}
+    filterOption={filterLanguages}
+    placeholder="Type or select languages..."
+  />
+</FormControl>
 
-              styles={{
-                control: (provided) => ({
-                  ...provided,
-                  borderColor: 'blue', // Customizing border color
-                  boxShadow: 'none', // Removing box shadow
-                }),
-                option: (provided, state) => ({
-                  ...provided,
-                  backgroundColor: state.isSelected ? 'sandybrown' : state.isFocused ? 'sandybrown' : 'white', // Customizing option background color for selected and focused states
-                  color: state.isSelected || state.isFocused ? 'white' : 'black', // Customizing option text color
-                }),
-                input: (provided) => ({
-                  ...provided,
-                  color: 'black', // Customizing input text color
-                }),
-              }}
-
-              options={predefinedLanguages}
-              value={(formData.languages || (sparkProfile ? sparkProfile.languages : "")).map((lang) => ({ label: lang, value: lang }))}
-              onChange={handleLanguageChange}
-              filterOption={filterLanguages}
-              placeholder="Type or select languages..."
-            />
-          </FormControl>
 
           <FormControl id="interests">
             <FormLabel>Interests</FormLabel>
