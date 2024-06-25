@@ -99,11 +99,13 @@ const CreateSpark = () => {
     console.log("Profile updated", formData);
   };
 
-  const genderOptions = [
-    { value: "male", label: "Male" },
-    { value: "female", label: "Female" },
-    { value: "other", label: "Other" },
-  ];
+//   const genderOptions = [
+//     { value: "male", label: "Male" },
+//     { value: "female", label: "Female" },
+//     { value: "other", label: "Other" },
+//   ];
+
+  const genderOptions = ["Male", "Female", "Other"];
 
   const handleGenderChange = (selectedOption) => {
     setFormData((prevState) => ({
@@ -254,17 +256,21 @@ const CreateSpark = () => {
           </FormControl>
 
           <FormControl id="gender">
-            <FormLabel>Gender</FormLabel>
-            <Select
-              name="gender"
-              value={
-                genderOptions.find((option) => option.value === formData.gender) ||
-                genderOptions.find((option) => option.value === (sparkProfile ? sparkProfile.gender : ""))
-              }
-              options={genderOptions}
-              onChange={handleGenderChange}
-            />
-          </FormControl>
+        <FormLabel>Gender</FormLabel>
+        <Box display="flex" flexWrap="wrap">
+          {genderOptions.map((gender) => (
+            <Button
+              key={gender}
+              onClick={() => handleGenderClick(gender)}
+              colorScheme={formData.gender === gender ? "orange" : "gray"}
+              variant={formData.gender === gender ? "solid" : "outline"}
+              m={1}
+            >
+              {gender}
+            </Button>
+          ))}
+        </Box>
+      </FormControl>
 
           <FormControl id="interested_in">
             <FormLabel>Interested In</FormLabel>
@@ -274,7 +280,7 @@ const CreateSpark = () => {
                   key={interestedIn}
                   onClick={() => handleInterestedInClick(interestedIn)}
                   colorScheme={formData.interested_in.includes(interestedIn) ? "orange" : "gray"}
-                  //variant={formData.interested_in.includes(interestedIn) ? "solid" : "outline"}
+                  variant={formData.interested_in.includes(interestedIn) ? "solid" : "outline"}
                   m={1}
                 >
                   {interestedIn}
