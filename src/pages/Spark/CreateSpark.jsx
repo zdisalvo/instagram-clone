@@ -10,6 +10,7 @@ import {
   Stack,
   Image,
   Heading,
+  Text,
 } from "@chakra-ui/react";
 import useAuthStore from "../../store/authStore";
 import useCreateSparkProfile from "../../hooks/useCreateSparkProfile";
@@ -96,18 +97,21 @@ const CreateSpark = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    const capitalizedValue = value.charAt(0).toUpperCase() + value.slice(1);
+
     setFormData((prevState) => ({
       ...prevState,
-      [name]: value,
+      [name]: capitalizedValue,
     }));
   };
 
-  const handleCheckboxChange = (name, values) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: values,
-    }));
-  };
+//   const handleCheckboxChange = (name, values) => {
+//     setFormData((prevState) => ({
+//       ...prevState,
+//       [name]: values,
+//     }));
+//   };
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -130,13 +134,9 @@ const CreateSpark = () => {
     console.log("Profile updated", formData);
   };
 
-//   const genderOptions = [
-//     { value: "male", label: "Male" },
-//     { value: "female", label: "Female" },
-//     { value: "other", label: "Other" },
-//   ];
+//GENDER
 
-  const genderOptions = ["Male", "Female", "Other"];
+  const genderOptions = ["Female", "Male", "Trans Female", "Trans Man", "Non-binary"];
 
   const handleGenderChange = (selectedOption) => {
     setFormData((prevState) => ({
@@ -152,7 +152,10 @@ const CreateSpark = () => {
     }));
   };
 
-  const interestedInOptions = ["Women", "Men", "Trans women", "Trans men", "Non-binary"];
+
+  //INTERESTED IN
+
+  const interestedInOptions = ["Women", "Men", "Trans Women", "Trans Men", "Non-binary"];
 
   const handleInterestedInClick = (interestedIn) => {
     setFormData((prevState) => {
@@ -243,7 +246,8 @@ const CreateSpark = () => {
             <Input
               type="text"
               name="name"
-              value={formData.name || (sparkProfile ? sparkProfile.name : "")}
+              //value={formData.name || "" || (sparkProfile ? sparkProfile.name : "")}
+              value={formData.name}
               onChange={handleChange}
             />
           </FormControl>
@@ -304,7 +308,12 @@ const CreateSpark = () => {
       </FormControl>
 
           <FormControl id="interested_in">
-            <FormLabel>Interested In</FormLabel>
+          <Stack direction="row" align="baseline">
+          <FormLabel>Interested In</FormLabel>
+          <Text fontSize="sm" color="gray.500">
+            (This will not show on your profile)
+          </Text>
+          </Stack>
             <Box display="flex" flexWrap="wrap">
               {interestedInOptions.map((interestedIn) => (
                 <Button
