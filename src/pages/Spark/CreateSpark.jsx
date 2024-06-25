@@ -18,6 +18,7 @@ import useGetSparkProfileById from "../../hooks/useGetSparkProfileById";
 import Select from "react-select";
 import languagesData from "../../../json-files/languages.json";
 import heightsData from "../../../json-files/heights.json"
+import citiesData from "../../../json-files/worldcities.json"
 
 
 
@@ -166,6 +167,80 @@ const CreateSpark = () => {
     });
   };
 
+  //LOCATION
+
+  const [cities, setCities] = useState([]);
+    const [selectedCity, setSelectedCity] = useState(null);
+
+    useEffect(() => {
+        const formattedCities = citiesData.cities.map(city => ({
+            value: `${city.city}, ${city.state}, ${city.country}`,
+            label: `${city.city}, ${city.state}, ${city.country}`
+        }));
+        setCities(formattedCities);
+    }, []);
+
+    
+
+    const handleCityChange = (selectedOption) => {
+        setSelectedCity(selectedOption);
+        setFormData({ ...formData, location: selectedOption ? selectedOption.value : '' });
+    };
+
+    const filterCities = (candidate, input) => {
+        return candidate.label.toLowerCase().startsWith(input.toLowerCase());
+      };
+
+    const customStyles = {
+        control: (provided, state) => ({
+            ...provided,
+            backgroundColor: 'black',
+            color: 'grey',
+            borderColor: state.isFocused ? 'sandybrown' : 'grey',
+            boxShadow: 'none',
+            '&:hover': {
+                borderColor: 'sandybrown',
+            },
+        }),
+        option: (provided, state) => ({
+            ...provided,
+            backgroundColor: state.isSelected ? '#333333' : 'black',
+            color: state.isSelected ? 'sandybrown' : 'grey',
+            '&:hover': {
+                backgroundColor: '#333333',
+                color: 'sandybrown',
+            },
+        }),
+        input: (provided) => ({
+            ...provided,
+            color: 'grey',
+        }),
+        menu: (provided) => ({
+            ...provided,
+            backgroundColor: 'black',
+            marginTop: 0,
+            borderRadius: 0,
+            boxShadow: 'none',
+            borderWidth: 0,
+        }),
+        singleValue: (provided) => ({
+            ...provided,
+            color: 'white',
+            backgroundColor: '#333333',
+            width: 'auto',
+            textAlign: 'center',
+        }),
+        clearIndicator: (provided) => ({
+            ...provided,
+            color: 'grey',
+            padding: '0px',
+            '&:hover': {
+                color: 'sandybrown',
+            },
+        }),
+    };
+
+
 //HEIGHT
 
     const predefinedHeights = heightsData.map((height) => ({
@@ -184,6 +259,26 @@ const CreateSpark = () => {
           const filterHeights = (candidate, input) => {
             return candidate.label.toLowerCase().startsWith(input.toLowerCase());
           };
+
+
+// //LOCATION
+
+// const predefinedCities = citiesData.map((location) => ({
+//     label: location,
+//     value: location,
+//     }));  
+
+
+//     const handleLocationChange = (selectedOption) => {
+//         setFormData((prevState) => ({
+//           ...prevState,
+//           location: selectedOption ? selectedOption.value : "", // Single value
+//         }));
+//       };
+    
+//       const filterCities = (candidate, input) => {
+//         return candidate.label.toLowerCase().startsWith(input.toLowerCase());
+//       };
         
 
 //LANGUAGES
@@ -344,13 +439,17 @@ const CreateSpark = () => {
 
           <FormControl id="location">
             <FormLabel>Location</FormLabel>
-            <Input
-              type="text"
-              name="location"
-              value={formData.location}
-              onChange={handleChange}
+            <Select
+                name="location"
+                isClearable
+                styles={customStyles}
+                options={cities}
+                value={selectedCity}
+                onChange={handleCityChange}
+                filterOption={filterCities}
+                placeholder="Type or select your city..."
             />
-          </FormControl>
+        </FormControl>
 
           <FormControl id="hometown">
             <FormLabel>Hometown</FormLabel>

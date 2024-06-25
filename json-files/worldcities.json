@@ -1,0 +1,6997 @@
+{
+"cities":[
+ {
+  "city": "A Coruña",
+  "state": "Galicia",
+  "country": "Spain",
+  "lat": 43.365,
+  "lng": -8.41
+ },
+ {
+  "city": "A Yun Pa",
+  "state": "Gia Lai",
+  "country": "Vietnam",
+  "lat": 13.3939,
+  "lng": 108.4408
+ },
+ {
+  "city": "Aachen",
+  "state": "North Rhine-Westphalia",
+  "country": "Germany",
+  "lat": 50.7756,
+  "lng": 6.0836
+ },
+ {
+  "city": "Aalborg",
+  "state": "Nordjylland",
+  "country": "Denmark",
+  "lat": 57.05,
+  "lng": 9.9167
+ },
+ {
+  "city": "Aalen",
+  "state": "Baden-Württemberg",
+  "country": "Germany",
+  "lat": 48.8333,
+  "lng": 10.1
+ },
+ {
+  "city": "Aaley",
+  "state": "Mont-Liban",
+  "country": "Lebanon",
+  "lat": 33.8,
+  "lng": 35.6
+ },
+ {
+  "city": "Aalsmeer",
+  "state": "Noord-Holland",
+  "country": "Netherlands",
+  "lat": 52.2667,
+  "lng": 4.75
+ },
+ {
+  "city": "Aalst",
+  "state": "Flanders",
+  "country": "Belgium",
+  "lat": 50.9383,
+  "lng": 4.0392
+ },
+ {
+  "city": "Aarhus",
+  "state": "Midtjylland",
+  "country": "Denmark",
+  "lat": 56.1572,
+  "lng": 10.2107
+ },
+ {
+  "city": "Aarsâl",
+  "state": "Baalbek-Hermel",
+  "country": "Lebanon",
+  "lat": 34.1794,
+  "lng": 36.4208
+ },
+ {
+  "city": "Aba",
+  "state": "Abia",
+  "country": "Nigeria",
+  "lat": 5.1167,
+  "lng": 7.3667
+ },
+ {
+  "city": "Abadan",
+  "state": "Ahal",
+  "country": "Turkmenistan",
+  "lat": 38.0517,
+  "lng": 58.21
+ },
+ {
+  "city": "Abaetetuba",
+  "state": "Pará",
+  "country": "Brazil",
+  "lat": -1.7178,
+  "lng": -48.8828
+ },
+ {
+  "city": "Abaji",
+  "state": "Federal Capital Territory",
+  "country": "Nigeria",
+  "lat": 8.4756,
+  "lng": 6.9433
+ },
+ {
+  "city": "Abakan",
+  "state": "Khakasiya",
+  "country": "Russia",
+  "lat": 53.7167,
+  "lng": 91.4667
+ },
+ {
+  "city": "Abancay",
+  "state": "Apurímac",
+  "country": "Peru",
+  "lat": -13.6333,
+  "lng": -72.8833
+ },
+ {
+  "city": "Abashiri",
+  "state": "Hokkaidō",
+  "country": "Japan",
+  "lat": 44.0167,
+  "lng": 144.2667
+ },
+ {
+  "city": "Abbiategrasso",
+  "state": "Lombardy",
+  "country": "Italy",
+  "lat": 45.4,
+  "lng": 8.9167
+ },
+ {
+  "city": "Abbigeri",
+  "state": "Karnātaka",
+  "country": "India",
+  "lat": 13.0767,
+  "lng": 77.525
+ },
+ {
+  "city": "Abbotsford",
+  "state": "British Columbia",
+  "country": "Canada",
+  "lat": 49.05,
+  "lng": -122.3167
+ },
+ {
+  "city": "Abbottabad",
+  "state": "Khyber Pakhtunkhwa",
+  "country": "Pakistan",
+  "lat": 34.1558,
+  "lng": 73.2194
+ },
+ {
+  "city": "Abdul Hakim",
+  "state": "Punjab",
+  "country": "Pakistan",
+  "lat": 30.55,
+  "lng": 72.1328
+ },
+ {
+  "city": "Abengourou",
+  "state": "Comoé",
+  "country": "Côte d’Ivoire",
+  "lat": 6.7333,
+  "lng": -3.4833
+ },
+ {
+  "city": "Abeokuta",
+  "state": "Ogun",
+  "country": "Nigeria",
+  "lat": 7.1608,
+  "lng": 3.3483
+ },
+ {
+  "city": "Aberdeen",
+  "state": "Aberdeen City",
+  "country": "United Kingdom",
+  "lat": 57.15,
+  "lng": -2.11
+ },
+ {
+  "city": "Abertawe",
+  "state": "Swansea",
+  "country": "United Kingdom",
+  "lat": 51.6167,
+  "lng": -3.95
+ },
+ {
+  "city": "Abhar",
+  "state": "Zanjān",
+  "country": "Iran",
+  "lat": 36.1511,
+  "lng": 49.2244
+ },
+ {
+  "city": "Abhā",
+  "state": "‘Asīr",
+  "country": "Saudi Arabia",
+  "lat": 18.2169,
+  "lng": 42.5053
+ },
+ {
+  "city": "Abidjan",
+  "state": "Abidjan",
+  "country": "Côte d’Ivoire",
+  "lat": 5.3167,
+  "lng": -4.0333
+ },
+ {
+  "city": "Abiko",
+  "state": "Chiba",
+  "country": "Japan",
+  "lat": 35.8667,
+  "lng": 140.0333
+ },
+ {
+  "city": "Abilene",
+  "state": "Texas",
+  "country": "United States",
+  "lat": 32.4543,
+  "lng": -99.7384
+ },
+ {
+  "city": "Abingdon",
+  "state": "Oxfordshire",
+  "country": "United Kingdom",
+  "lat": 51.6717,
+  "lng": -1.2783
+ },
+ {
+  "city": "Abington",
+  "state": "Pennsylvania",
+  "country": "United States",
+  "lat": 40.1108,
+  "lng": -75.1146
+ },
+ {
+  "city": "Abinsk",
+  "state": "Krasnodarskiy Kray",
+  "country": "Russia",
+  "lat": 44.8667,
+  "lng": 38.15
+ },
+ {
+  "city": "Abnūb",
+  "state": "Asyūţ",
+  "country": "Egypt",
+  "lat": 27.2667,
+  "lng": 31.15
+ },
+ {
+  "city": "Abohar",
+  "state": "Punjab",
+  "country": "India",
+  "lat": 30.1334,
+  "lng": 74.2001
+ },
+ {
+  "city": "Aboisso",
+  "state": "Comoé",
+  "country": "Côte d’Ivoire",
+  "lat": 5.4667,
+  "lng": -3.2
+ },
+ {
+  "city": "Abomey",
+  "state": "Zou",
+  "country": "Benin",
+  "lat": 7.1856,
+  "lng": 1.9881
+ },
+ {
+  "city": "Abomey-Calavi",
+  "state": "Atlantique",
+  "country": "Benin",
+  "lat": 6.4486,
+  "lng": 2.3556
+ },
+ {
+  "city": "Aborlan",
+  "state": "Palawan",
+  "country": "Philippines",
+  "lat": 9.4386,
+  "lng": 118.5481
+ },
+ {
+  "city": "Abovyan",
+  "state": "Kotayk’",
+  "country": "Armenia",
+  "lat": 40.2739,
+  "lng": 44.6256
+ },
+ {
+  "city": "Abqaiq",
+  "state": "Ash Sharqīyah",
+  "country": "Saudi Arabia",
+  "lat": 25.935,
+  "lng": 49.6661
+ },
+ {
+  "city": "Abra de Ilog",
+  "state": "Occidental Mindoro",
+  "country": "Philippines",
+  "lat": 13.4448,
+  "lng": 120.726
+ },
+ {
+  "city": "Abrantes",
+  "state": "Santarém",
+  "country": "Portugal",
+  "lat": 39.4633,
+  "lng": -8.1975
+ },
+ {
+  "city": "Abreu e Lima",
+  "state": "Pernambuco",
+  "country": "Brazil",
+  "lat": -7.9117,
+  "lng": -34.9028
+ },
+ {
+  "city": "Abu Dhabi",
+  "state": "Abū Z̧aby",
+  "country": "United Arab Emirates",
+  "lat": 24.4667,
+  "lng": 54.3667
+ },
+ {
+  "city": "Abucay",
+  "state": "Bataan",
+  "country": "Philippines",
+  "lat": 14.7222,
+  "lng": 120.5354
+ },
+ {
+  "city": "Abuja",
+  "state": "Federal Capital Territory",
+  "country": "Nigeria",
+  "lat": 9.0667,
+  "lng": 7.4833
+ },
+ {
+  "city": "Abulug",
+  "state": "Cagayan",
+  "country": "Philippines",
+  "lat": 18.4441,
+  "lng": 121.4576
+ },
+ {
+  "city": "Abuyog",
+  "state": "Leyte",
+  "country": "Philippines",
+  "lat": 10.7458,
+  "lng": 125.0122
+ },
+ {
+  "city": "Abéché",
+  "state": "Ouaddaï",
+  "country": "Chad",
+  "lat": 13.8331,
+  "lng": 20.8347
+ },
+ {
+  "city": "Abī al Khaşīb",
+  "state": "Al Başrah",
+  "country": "Iraq",
+  "lat": 30.4411,
+  "lng": 47.9725
+ },
+ {
+  "city": "Abū Ghurayb",
+  "state": "Baghdād",
+  "country": "Iraq",
+  "lat": 33.2919,
+  "lng": 44.0656
+ },
+ {
+  "city": "Abū Qurqāş",
+  "state": "Al Minyā",
+  "country": "Egypt",
+  "lat": 27.9333,
+  "lng": 30.8333
+ },
+ {
+  "city": "Abū Qīr",
+  "state": "Al Iskandarīyah",
+  "country": "Egypt",
+  "lat": 31.3167,
+  "lng": 30.0667
+ },
+ {
+  "city": "Abū Za‘bal",
+  "state": "Al Qalyūbīyah",
+  "country": "Egypt",
+  "lat": 30.2415,
+  "lng": 31.411
+ },
+ {
+  "city": "Abū al Maţāmīr",
+  "state": "Al Buḩayrah",
+  "country": "Egypt",
+  "lat": 30.9084,
+  "lng": 30.1485
+ },
+ {
+  "city": "Abū Şuwayr",
+  "state": "Ash Sharqīyah",
+  "country": "Egypt",
+  "lat": 30.5633,
+  "lng": 32.1155
+ },
+ {
+  "city": "Abū Ţisht",
+  "state": "Qinā",
+  "country": "Egypt",
+  "lat": 26.1183,
+  "lng": 32.0953
+ },
+ {
+  "city": "Abū Ḩamad",
+  "state": "River Nile",
+  "country": "Sudan",
+  "lat": 19.5433,
+  "lng": 33.3378
+ },
+ {
+  "city": "Abū Ḩulayfah",
+  "state": "Al Aḩmadī",
+  "country": "Kuwait",
+  "lat": 29.1322,
+  "lng": 48.1261
+ },
+ {
+  "city": "Abū Ḩummuş",
+  "state": "Al Buḩayrah",
+  "country": "Egypt",
+  "lat": 31.1006,
+  "lng": 30.3128
+ },
+ {
+  "city": "Acacías",
+  "state": "Meta",
+  "country": "Colombia",
+  "lat": 3.9878,
+  "lng": -73.7597
+ },
+ {
+  "city": "Acajutla",
+  "state": "Sonsonate",
+  "country": "El Salvador",
+  "lat": 13.59,
+  "lng": -89.8336
+ },
+ {
+  "city": "Acambay",
+  "state": "México",
+  "country": "Mexico",
+  "lat": 19.9539,
+  "lng": -99.8431
+ },
+ {
+  "city": "Acapulco de Juárez",
+  "state": "Guerrero",
+  "country": "Mexico",
+  "lat": 16.8636,
+  "lng": -99.8825
+ },
+ {
+  "city": "Acaraú",
+  "state": "Ceará",
+  "country": "Brazil",
+  "lat": -2.8858,
+  "lng": -40.1186
+ },
+ {
+  "city": "Acarigua",
+  "state": "Portuguesa",
+  "country": "Venezuela",
+  "lat": 9.5597,
+  "lng": -69.2019
+ },
+ {
+  "city": "Acará",
+  "state": "Pará",
+  "country": "Brazil",
+  "lat": -1.9608,
+  "lng": -48.1969
+ },
+ {
+  "city": "Acatlán de Osorio",
+  "state": "Puebla",
+  "country": "Mexico",
+  "lat": 18.2086,
+  "lng": -98.0575
+ },
+ {
+  "city": "Acatlán de Pérez Figueroa",
+  "state": "Oaxaca",
+  "country": "Mexico",
+  "lat": 18.5333,
+  "lng": -96.6
+ },
+ {
+  "city": "Acatzingo",
+  "state": "Puebla",
+  "country": "Mexico",
+  "lat": 18.9817,
+  "lng": -97.7822
+ },
+ {
+  "city": "Acaxochitlán",
+  "state": "Hidalgo",
+  "country": "Mexico",
+  "lat": 20.1667,
+  "lng": -98.2
+ },
+ {
+  "city": "Acayucan",
+  "state": "Veracruz",
+  "country": "Mexico",
+  "lat": 17.9422,
+  "lng": -94.9103
+ },
+ {
+  "city": "Accra",
+  "state": "Greater Accra",
+  "country": "Ghana",
+  "lat": 5.55,
+  "lng": -0.2
+ },
+ {
+  "city": "Accrington",
+  "state": "Lancashire",
+  "country": "United Kingdom",
+  "lat": 53.7534,
+  "lng": -2.3638
+ },
+ {
+  "city": "Acerra",
+  "state": "Campania",
+  "country": "Italy",
+  "lat": 40.95,
+  "lng": 14.3667
+ },
+ {
+  "city": "Acevedo",
+  "state": "Huila",
+  "country": "Colombia",
+  "lat": 1.8192,
+  "lng": -75.8964
+ },
+ {
+  "city": "Achaguas",
+  "state": "Apure",
+  "country": "Venezuela",
+  "lat": 7.7667,
+  "lng": -68.2333
+ },
+ {
+  "city": "Acharnés",
+  "state": "Attikí",
+  "country": "Greece",
+  "lat": 38.0833,
+  "lng": 23.7333
+ },
+ {
+  "city": "Achim",
+  "state": "Lower Saxony",
+  "country": "Germany",
+  "lat": 53.0653,
+  "lng": 9.0342
+ },
+ {
+  "city": "Achinsk",
+  "state": "Krasnoyarskiy Kray",
+  "country": "Russia",
+  "lat": 56.2817,
+  "lng": 90.5039
+ },
+ {
+  "city": "Acilia",
+  "state": "Lazio",
+  "country": "Italy",
+  "lat": 41.7833,
+  "lng": 12.3667
+ },
+ {
+  "city": "Acireale",
+  "state": "Sicilia",
+  "country": "Italy",
+  "lat": 37.6167,
+  "lng": 15.1667
+ },
+ {
+  "city": "Acopiara",
+  "state": "Ceará",
+  "country": "Brazil",
+  "lat": -6.1,
+  "lng": -39.45
+ },
+ {
+  "city": "Acornhoek",
+  "state": "Limpopo",
+  "country": "South Africa",
+  "lat": -24.593,
+  "lng": 31.097
+ },
+ {
+  "city": "Acton",
+  "state": "Ealing",
+  "country": "United Kingdom",
+  "lat": 51.5135,
+  "lng": -0.2707
+ },
+ {
+  "city": "Actopan",
+  "state": "Veracruz",
+  "country": "Mexico",
+  "lat": 19.5036,
+  "lng": -96.6192
+ },
+ {
+  "city": "Acul du Nord",
+  "state": "Nord",
+  "country": "Haiti",
+  "lat": 19.6833,
+  "lng": -72.3167
+ },
+ {
+  "city": "Acámbaro",
+  "state": "Guanajuato",
+  "country": "Mexico",
+  "lat": 20.0361,
+  "lng": -100.7314
+ },
+ {
+  "city": "Acıpayam",
+  "state": "Denizli",
+  "country": "Turkey",
+  "lat": 37.425,
+  "lng": 29.3539
+ },
+ {
+  "city": "Ad Dabbah",
+  "state": "Northern",
+  "country": "Sudan",
+  "lat": 18.0502,
+  "lng": 30.9495
+ },
+ {
+  "city": "Ad Dakhla",
+  "state": "Dakhla-Oued Ed-Dahab",
+  "country": "Morocco",
+  "lat": 23.7081,
+  "lng": -15.9456
+ },
+ {
+  "city": "Ad Dammām",
+  "state": "Ash Sharqīyah",
+  "country": "Saudi Arabia",
+  "lat": 26.4333,
+  "lng": 50.1
+ },
+ {
+  "city": "Ad Darb",
+  "state": "Jāzān",
+  "country": "Saudi Arabia",
+  "lat": 17.7167,
+  "lng": 42.25
+ },
+ {
+  "city": "Ad Darwa",
+  "state": "Casablanca-Settat",
+  "country": "Morocco",
+  "lat": 33.4167,
+  "lng": -7.5333
+ },
+ {
+  "city": "Ad Diwem",
+  "state": "White Nile",
+  "country": "Sudan",
+  "lat": 14,
+  "lng": 32.3167
+ },
+ {
+  "city": "Ad Dujayl",
+  "state": "Şalāḩ ad Dīn",
+  "country": "Iraq",
+  "lat": 33.8389,
+  "lng": 44.2481
+ },
+ {
+  "city": "Ad Dīwānīyah",
+  "state": "Al Qādisīyah",
+  "country": "Iraq",
+  "lat": 31.9892,
+  "lng": 44.9247
+ },
+ {
+  "city": "Ada",
+  "state": "Osun",
+  "country": "Nigeria",
+  "lat": 7.8956,
+  "lng": 4.7094
+ },
+ {
+  "city": "Adachi",
+  "state": "Tōkyō",
+  "country": "Japan",
+  "lat": 35.7833,
+  "lng": 139.8
+ },
+ {
+  "city": "Adamantina",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -21.6847,
+  "lng": -51.0733
+ },
+ {
+  "city": "Adana",
+  "state": "Adana",
+  "country": "Turkey",
+  "lat": 37,
+  "lng": 35.3213
+ },
+ {
+  "city": "Addanki",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "lat": 15.8167,
+  "lng": 79.9833
+ },
+ {
+  "city": "Addis Ababa",
+  "state": "Ādīs Ābeba",
+  "country": "Ethiopia",
+  "lat": 9.03,
+  "lng": 38.74
+ },
+ {
+  "city": "Addison",
+  "state": "Illinois",
+  "country": "United States",
+  "lat": 41.9313,
+  "lng": -88.0085
+ },
+ {
+  "city": "Adeje",
+  "state": "Canary Islands",
+  "country": "Spain",
+  "lat": 28.1167,
+  "lng": -16.7167
+ },
+ {
+  "city": "Adelaide",
+  "state": "South Australia",
+  "country": "Australia",
+  "lat": -34.9275,
+  "lng": 138.6
+ },
+ {
+  "city": "Adelanto",
+  "state": "California",
+  "country": "United States",
+  "lat": 34.5814,
+  "lng": -117.4397
+ },
+ {
+  "city": "Aden",
+  "state": "‘Adan",
+  "country": "Yemen",
+  "lat": 12.8,
+  "lng": 45.0333
+ },
+ {
+  "city": "Adilābād",
+  "state": "Telangāna",
+  "country": "India",
+  "lat": 19.6667,
+  "lng": 78.5333
+ },
+ {
+  "city": "Adjaouèrè",
+  "state": "Plateau",
+  "country": "Benin",
+  "lat": 7,
+  "lng": 2.6167
+ },
+ {
+  "city": "Adjarra",
+  "state": "Ouémé",
+  "country": "Benin",
+  "lat": 6.5333,
+  "lng": 2.6667
+ },
+ {
+  "city": "Adjohon",
+  "state": "Ouémé",
+  "country": "Benin",
+  "lat": 6.7,
+  "lng": 2.4667
+ },
+ {
+  "city": "Adjumani",
+  "state": "Adjumani",
+  "country": "Uganda",
+  "lat": 3.3772,
+  "lng": 31.7906
+ },
+ {
+  "city": "Ado-Ekiti",
+  "state": "Ekiti",
+  "country": "Nigeria",
+  "lat": 7.6211,
+  "lng": 5.2214
+ },
+ {
+  "city": "Adonara",
+  "state": "Nusa Tenggara Timur",
+  "country": "Indonesia",
+  "lat": -8.25,
+  "lng": 123.15
+ },
+ {
+  "city": "Adrano",
+  "state": "Sicilia",
+  "country": "Italy",
+  "lat": 37.6667,
+  "lng": 14.8333
+ },
+ {
+  "city": "Adrar",
+  "state": "Adrar",
+  "country": "Algeria",
+  "lat": 27.8667,
+  "lng": -0.2833
+ },
+ {
+  "city": "Adzopé",
+  "state": "Lagunes",
+  "country": "Côte d’Ivoire",
+  "lat": 6.1667,
+  "lng": -3.9833
+ },
+ {
+  "city": "Adıyaman",
+  "state": "Adıyaman",
+  "country": "Turkey",
+  "lat": 37.7639,
+  "lng": 38.2778
+ },
+ {
+  "city": "Afgooye",
+  "state": "Shabeellaha Hoose",
+  "country": "Somalia",
+  "lat": 2.1413,
+  "lng": 45.1169
+ },
+ {
+  "city": "Aflao",
+  "state": "Volta",
+  "country": "Ghana",
+  "lat": 6.1468,
+  "lng": 1.1799
+ },
+ {
+  "city": "Aflou",
+  "state": "Laghouat",
+  "country": "Algeria",
+  "lat": 34.1089,
+  "lng": 2.1019
+ },
+ {
+  "city": "Afmadow",
+  "state": "Jubbada Hoose",
+  "country": "Somalia",
+  "lat": 0.5156,
+  "lng": 42.0733
+ },
+ {
+  "city": "Afogados da Ingazeira",
+  "state": "Pernambuco",
+  "country": "Brazil",
+  "lat": -7.7508,
+  "lng": -37.6389
+ },
+ {
+  "city": "Afonso Cláudio",
+  "state": "Espírito Santo",
+  "country": "Brazil",
+  "lat": -20.0739,
+  "lng": -41.1239
+ },
+ {
+  "city": "Afragola",
+  "state": "Campania",
+  "country": "Italy",
+  "lat": 40.9167,
+  "lng": 14.3167
+ },
+ {
+  "city": "Afula",
+  "state": "Northern",
+  "country": "Israel",
+  "lat": 32.6064,
+  "lng": 35.2881
+ },
+ {
+  "city": "Afuá",
+  "state": "Pará",
+  "country": "Brazil",
+  "lat": -0.1569,
+  "lng": -50.3869
+ },
+ {
+  "city": "Afyonkarahisar",
+  "state": "Afyonkarahisar",
+  "country": "Turkey",
+  "lat": 38.7578,
+  "lng": 30.5386
+ },
+ {
+  "city": "Afşin",
+  "state": "Kahramanmaraş",
+  "country": "Turkey",
+  "lat": 38.2464,
+  "lng": 36.9186
+ },
+ {
+  "city": "Agadez",
+  "state": "Agadez",
+  "country": "Niger",
+  "lat": 16.9959,
+  "lng": 7.9828
+ },
+ {
+  "city": "Agadir",
+  "state": "Souss-Massa",
+  "country": "Morocco",
+  "lat": 30.4333,
+  "lng": -9.6
+ },
+ {
+  "city": "Agano",
+  "state": "Niigata",
+  "country": "Japan",
+  "lat": 37.8344,
+  "lng": 139.226
+ },
+ {
+  "city": "Agar",
+  "state": "Madhya Pradesh",
+  "country": "India",
+  "lat": 23.7118,
+  "lng": 76.0157
+ },
+ {
+  "city": "Agartala",
+  "state": "Tripura",
+  "country": "India",
+  "lat": 23.8314,
+  "lng": 91.2869
+ },
+ {
+  "city": "Agbangnizoun",
+  "state": "Zou",
+  "country": "Benin",
+  "lat": 7.0667,
+  "lng": 1.9667
+ },
+ {
+  "city": "Agblangandan",
+  "state": "Ouémé",
+  "country": "Benin",
+  "lat": 6.3667,
+  "lng": 2.5167
+ },
+ {
+  "city": "Agboville",
+  "state": "Lagunes",
+  "country": "Côte d’Ivoire",
+  "lat": 5.9333,
+  "lng": -4.2167
+ },
+ {
+  "city": "Agege",
+  "state": "Lagos",
+  "country": "Nigeria",
+  "lat": 6.6219,
+  "lng": 3.3258
+ },
+ {
+  "city": "Agen",
+  "state": "Nouvelle-Aquitaine",
+  "country": "France",
+  "lat": 44.2049,
+  "lng": 0.6212
+ },
+ {
+  "city": "Ageoshimo",
+  "state": "Saitama",
+  "country": "Japan",
+  "lat": 35.9774,
+  "lng": 139.5932
+ },
+ {
+  "city": "Aglipay",
+  "state": "Quirino",
+  "country": "Philippines",
+  "lat": 16.4889,
+  "lng": 121.5874
+ },
+ {
+  "city": "Agogo",
+  "state": "Ashanti",
+  "country": "Ghana",
+  "lat": 6.8,
+  "lng": -1.0833
+ },
+ {
+  "city": "Agoncillo",
+  "state": "Batangas",
+  "country": "Philippines",
+  "lat": 13.9334,
+  "lng": 120.9285
+ },
+ {
+  "city": "Agoo",
+  "state": "La Union",
+  "country": "Philippines",
+  "lat": 16.322,
+  "lng": 120.3647
+ },
+ {
+  "city": "Agrigento",
+  "state": "Sicilia",
+  "country": "Italy",
+  "lat": 37.3167,
+  "lng": 13.5833
+ },
+ {
+  "city": "Agrínio",
+  "state": "Dytikí Elláda",
+  "country": "Greece",
+  "lat": 38.6167,
+  "lng": 21.4
+ },
+ {
+  "city": "Agua Prieta",
+  "state": "Sonora",
+  "country": "Mexico",
+  "lat": 31.3258,
+  "lng": -109.5489
+ },
+ {
+  "city": "Aguacatán",
+  "state": "Huehuetenango",
+  "country": "Guatemala",
+  "lat": 15.35,
+  "lng": -91.3167
+ },
+ {
+  "city": "Aguachica",
+  "state": "Cesar",
+  "country": "Colombia",
+  "lat": 8.3167,
+  "lng": -73.6333
+ },
+ {
+  "city": "Aguada de Pasajeros",
+  "state": "Cienfuegos",
+  "country": "Cuba",
+  "lat": 22.3847,
+  "lng": -80.8461
+ },
+ {
+  "city": "Aguadilla",
+  "state": "Puerto Rico",
+  "country": "Puerto Rico",
+  "lat": 18.4382,
+  "lng": -67.1537
+ },
+ {
+  "city": "Aguadulce",
+  "state": "Coclé",
+  "country": "Panama",
+  "lat": 8.24,
+  "lng": -80.54
+ },
+ {
+  "city": "Agualva",
+  "state": "Lisboa",
+  "country": "Portugal",
+  "lat": 38.77,
+  "lng": -9.2988
+ },
+ {
+  "city": "Aguascalientes",
+  "state": "Aguascalientes",
+  "country": "Mexico",
+  "lat": 21.876,
+  "lng": -102.296
+ },
+ {
+  "city": "Aguazul",
+  "state": "Casanare",
+  "country": "Colombia",
+  "lat": 5.1731,
+  "lng": -72.5547
+ },
+ {
+  "city": "Aguaí",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -22.0603,
+  "lng": -46.9736
+ },
+ {
+  "city": "Agudos",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -22.4739,
+  "lng": -48.9836
+ },
+ {
+  "city": "Aguelmous",
+  "state": "Béni Mellal-Khénifra",
+  "country": "Morocco",
+  "lat": 33.15,
+  "lng": -5.8333
+ },
+ {
+  "city": "Aguilar",
+  "state": "Pangasinan",
+  "country": "Philippines",
+  "lat": 15.8899,
+  "lng": 120.2379
+ },
+ {
+  "city": "Aguilares",
+  "state": "Tucumán",
+  "country": "Argentina",
+  "lat": -27.4333,
+  "lng": -65.6167
+ },
+ {
+  "city": "Agustín Codazzi",
+  "state": "Cesar",
+  "country": "Colombia",
+  "lat": 10.0367,
+  "lng": -73.2369
+ },
+ {
+  "city": "Agía Paraskeví",
+  "state": "Attikí",
+  "country": "Greece",
+  "lat": 38.0117,
+  "lng": 23.82
+ },
+ {
+  "city": "Ahar",
+  "state": "Āz̄arbāyjān-e Sharqī",
+  "country": "Iran",
+  "lat": 38.4797,
+  "lng": 47.0669
+ },
+ {
+  "city": "Ahaus",
+  "state": "North Rhine-Westphalia",
+  "country": "Germany",
+  "lat": 52.0667,
+  "lng": 7
+ },
+ {
+  "city": "Ahenkro",
+  "state": "Oti",
+  "country": "Ghana",
+  "lat": 7.1164,
+  "lng": 0.3242
+ },
+ {
+  "city": "Ahlat",
+  "state": "Bitlis",
+  "country": "Turkey",
+  "lat": 38.7528,
+  "lng": 42.4944
+ },
+ {
+  "city": "Ahlen",
+  "state": "North Rhine-Westphalia",
+  "country": "Germany",
+  "lat": 51.7633,
+  "lng": 7.8911
+ },
+ {
+  "city": "Ahmadnagar",
+  "state": "Mahārāshtra",
+  "country": "India",
+  "lat": 19.08,
+  "lng": 74.73
+ },
+ {
+  "city": "Ahmadpur",
+  "state": "Mahārāshtra",
+  "country": "India",
+  "lat": 18.7,
+  "lng": 76.9333
+ },
+ {
+  "city": "Ahmadpur East",
+  "state": "Punjab",
+  "country": "Pakistan",
+  "lat": 29.1439,
+  "lng": 71.2592
+ },
+ {
+  "city": "Ahmedabad",
+  "state": "Gujarāt",
+  "country": "India",
+  "lat": 23.0225,
+  "lng": 72.5714
+ },
+ {
+  "city": "Ahor",
+  "state": "Rājasthān",
+  "country": "India",
+  "lat": 25.367,
+  "lng": 72.783
+ },
+ {
+  "city": "Ahrensburg",
+  "state": "Schleswig-Holstein",
+  "country": "Germany",
+  "lat": 53.6747,
+  "lng": 10.2411
+ },
+ {
+  "city": "Ahuachapán",
+  "state": "Ahuachapán",
+  "country": "El Salvador",
+  "lat": 13.9167,
+  "lng": -89.85
+ },
+ {
+  "city": "Ahvāz",
+  "state": "Khūzestān",
+  "country": "Iran",
+  "lat": 31.3047,
+  "lng": 48.6783
+ },
+ {
+  "city": "Aigáleo",
+  "state": "Attikí",
+  "country": "Greece",
+  "lat": 37.992,
+  "lng": 23.678
+ },
+ {
+  "city": "Aihua",
+  "state": "Yunnan",
+  "country": "China",
+  "lat": 24.4514,
+  "lng": 100.1273
+ },
+ {
+  "city": "Aiken",
+  "state": "South Carolina",
+  "country": "United States",
+  "lat": 33.5303,
+  "lng": -81.7271
+ },
+ {
+  "city": "Ailan Mubage",
+  "state": "Xinjiang",
+  "country": "China",
+  "lat": 43.908,
+  "lng": 81.2777
+ },
+ {
+  "city": "Ain El Aouda",
+  "state": "Rabat-Salé-Kénitra",
+  "country": "Morocco",
+  "lat": 33.8111,
+  "lng": -6.7922
+ },
+ {
+  "city": "Aira",
+  "state": "Kagoshima",
+  "country": "Japan",
+  "lat": 31.7283,
+  "lng": 130.6278
+ },
+ {
+  "city": "Airdrie",
+  "state": "Alberta",
+  "country": "Canada",
+  "lat": 51.2917,
+  "lng": -114.0144
+ },
+ {
+  "city": "Airdrie",
+  "state": "North Lanarkshire",
+  "country": "United Kingdom",
+  "lat": 55.86,
+  "lng": -3.98
+ },
+ {
+  "city": "Airmadidi",
+  "state": "Sulawesi Utara",
+  "country": "Indonesia",
+  "lat": 1.4333,
+  "lng": 124.9833
+ },
+ {
+  "city": "Aisai",
+  "state": "Aichi",
+  "country": "Japan",
+  "lat": 35.1528,
+  "lng": 136.7282
+ },
+ {
+  "city": "Ait Ali",
+  "state": "Souss-Massa",
+  "country": "Morocco",
+  "lat": 30.1765,
+  "lng": -9.4886
+ },
+ {
+  "city": "Ait Melloul",
+  "state": "Souss-Massa",
+  "country": "Morocco",
+  "lat": 30.3342,
+  "lng": -9.4972
+ },
+ {
+  "city": "Ait Ourir",
+  "state": "Marrakech-Safi",
+  "country": "Morocco",
+  "lat": 31.5644,
+  "lng": -7.6628
+ },
+ {
+  "city": "Aix-en-Provence",
+  "state": "Provence-Alpes-Côte d’Azur",
+  "country": "France",
+  "lat": 43.5263,
+  "lng": 5.4454
+ },
+ {
+  "city": "Aix-les-Bains",
+  "state": "Auvergne-Rhône-Alpes",
+  "country": "France",
+  "lat": 45.6886,
+  "lng": 5.915
+ },
+ {
+  "city": "Aiyappan Kōvil",
+  "state": "Kerala",
+  "country": "India",
+  "lat": 9.7158,
+  "lng": 77.0333
+ },
+ {
+  "city": "Aizawa",
+  "state": "Kanagawa",
+  "country": "Japan",
+  "lat": 35.5289,
+  "lng": 139.3217
+ },
+ {
+  "city": "Aizumi",
+  "state": "Tokushima",
+  "country": "Japan",
+  "lat": 34.1266,
+  "lng": 134.4951
+ },
+ {
+  "city": "Aizuwakamatsu",
+  "state": "Fukushima",
+  "country": "Japan",
+  "lat": 37.4948,
+  "lng": 139.9298
+ },
+ {
+  "city": "Ajaccio",
+  "state": "Corsica",
+  "country": "France",
+  "lat": 41.9267,
+  "lng": 8.7369
+ },
+ {
+  "city": "Ajax",
+  "state": "Ontario",
+  "country": "Canada",
+  "lat": 43.8583,
+  "lng": -79.0364
+ },
+ {
+  "city": "Ajdābiyā",
+  "state": "Al Wāḩāt",
+  "country": "Libya",
+  "lat": 30.7556,
+  "lng": 20.2253
+ },
+ {
+  "city": "Ajmer",
+  "state": "Rājasthān",
+  "country": "India",
+  "lat": 26.4499,
+  "lng": 74.6399
+ },
+ {
+  "city": "Ajodhya",
+  "state": "Uttar Pradesh",
+  "country": "India",
+  "lat": 26.7992,
+  "lng": 82.2044
+ },
+ {
+  "city": "Ajuy",
+  "state": "Iloilo",
+  "country": "Philippines",
+  "lat": 11.1725,
+  "lng": 123.0196
+ },
+ {
+  "city": "Akaiwa",
+  "state": "Okayama",
+  "country": "Japan",
+  "lat": 34.7553,
+  "lng": 134.0189
+ },
+ {
+  "city": "Akbarpur",
+  "state": "Uttar Pradesh",
+  "country": "India",
+  "lat": 26.4333,
+  "lng": 82.5403
+ },
+ {
+  "city": "Akbou",
+  "state": "Bejaïa",
+  "country": "Algeria",
+  "lat": 36.4667,
+  "lng": 4.5333
+ },
+ {
+  "city": "Akdağmadeni",
+  "state": "Yozgat",
+  "country": "Turkey",
+  "lat": 39.6658,
+  "lng": 35.8836
+ },
+ {
+  "city": "Aketao",
+  "state": "Xinjiang",
+  "country": "China",
+  "lat": 39.1349,
+  "lng": 75.9337
+ },
+ {
+  "city": "Aketi",
+  "state": "Bas-Uélé",
+  "country": "Congo (Kinshasa)",
+  "lat": 2.7333,
+  "lng": 23.75
+ },
+ {
+  "city": "Akhisar",
+  "state": "Manisa",
+  "country": "Turkey",
+  "lat": 38.9239,
+  "lng": 27.84
+ },
+ {
+  "city": "Akhmīm",
+  "state": "Sūhāj",
+  "country": "Egypt",
+  "lat": 26.5667,
+  "lng": 31.75
+ },
+ {
+  "city": "Akhtubinsk",
+  "state": "Astrakhanskaya Oblast’",
+  "country": "Russia",
+  "lat": 48.2833,
+  "lng": 46.1667
+ },
+ {
+  "city": "Akiruno",
+  "state": "Tōkyō",
+  "country": "Japan",
+  "lat": 35.7289,
+  "lng": 139.2941
+ },
+ {
+  "city": "Akishima",
+  "state": "Tōkyō",
+  "country": "Japan",
+  "lat": 35.7057,
+  "lng": 139.3535
+ },
+ {
+  "city": "Akita",
+  "state": "Akita",
+  "country": "Japan",
+  "lat": 39.72,
+  "lng": 140.1026
+ },
+ {
+  "city": "Akivīdu",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "lat": 16.5823,
+  "lng": 81.3811
+ },
+ {
+  "city": "Aklera",
+  "state": "Rājasthān",
+  "country": "India",
+  "lat": 24.42,
+  "lng": 76.57
+ },
+ {
+  "city": "Akola",
+  "state": "Mahārāshtra",
+  "country": "India",
+  "lat": 20.7,
+  "lng": 77
+ },
+ {
+  "city": "Akot",
+  "state": "Mahārāshtra",
+  "country": "India",
+  "lat": 21.1,
+  "lng": 77.06
+ },
+ {
+  "city": "Akouda",
+  "state": "Sousse",
+  "country": "Tunisia",
+  "lat": 35.8714,
+  "lng": 10.5697
+ },
+ {
+  "city": "Akron",
+  "state": "Ohio",
+  "country": "United States",
+  "lat": 41.0798,
+  "lng": -81.5219
+ },
+ {
+  "city": "Aksaray",
+  "state": "Aksaray",
+  "country": "Turkey",
+  "lat": 38.3742,
+  "lng": 34.0289
+ },
+ {
+  "city": "Aksay",
+  "state": "Rostovskaya Oblast’",
+  "country": "Russia",
+  "lat": 47.25,
+  "lng": 39.8667
+ },
+ {
+  "city": "Aksay",
+  "state": "West Kazakhstan",
+  "country": "Kazakhstan",
+  "lat": 51.1678,
+  "lng": 52.995
+ },
+ {
+  "city": "Aksu",
+  "state": "Xinjiang",
+  "country": "China",
+  "lat": 41.185,
+  "lng": 80.2904
+ },
+ {
+  "city": "Aksu",
+  "state": "Antalya",
+  "country": "Turkey",
+  "lat": 36.95,
+  "lng": 30.85
+ },
+ {
+  "city": "Aktuluk",
+  "state": "Tunceli",
+  "country": "Turkey",
+  "lat": 39.1064,
+  "lng": 39.5472
+ },
+ {
+  "city": "Akurana",
+  "state": "Central",
+  "country": "Sri Lanka",
+  "lat": 7.365,
+  "lng": 80.6172
+ },
+ {
+  "city": "Akure",
+  "state": "Ondo",
+  "country": "Nigeria",
+  "lat": 7.25,
+  "lng": 5.195
+ },
+ {
+  "city": "Akyazı",
+  "state": "Sakarya",
+  "country": "Turkey",
+  "lat": 40.6833,
+  "lng": 30.6253
+ },
+ {
+  "city": "Akyurt",
+  "state": "Ankara",
+  "country": "Turkey",
+  "lat": 40.1333,
+  "lng": 33.0833
+ },
+ {
+  "city": "Akçaabat",
+  "state": "Trabzon",
+  "country": "Turkey",
+  "lat": 41.0167,
+  "lng": 39.55
+ },
+ {
+  "city": "Akçadağ",
+  "state": "Malatya",
+  "country": "Turkey",
+  "lat": 38.345,
+  "lng": 37.9686
+ },
+ {
+  "city": "Akçakale",
+  "state": "Şanlıurfa",
+  "country": "Turkey",
+  "lat": 36.7108,
+  "lng": 38.9478
+ },
+ {
+  "city": "Akçakoca",
+  "state": "Düzce",
+  "country": "Turkey",
+  "lat": 41.0878,
+  "lng": 31.1244
+ },
+ {
+  "city": "Akşehir",
+  "state": "Konya",
+  "country": "Turkey",
+  "lat": 38.3575,
+  "lng": 31.4164
+ },
+ {
+  "city": "Al Aaroui",
+  "state": "Oriental",
+  "country": "Morocco",
+  "lat": 35.0029,
+  "lng": -3.0311
+ },
+ {
+  "city": "Al Aḩad al Masāriḩah",
+  "state": "Jāzān",
+  "country": "Saudi Arabia",
+  "lat": 16.7097,
+  "lng": 42.955
+ },
+ {
+  "city": "Al Aḩmadī",
+  "state": "Al Aḩmadī",
+  "country": "Kuwait",
+  "lat": 29.0769,
+  "lng": 48.0838
+ },
+ {
+  "city": "Al Badrashayn",
+  "state": "Al Jīzah",
+  "country": "Egypt",
+  "lat": 29.852,
+  "lng": 31.276
+ },
+ {
+  "city": "Al Badārī",
+  "state": "Asyūţ",
+  "country": "Egypt",
+  "lat": 26.9925,
+  "lng": 31.4156
+ },
+ {
+  "city": "Al Balyanā",
+  "state": "Sūhāj",
+  "country": "Egypt",
+  "lat": 26.2333,
+  "lng": 32
+ },
+ {
+  "city": "Al Bayḑā’",
+  "state": "Al Jabal al Akhḑar",
+  "country": "Libya",
+  "lat": 32.7664,
+  "lng": 21.7417
+ },
+ {
+  "city": "Al Bayḑā’",
+  "state": "Al Bayḑā’",
+  "country": "Yemen",
+  "lat": 13.979,
+  "lng": 45.574
+ },
+ {
+  "city": "Al Başrah",
+  "state": "Al Başrah",
+  "country": "Iraq",
+  "lat": 30.515,
+  "lng": 47.81
+ },
+ {
+  "city": "Al Buraymī",
+  "state": "Al Buraymī",
+  "country": "Oman",
+  "lat": 24.2592,
+  "lng": 55.7839
+ },
+ {
+  "city": "Al Bājūr",
+  "state": "Al Minūfīyah",
+  "country": "Egypt",
+  "lat": 30.4333,
+  "lng": 31.0569
+ },
+ {
+  "city": "Al Fallūjah",
+  "state": "Al Anbār",
+  "country": "Iraq",
+  "lat": 33.35,
+  "lng": 43.7833
+ },
+ {
+  "city": "Al Fashn",
+  "state": "Banī Suwayf",
+  "country": "Egypt",
+  "lat": 28.8227,
+  "lng": 30.8992
+ },
+ {
+  "city": "Al Fayyūm",
+  "state": "Al Fayyūm",
+  "country": "Egypt",
+  "lat": 29.3084,
+  "lng": 30.8441
+ },
+ {
+  "city": "Al Fqih Ben Çalah",
+  "state": "Béni Mellal-Khénifra",
+  "country": "Morocco",
+  "lat": 32.5,
+  "lng": -6.5333
+ },
+ {
+  "city": "Al Fujayrah",
+  "state": "Al Fujayrah",
+  "country": "United Arab Emirates",
+  "lat": 25.1222,
+  "lng": 56.3344
+ },
+ {
+  "city": "Al Fāw",
+  "state": "Al Başrah",
+  "country": "Iraq",
+  "lat": 29.9758,
+  "lng": 48.4722
+ },
+ {
+  "city": "Al Ghardaqah",
+  "state": "Al Baḩr al Aḩmar",
+  "country": "Egypt",
+  "lat": 27.2578,
+  "lng": 33.8117
+ },
+ {
+  "city": "Al Ghizlānīyah",
+  "state": "Rīf Dimashq",
+  "country": "Syria",
+  "lat": 33.3986,
+  "lng": 36.4531
+ },
+ {
+  "city": "Al Hindīyah",
+  "state": "Karbalā’",
+  "country": "Iraq",
+  "lat": 32.5442,
+  "lng": 44.2197
+ },
+ {
+  "city": "Al Hoceïma",
+  "state": "Tanger-Tétouan-Al Hoceïma",
+  "country": "Morocco",
+  "lat": 35.2472,
+  "lng": -3.9322
+ },
+ {
+  "city": "Al Hufūf",
+  "state": "Ash Sharqīyah",
+  "country": "Saudi Arabia",
+  "lat": 25.3833,
+  "lng": 49.5833
+ },
+ {
+  "city": "Al Hāshimīyah",
+  "state": "Bābil",
+  "country": "Iraq",
+  "lat": 32.3664,
+  "lng": 44.6581
+ },
+ {
+  "city": "Al Jabāyish",
+  "state": "Dhī Qār",
+  "country": "Iraq",
+  "lat": 30.9549,
+  "lng": 46.9751
+ },
+ {
+  "city": "Al Jahrā’",
+  "state": "Al Jahrā’",
+  "country": "Kuwait",
+  "lat": 29.35,
+  "lng": 47.6833
+ },
+ {
+  "city": "Al Jammālīyah",
+  "state": "Ad Daqahlīyah",
+  "country": "Egypt",
+  "lat": 31.1806,
+  "lng": 31.8653
+ },
+ {
+  "city": "Al Jubayl",
+  "state": "Ash Sharqīyah",
+  "country": "Saudi Arabia",
+  "lat": 27,
+  "lng": 49.6544
+ },
+ {
+  "city": "Al Jumayl",
+  "state": "An Nuqāţ al Khams",
+  "country": "Libya",
+  "lat": 32.8528,
+  "lng": 12.0611
+ },
+ {
+  "city": "Al Juwayyidah",
+  "state": "Al ‘Āşimah",
+  "country": "Jordan",
+  "lat": 31.9167,
+  "lng": 35.95
+ },
+ {
+  "city": "Al Jīzah",
+  "state": "Al ‘Āşimah",
+  "country": "Jordan",
+  "lat": 31.6833,
+  "lng": 35.95
+ },
+ {
+  "city": "Al Kharj",
+  "state": "Ar Riyāḑ",
+  "country": "Saudi Arabia",
+  "lat": 24.1483,
+  "lng": 47.305
+ },
+ {
+  "city": "Al Khawr",
+  "state": "Al Khawr wa adh Dhakhīrah",
+  "country": "Qatar",
+  "lat": 25.69,
+  "lng": 51.51
+ },
+ {
+  "city": "Al Khmissat",
+  "state": "Rabat-Salé-Kénitra",
+  "country": "Morocco",
+  "lat": 33.8167,
+  "lng": -6.0667
+ },
+ {
+  "city": "Al Khubar",
+  "state": "Ash Sharqīyah",
+  "country": "Saudi Arabia",
+  "lat": 26.2833,
+  "lng": 50.2
+ },
+ {
+  "city": "Al Khums",
+  "state": "Al Marqab",
+  "country": "Libya",
+  "lat": 32.6497,
+  "lng": 14.2644
+ },
+ {
+  "city": "Al Khānkah",
+  "state": "Al Qalyūbīyah",
+  "country": "Egypt",
+  "lat": 30.1601,
+  "lng": 31.3133
+ },
+ {
+  "city": "Al Khārjah",
+  "state": "Al Wādī al Jadīd",
+  "country": "Egypt",
+  "lat": 25.44,
+  "lng": 30.55
+ },
+ {
+  "city": "Al Kiswah",
+  "state": "Rīf Dimashq",
+  "country": "Syria",
+  "lat": 33.35,
+  "lng": 36.2333
+ },
+ {
+  "city": "Al Kūfah",
+  "state": "An Najaf",
+  "country": "Iraq",
+  "lat": 32.03,
+  "lng": 44.4
+ },
+ {
+  "city": "Al Kūt",
+  "state": "Wāsiţ",
+  "country": "Iraq",
+  "lat": 32.4907,
+  "lng": 45.8304
+ },
+ {
+  "city": "Al Līth",
+  "state": "Makkah al Mukarramah",
+  "country": "Saudi Arabia",
+  "lat": 20.15,
+  "lng": 40.2667
+ },
+ {
+  "city": "Al Madrah Samā’il",
+  "state": "Ad Dākhilīyah",
+  "country": "Oman",
+  "lat": 23.3103,
+  "lng": 57.9455
+ },
+ {
+  "city": "Al Mafraq",
+  "state": "Al Mafraq",
+  "country": "Jordan",
+  "lat": 32.3399,
+  "lng": 36.2052
+ },
+ {
+  "city": "Al Majāridah",
+  "state": "‘Asīr",
+  "country": "Saudi Arabia",
+  "lat": 19.1167,
+  "lng": 41.9167
+ },
+ {
+  "city": "Al Manāqil",
+  "state": "Gezira",
+  "country": "Sudan",
+  "lat": 14.2467,
+  "lng": 32.9861
+ },
+ {
+  "city": "Al Manşūrah",
+  "state": "Ad Daqahlīyah",
+  "country": "Egypt",
+  "lat": 31.05,
+  "lng": 31.3833
+ },
+ {
+  "city": "Al Manşūrah",
+  "state": "‘Adan",
+  "country": "Yemen",
+  "lat": 12.8531,
+  "lng": 44.9722
+ },
+ {
+  "city": "Al Marj",
+  "state": "Al Marj",
+  "country": "Libya",
+  "lat": 32.5005,
+  "lng": 20.83
+ },
+ {
+  "city": "Al Marāghah",
+  "state": "Sūhāj",
+  "country": "Egypt",
+  "lat": 26.7,
+  "lng": 31.6
+ },
+ {
+  "city": "Al Mayādīn",
+  "state": "Dayr az Zawr",
+  "country": "Syria",
+  "lat": 35.0183,
+  "lng": 40.4533
+ },
+ {
+  "city": "Al Maţarīyah",
+  "state": "Ad Daqahlīyah",
+  "country": "Egypt",
+  "lat": 31.1833,
+  "lng": 32.0333
+ },
+ {
+  "city": "Al Maḩallah al Kubrá",
+  "state": "Al Gharbīyah",
+  "country": "Egypt",
+  "lat": 30.9686,
+  "lng": 31.1636
+ },
+ {
+  "city": "Al Ma‘allā’",
+  "state": "‘Adan",
+  "country": "Yemen",
+  "lat": 12.7897,
+  "lng": 45.0064
+ },
+ {
+  "city": "Al Midhnab",
+  "state": "Al Qaşīm",
+  "country": "Saudi Arabia",
+  "lat": 25.8601,
+  "lng": 44.2223
+ },
+ {
+  "city": "Al Mijlad",
+  "state": "West Kordofan",
+  "country": "Sudan",
+  "lat": 11.0339,
+  "lng": 27.74
+ },
+ {
+  "city": "Al Mindak",
+  "state": "Al Bāḩah",
+  "country": "Saudi Arabia",
+  "lat": 20.1833,
+  "lng": 41.2333
+ },
+ {
+  "city": "Al Minshāh",
+  "state": "Sūhāj",
+  "country": "Egypt",
+  "lat": 26.4833,
+  "lng": 31.8
+ },
+ {
+  "city": "Al Minyā",
+  "state": "Al Minyā",
+  "country": "Egypt",
+  "lat": 28.1194,
+  "lng": 30.7444
+ },
+ {
+  "city": "Al Miqdādīyah",
+  "state": "Diyālá",
+  "country": "Iraq",
+  "lat": 33.9786,
+  "lng": 44.9369
+ },
+ {
+  "city": "Al Mubarraz",
+  "state": "Ash Sharqīyah",
+  "country": "Saudi Arabia",
+  "lat": 25.3833,
+  "lng": 49.6
+ },
+ {
+  "city": "Al Mukallā",
+  "state": "Ḩaḑramawt",
+  "country": "Yemen",
+  "lat": 14.5333,
+  "lng": 49.1333
+ },
+ {
+  "city": "Al Musayyib",
+  "state": "Bābil",
+  "country": "Iraq",
+  "lat": 32.7786,
+  "lng": 44.29
+ },
+ {
+  "city": "Al Muḑaybī",
+  "state": "Shamāl ash Sharqīyah",
+  "country": "Oman",
+  "lat": 22.5667,
+  "lng": 58.1167
+ },
+ {
+  "city": "Al Muḩarraq",
+  "state": "Al Muḩarraq",
+  "country": "Bahrain",
+  "lat": 26.25,
+  "lng": 50.6167
+ },
+ {
+  "city": "Al Mālikīyah",
+  "state": "Al Ḩasakah",
+  "country": "Syria",
+  "lat": 37.1667,
+  "lng": 42.1333
+ },
+ {
+  "city": "Al Qaryatayn",
+  "state": "Ḩimş",
+  "country": "Syria",
+  "lat": 34.2283,
+  "lng": 37.2406
+ },
+ {
+  "city": "Al Qaţīf",
+  "state": "Ash Sharqīyah",
+  "country": "Saudi Arabia",
+  "lat": 26.556,
+  "lng": 49.996
+ },
+ {
+  "city": "Al Qunfudhah",
+  "state": "Makkah al Mukarramah",
+  "country": "Saudi Arabia",
+  "lat": 19.1264,
+  "lng": 41.0789
+ },
+ {
+  "city": "Al Qurayn",
+  "state": "Ash Sharqīyah",
+  "country": "Egypt",
+  "lat": 30.6161,
+  "lng": 31.7353
+ },
+ {
+  "city": "Al Qurayyā",
+  "state": "Dayr az Zawr",
+  "country": "Syria",
+  "lat": 35.0025,
+  "lng": 40.5117
+ },
+ {
+  "city": "Al Qurayyāt",
+  "state": "Al Jawf",
+  "country": "Saudi Arabia",
+  "lat": 31.3167,
+  "lng": 37.3667
+ },
+ {
+  "city": "Al Qurnah",
+  "state": "Al Başrah",
+  "country": "Iraq",
+  "lat": 31.0158,
+  "lng": 47.4306
+ },
+ {
+  "city": "Al Quşayr",
+  "state": "Ḩimş",
+  "country": "Syria",
+  "lat": 34.5119,
+  "lng": 36.5764
+ },
+ {
+  "city": "Al Qāmishlī",
+  "state": "Al Ḩasakah",
+  "country": "Syria",
+  "lat": 37.05,
+  "lng": 41.22
+ },
+ {
+  "city": "Al Qā‘idah",
+  "state": "Ibb",
+  "country": "Yemen",
+  "lat": 13.7569,
+  "lng": 44.1392
+ },
+ {
+  "city": "Al Qā’im",
+  "state": "Al Anbār",
+  "country": "Iraq",
+  "lat": 34.3688,
+  "lng": 41.0945
+ },
+ {
+  "city": "Al Qūşīyah",
+  "state": "Asyūţ",
+  "country": "Egypt",
+  "lat": 27.4143,
+  "lng": 30.8216
+ },
+ {
+  "city": "Al Wajh",
+  "state": "Tabūk",
+  "country": "Saudi Arabia",
+  "lat": 26.2833,
+  "lng": 36.4167
+ },
+ {
+  "city": "Al Wakrah",
+  "state": "Al Wakrah",
+  "country": "Qatar",
+  "lat": 25.18,
+  "lng": 51.61
+ },
+ {
+  "city": "Al Waqf",
+  "state": "Qinā",
+  "country": "Egypt",
+  "lat": 26.0808,
+  "lng": 32.4245
+ },
+ {
+  "city": "Al Ḩajar al Aswad",
+  "state": "Rīf Dimashq",
+  "country": "Syria",
+  "lat": 33.464,
+  "lng": 36.3044
+ },
+ {
+  "city": "Al Ḩamdānīyah",
+  "state": "Nīnawá",
+  "country": "Iraq",
+  "lat": 36.2697,
+  "lng": 43.3775
+ },
+ {
+  "city": "Al Ḩamzah",
+  "state": "Al Qādisīyah",
+  "country": "Iraq",
+  "lat": 31.7339,
+  "lng": 45.0086
+ },
+ {
+  "city": "Al Ḩasakah",
+  "state": "Al Ḩasakah",
+  "country": "Syria",
+  "lat": 36.5117,
+  "lng": 40.7422
+ },
+ {
+  "city": "Al Ḩawīyah",
+  "state": "Makkah al Mukarramah",
+  "country": "Saudi Arabia",
+  "lat": 21.4411,
+  "lng": 40.4975
+ },
+ {
+  "city": "Al Ḩayy",
+  "state": "Wāsiţ",
+  "country": "Iraq",
+  "lat": 32.1667,
+  "lng": 46.05
+ },
+ {
+  "city": "Al Ḩillah",
+  "state": "Ar Riyāḑ",
+  "country": "Saudi Arabia",
+  "lat": 23.4895,
+  "lng": 46.7564
+ },
+ {
+  "city": "Al Ḩillah",
+  "state": "Bābil",
+  "country": "Iraq",
+  "lat": 32.4775,
+  "lng": 44.4314
+ },
+ {
+  "city": "Al Ḩişn",
+  "state": "Irbid",
+  "country": "Jordan",
+  "lat": 32.4583,
+  "lng": 35.8583
+ },
+ {
+  "city": "Al Ḩudaydah",
+  "state": "Al Ḩudaydah",
+  "country": "Yemen",
+  "lat": 14.8022,
+  "lng": 42.9511
+ },
+ {
+  "city": "Al Ḩusaynīyah",
+  "state": "Ash Sharqīyah",
+  "country": "Egypt",
+  "lat": 30.8617,
+  "lng": 31.9181
+ },
+ {
+  "city": "Al ‘Ajamī",
+  "state": "Al Iskandarīyah",
+  "country": "Egypt",
+  "lat": 31.0959,
+  "lng": 29.7604
+ },
+ {
+  "city": "Al ‘Amārah",
+  "state": "Maysān",
+  "country": "Iraq",
+  "lat": 31.8333,
+  "lng": 47.15
+ },
+ {
+  "city": "Al ‘Aqabah",
+  "state": "Al ‘Aqabah",
+  "country": "Jordan",
+  "lat": 29.5319,
+  "lng": 35.0056
+ },
+ {
+  "city": "Al ‘Aqīq",
+  "state": "Al Bāḩah",
+  "country": "Saudi Arabia",
+  "lat": 20.2685,
+  "lng": 41.6493
+ },
+ {
+  "city": "Al ‘Arīsh",
+  "state": "Shamāl Sīnā’",
+  "country": "Egypt",
+  "lat": 31.1249,
+  "lng": 33.8006
+ },
+ {
+  "city": "Al ‘Aydābī",
+  "state": "Jāzān",
+  "country": "Saudi Arabia",
+  "lat": 17.237,
+  "lng": 42.939
+ },
+ {
+  "city": "Al ‘Ayn",
+  "state": "Abū Z̧aby",
+  "country": "United Arab Emirates",
+  "lat": 24.2075,
+  "lng": 55.7447
+ },
+ {
+  "city": "Al ‘Ayyāţ",
+  "state": "Al Jīzah",
+  "country": "Egypt",
+  "lat": 29.6167,
+  "lng": 31.25
+ },
+ {
+  "city": "Al ‘Azīzīyah",
+  "state": "Wāsiţ",
+  "country": "Iraq",
+  "lat": 32.9083,
+  "lng": 45.0667
+ },
+ {
+  "city": "Al ‘Āmirāt",
+  "state": "Masqaţ",
+  "country": "Oman",
+  "lat": 23.5242,
+  "lng": 58.4989
+ },
+ {
+  "city": "Al ‘Āshir min Ramaḑān",
+  "state": "Ash Sharqīyah",
+  "country": "Egypt",
+  "lat": 30.3065,
+  "lng": 31.7415
+ },
+ {
+  "city": "Al ’Attawia",
+  "state": "Marrakech-Safi",
+  "country": "Morocco",
+  "lat": 31.8347,
+  "lng": -7.3125
+ },
+ {
+  "city": "Alabang",
+  "state": "Muntinlupa",
+  "country": "Philippines",
+  "lat": 14.4184,
+  "lng": 121.0385
+ },
+ {
+  "city": "Alabaster",
+  "state": "Alabama",
+  "country": "United States",
+  "lat": 33.2198,
+  "lng": -86.8225
+ },
+ {
+  "city": "Alabel",
+  "state": "Sarangani",
+  "country": "Philippines",
+  "lat": 6.1023,
+  "lng": 125.2868
+ },
+ {
+  "city": "Alafaya",
+  "state": "Florida",
+  "country": "United States",
+  "lat": 28.528,
+  "lng": -81.1868
+ },
+ {
+  "city": "Alagoinhas",
+  "state": "Bahia",
+  "country": "Brazil",
+  "lat": -12.1358,
+  "lng": -38.4189
+ },
+ {
+  "city": "Alajuela",
+  "state": "Alajuela",
+  "country": "Costa Rica",
+  "lat": 10.164,
+  "lng": -84.2645
+ },
+ {
+  "city": "Alamada",
+  "state": "Cotabato",
+  "country": "Philippines",
+  "lat": 7.3868,
+  "lng": 124.5534
+ },
+ {
+  "city": "Alameda",
+  "state": "California",
+  "country": "United States",
+  "lat": 37.7668,
+  "lng": -122.267
+ },
+ {
+  "city": "Alaminos",
+  "state": "Pangasinan",
+  "country": "Philippines",
+  "lat": 16.1553,
+  "lng": 119.9808
+ },
+ {
+  "city": "Alaminos",
+  "state": "Laguna",
+  "country": "Philippines",
+  "lat": 14.0635,
+  "lng": 121.2451
+ },
+ {
+  "city": "Alamnagar",
+  "state": "Bihār",
+  "country": "India",
+  "lat": 25.561,
+  "lng": 86.9014
+ },
+ {
+  "city": "Alamogordo",
+  "state": "New Mexico",
+  "country": "United States",
+  "lat": 32.8837,
+  "lng": -105.9625
+ },
+ {
+  "city": "Alamādi",
+  "state": "Tamil Nādu",
+  "country": "India",
+  "lat": 13.1097,
+  "lng": 80.0972
+ },
+ {
+  "city": "Aland",
+  "state": "Karnātaka",
+  "country": "India",
+  "lat": 17.5642,
+  "lng": 76.5685
+ },
+ {
+  "city": "Alandatte",
+  "state": "Kerala",
+  "country": "India",
+  "lat": 12.191,
+  "lng": 75.4673
+ },
+ {
+  "city": "Alangalang",
+  "state": "Leyte",
+  "country": "Philippines",
+  "lat": 11.2061,
+  "lng": 124.8478
+ },
+ {
+  "city": "Alanya",
+  "state": "Antalya",
+  "country": "Turkey",
+  "lat": 36.55,
+  "lng": 32
+ },
+ {
+  "city": "Alapayevsk",
+  "state": "Sverdlovskaya Oblast’",
+  "country": "Russia",
+  "lat": 57.85,
+  "lng": 61.7
+ },
+ {
+  "city": "Alaplı",
+  "state": "Zonguldak",
+  "country": "Turkey",
+  "lat": 41.1806,
+  "lng": 31.3861
+ },
+ {
+  "city": "Alasandigutta",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "lat": 15.6244,
+  "lng": 77.2731
+ },
+ {
+  "city": "Alashankou",
+  "state": "Xinjiang",
+  "country": "China",
+  "lat": 45.1733,
+  "lng": 82.5546
+ },
+ {
+  "city": "Alatyr",
+  "state": "Chuvashiya",
+  "country": "Russia",
+  "lat": 54.85,
+  "lng": 46.5833
+ },
+ {
+  "city": "Alaşehir",
+  "state": "Manisa",
+  "country": "Turkey",
+  "lat": 38.35,
+  "lng": 28.5167
+ },
+ {
+  "city": "Alba",
+  "state": "Piedmont",
+  "country": "Italy",
+  "lat": 44.7,
+  "lng": 8.0333
+ },
+ {
+  "city": "Alba Iulia",
+  "state": "Alba",
+  "country": "Romania",
+  "lat": 46.0669,
+  "lng": 23.57
+ },
+ {
+  "city": "Albacete",
+  "state": "Castille-La Mancha",
+  "country": "Spain",
+  "lat": 38.9956,
+  "lng": -1.8558
+ },
+ {
+  "city": "Albano Laziale",
+  "state": "Lazio",
+  "country": "Italy",
+  "lat": 41.7333,
+  "lng": 12.6667
+ },
+ {
+  "city": "Albany",
+  "state": "New York",
+  "country": "United States",
+  "lat": 42.6664,
+  "lng": -73.7987
+ },
+ {
+  "city": "Albany",
+  "state": "Georgia",
+  "country": "United States",
+  "lat": 31.5776,
+  "lng": -84.1762
+ },
+ {
+  "city": "Albany",
+  "state": "Oregon",
+  "country": "United States",
+  "lat": 44.6272,
+  "lng": -123.0965
+ },
+ {
+  "city": "Alberton",
+  "state": "Gauteng",
+  "country": "South Africa",
+  "lat": -26.2672,
+  "lng": 28.1219
+ },
+ {
+  "city": "Albi",
+  "state": "Occitanie",
+  "country": "France",
+  "lat": 43.9289,
+  "lng": 2.1464
+ },
+ {
+  "city": "Albstadt",
+  "state": "Baden-Württemberg",
+  "country": "Germany",
+  "lat": 48.2119,
+  "lng": 9.0239
+ },
+ {
+  "city": "Albuera",
+  "state": "Leyte",
+  "country": "Philippines",
+  "lat": 10.9186,
+  "lng": 124.6923
+ },
+ {
+  "city": "Albufeira",
+  "state": "Faro",
+  "country": "Portugal",
+  "lat": 37.0897,
+  "lng": -8.2458
+ },
+ {
+  "city": "Albuquerque",
+  "state": "New Mexico",
+  "country": "United States",
+  "lat": 35.1054,
+  "lng": -106.6465
+ },
+ {
+  "city": "Alcala",
+  "state": "Pangasinan",
+  "country": "Philippines",
+  "lat": 15.8468,
+  "lng": 120.5218
+ },
+ {
+  "city": "Alcala",
+  "state": "Cagayan",
+  "country": "Philippines",
+  "lat": 17.9031,
+  "lng": 121.6556
+ },
+ {
+  "city": "Alcalde Díaz",
+  "state": "Panamá",
+  "country": "Panama",
+  "lat": 9.12,
+  "lng": -79.55
+ },
+ {
+  "city": "Alcalá de Guadaira",
+  "state": "Andalusia",
+  "country": "Spain",
+  "lat": 37.3333,
+  "lng": -5.85
+ },
+ {
+  "city": "Alcalá de Henares",
+  "state": "Madrid",
+  "country": "Spain",
+  "lat": 40.4667,
+  "lng": -3.3667
+ },
+ {
+  "city": "Alcamo",
+  "state": "Sicilia",
+  "country": "Italy",
+  "lat": 37.9778,
+  "lng": 12.9639
+ },
+ {
+  "city": "Alcantarilla",
+  "state": "Murcia",
+  "country": "Spain",
+  "lat": 37.9722,
+  "lng": -1.2094
+ },
+ {
+  "city": "Alchevsk",
+  "state": "Luhanska Oblast",
+  "country": "Ukraine",
+  "lat": 48.4778,
+  "lng": 38.7978
+ },
+ {
+  "city": "Alcira",
+  "state": "Valencia",
+  "country": "Spain",
+  "lat": 39.15,
+  "lng": -0.435
+ },
+ {
+  "city": "Alcobaça",
+  "state": "Leiria",
+  "country": "Portugal",
+  "lat": 39.5528,
+  "lng": -8.9778
+ },
+ {
+  "city": "Alcobendas",
+  "state": "Madrid",
+  "country": "Spain",
+  "lat": 40.5333,
+  "lng": -3.6333
+ },
+ {
+  "city": "Alcorcón",
+  "state": "Madrid",
+  "country": "Spain",
+  "lat": 40.35,
+  "lng": -3.8333
+ },
+ {
+  "city": "Alcoy",
+  "state": "Valencia",
+  "country": "Spain",
+  "lat": 38.6983,
+  "lng": -0.4736
+ },
+ {
+  "city": "Alcázar de San Juan",
+  "state": "Castille-La Mancha",
+  "country": "Spain",
+  "lat": 39.4056,
+  "lng": -3.2056
+ },
+ {
+  "city": "Aldaya",
+  "state": "Valencia",
+  "country": "Spain",
+  "lat": 39.4639,
+  "lng": -0.4628
+ },
+ {
+  "city": "Aldershot",
+  "state": "Hampshire",
+  "country": "United Kingdom",
+  "lat": 51.2483,
+  "lng": -0.7614
+ },
+ {
+  "city": "Alegre",
+  "state": "Espírito Santo",
+  "country": "Brazil",
+  "lat": -20.7639,
+  "lng": -41.5328
+ },
+ {
+  "city": "Alegrete",
+  "state": "Rio Grande do Sul",
+  "country": "Brazil",
+  "lat": -29.7838,
+  "lng": -55.791
+ },
+ {
+  "city": "Aleksandrov",
+  "state": "Vladimirskaya Oblast’",
+  "country": "Russia",
+  "lat": 56.4,
+  "lng": 38.7333
+ },
+ {
+  "city": "Alekseyevka",
+  "state": "Belgorodskaya Oblast’",
+  "country": "Russia",
+  "lat": 50.6333,
+  "lng": 38.7
+ },
+ {
+  "city": "Aleksin",
+  "state": "Tul’skaya Oblast’",
+  "country": "Russia",
+  "lat": 54.5167,
+  "lng": 37.1
+ },
+ {
+  "city": "Aleksinac",
+  "state": "Aleksinac",
+  "country": "Serbia",
+  "lat": 43.55,
+  "lng": 21.7
+ },
+ {
+  "city": "Alengād",
+  "state": "Kerala",
+  "country": "India",
+  "lat": 10.1,
+  "lng": 76.3
+ },
+ {
+  "city": "Alenquer",
+  "state": "Pará",
+  "country": "Brazil",
+  "lat": -1.9448,
+  "lng": -54.732
+ },
+ {
+  "city": "Alenquer",
+  "state": "Lisboa",
+  "country": "Portugal",
+  "lat": 39.05,
+  "lng": -9.0167
+ },
+ {
+  "city": "Aleppo",
+  "state": "Ḩalab",
+  "country": "Syria",
+  "lat": 36.2,
+  "lng": 37.16
+ },
+ {
+  "city": "Alerce",
+  "state": "Los Lagos",
+  "country": "Chile",
+  "lat": -41.4,
+  "lng": -72.9333
+ },
+ {
+  "city": "Aleshtar",
+  "state": "Lorestān",
+  "country": "Iran",
+  "lat": 33.8653,
+  "lng": 48.2622
+ },
+ {
+  "city": "Alessandria",
+  "state": "Piedmont",
+  "country": "Italy",
+  "lat": 44.9167,
+  "lng": 8.6167
+ },
+ {
+  "city": "Alexandria",
+  "state": "Al Iskandarīyah",
+  "country": "Egypt",
+  "lat": 31.1975,
+  "lng": 29.8925
+ },
+ {
+  "city": "Alexandria",
+  "state": "Virginia",
+  "country": "United States",
+  "lat": 38.8185,
+  "lng": -77.0861
+ },
+ {
+  "city": "Alexandria",
+  "state": "Louisiana",
+  "country": "United States",
+  "lat": 31.2923,
+  "lng": -92.4702
+ },
+ {
+  "city": "Alexandria",
+  "state": "Teleorman",
+  "country": "Romania",
+  "lat": 43.9686,
+  "lng": 25.3333
+ },
+ {
+  "city": "Alexandroúpoli",
+  "state": "Anatolikí Makedonía kai Thráki",
+  "country": "Greece",
+  "lat": 40.85,
+  "lng": 25.8667
+ },
+ {
+  "city": "Alfenas",
+  "state": "Minas Gerais",
+  "country": "Brazil",
+  "lat": -21.4333,
+  "lng": -45.95
+ },
+ {
+  "city": "Alfonso",
+  "state": "Cavite",
+  "country": "Philippines",
+  "lat": 14.1379,
+  "lng": 120.8552
+ },
+ {
+  "city": "Alfortville",
+  "state": "Île-de-France",
+  "country": "France",
+  "lat": 48.805,
+  "lng": 2.4239
+ },
+ {
+  "city": "Algeciras",
+  "state": "Andalusia",
+  "country": "Spain",
+  "lat": 36.1275,
+  "lng": -5.4539
+ },
+ {
+  "city": "Alghero",
+  "state": "Sardegna",
+  "country": "Italy",
+  "lat": 40.56,
+  "lng": 8.315
+ },
+ {
+  "city": "Algiers",
+  "state": "Alger",
+  "country": "Algeria",
+  "lat": 36.7539,
+  "lng": 3.0589
+ },
+ {
+  "city": "Alhambra",
+  "state": "California",
+  "country": "United States",
+  "lat": 34.084,
+  "lng": -118.1355
+ },
+ {
+  "city": "Alhaurín de la Torre",
+  "state": "Andalusia",
+  "country": "Spain",
+  "lat": 36.6667,
+  "lng": -4.55
+ },
+ {
+  "city": "Ali Sabieh",
+  "state": "Ali Sabieh",
+  "country": "Djibouti",
+  "lat": 11.15,
+  "lng": 42.7167
+ },
+ {
+  "city": "Aliaga",
+  "state": "Nueva Ecija",
+  "country": "Philippines",
+  "lat": 15.5036,
+  "lng": 120.845
+ },
+ {
+  "city": "Aliança",
+  "state": "Pernambuco",
+  "country": "Brazil",
+  "lat": -7.6028,
+  "lng": -35.2308
+ },
+ {
+  "city": "Aliağa",
+  "state": "İzmir",
+  "country": "Turkey",
+  "lat": 38.8008,
+  "lng": 26.9728
+ },
+ {
+  "city": "Alicante",
+  "state": "Valencia",
+  "country": "Spain",
+  "lat": 38.3453,
+  "lng": -0.4831
+ },
+ {
+  "city": "Alicia",
+  "state": "Isabela",
+  "country": "Philippines",
+  "lat": 16.7787,
+  "lng": 121.6972
+ },
+ {
+  "city": "Alicia",
+  "state": "Zamboanga Sibugay",
+  "country": "Philippines",
+  "lat": 7.506,
+  "lng": 122.9412
+ },
+ {
+  "city": "Alimodian",
+  "state": "Iloilo",
+  "country": "Philippines",
+  "lat": 10.8196,
+  "lng": 122.4322
+ },
+ {
+  "city": "Alingsås",
+  "state": "Västra Götaland",
+  "country": "Sweden",
+  "lat": 57.93,
+  "lng": 12.5331
+ },
+ {
+  "city": "Aliso Viejo",
+  "state": "California",
+  "country": "United States",
+  "lat": 33.5792,
+  "lng": -117.7289
+ },
+ {
+  "city": "Alkmaar",
+  "state": "Noord-Holland",
+  "country": "Netherlands",
+  "lat": 52.6333,
+  "lng": 4.75
+ },
+ {
+  "city": "Allacapan",
+  "state": "Cagayan",
+  "country": "Philippines",
+  "lat": 18.227,
+  "lng": 121.5556
+ },
+ {
+  "city": "Allada",
+  "state": "Atlantique",
+  "country": "Benin",
+  "lat": 6.65,
+  "lng": 2.15
+ },
+ {
+  "city": "Allahabad",
+  "state": "Punjab",
+  "country": "Pakistan",
+  "lat": 28.9333,
+  "lng": 70.9667
+ },
+ {
+  "city": "Allanmyo",
+  "state": "Magway",
+  "country": "Burma",
+  "lat": 19.3783,
+  "lng": 95.2279
+ },
+ {
+  "city": "Allen",
+  "state": "Texas",
+  "country": "United States",
+  "lat": 33.1088,
+  "lng": -96.6735
+ },
+ {
+  "city": "Allentown",
+  "state": "Pennsylvania",
+  "country": "United States",
+  "lat": 40.5961,
+  "lng": -75.4756
+ },
+ {
+  "city": "Alleppey",
+  "state": "Kerala",
+  "country": "India",
+  "lat": 9.49,
+  "lng": 76.33
+ },
+ {
+  "city": "Allinagaram",
+  "state": "Tamil Nādu",
+  "country": "India",
+  "lat": 10.0119,
+  "lng": 77.4786
+ },
+ {
+  "city": "Allūru",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "lat": 15.1336,
+  "lng": 78.4975
+ },
+ {
+  "city": "Alma",
+  "state": "Quebec",
+  "country": "Canada",
+  "lat": 48.55,
+  "lng": -71.65
+ },
+ {
+  "city": "Almada",
+  "state": "Setúbal",
+  "country": "Portugal",
+  "lat": 38.6803,
+  "lng": -9.1583
+ },
+ {
+  "city": "Almaty",
+  "state": "Almaty",
+  "country": "Kazakhstan",
+  "lat": 43.24,
+  "lng": 76.915
+ },
+ {
+  "city": "Almeirim",
+  "state": "Pará",
+  "country": "Brazil",
+  "lat": -1.5228,
+  "lng": -52.5819
+ },
+ {
+  "city": "Almelo",
+  "state": "Overijssel",
+  "country": "Netherlands",
+  "lat": 52.35,
+  "lng": 6.6667
+ },
+ {
+  "city": "Almenara",
+  "state": "Minas Gerais",
+  "country": "Brazil",
+  "lat": -16.1839,
+  "lng": -40.6939
+ },
+ {
+  "city": "Almendralejo",
+  "state": "Extremadura",
+  "country": "Spain",
+  "lat": 38.6833,
+  "lng": -6.4167
+ },
+ {
+  "city": "Almere",
+  "state": "Flevoland",
+  "country": "Netherlands",
+  "lat": 52.3667,
+  "lng": 5.2167
+ },
+ {
+  "city": "Almería",
+  "state": "Andalusia",
+  "country": "Spain",
+  "lat": 36.8403,
+  "lng": -2.4681
+ },
+ {
+  "city": "Almetyevsk",
+  "state": "Tatarstan",
+  "country": "Russia",
+  "lat": 54.9,
+  "lng": 52.3
+ },
+ {
+  "city": "Almirante Tamandaré",
+  "state": "Paraná",
+  "country": "Brazil",
+  "lat": -25.325,
+  "lng": -49.31
+ },
+ {
+  "city": "Almora",
+  "state": "Uttarākhand",
+  "country": "India",
+  "lat": 29.5971,
+  "lng": 79.6591
+ },
+ {
+  "city": "Aloguinsan",
+  "state": "Cebu",
+  "country": "Philippines",
+  "lat": 10.2229,
+  "lng": 123.5491
+ },
+ {
+  "city": "Aloha",
+  "state": "Oregon",
+  "country": "United States",
+  "lat": 45.492,
+  "lng": -122.8725
+ },
+ {
+  "city": "Alor Setar",
+  "state": "Kedah",
+  "country": "Malaysia",
+  "lat": 6.1183,
+  "lng": 100.3694
+ },
+ {
+  "city": "Alpharetta",
+  "state": "Georgia",
+  "country": "United States",
+  "lat": 34.0704,
+  "lng": -84.2738
+ },
+ {
+  "city": "Alphen aan den Rijn",
+  "state": "Zuid-Holland",
+  "country": "Netherlands",
+  "lat": 52.1333,
+  "lng": 4.6667
+ },
+ {
+  "city": "Alsdorf",
+  "state": "North Rhine-Westphalia",
+  "country": "Germany",
+  "lat": 50.8833,
+  "lng": 6.1667
+ },
+ {
+  "city": "Alta Floresta",
+  "state": "Mato Grosso",
+  "country": "Brazil",
+  "lat": -9.8861,
+  "lng": -56.0872
+ },
+ {
+  "city": "Alta Gracia",
+  "state": "Córdoba",
+  "country": "Argentina",
+  "lat": -31.6667,
+  "lng": -64.4333
+ },
+ {
+  "city": "Altadena",
+  "state": "California",
+  "country": "United States",
+  "lat": 34.1927,
+  "lng": -118.1346
+ },
+ {
+  "city": "Altagracia de Orituco",
+  "state": "Guárico",
+  "country": "Venezuela",
+  "lat": 9.8504,
+  "lng": -66.38
+ },
+ {
+  "city": "Altamira",
+  "state": "Pará",
+  "country": "Brazil",
+  "lat": -3.2028,
+  "lng": -52.2058
+ },
+ {
+  "city": "Altamira",
+  "state": "Tamaulipas",
+  "country": "Mexico",
+  "lat": 22.3375,
+  "lng": -97.8694
+ },
+ {
+  "city": "Altamonte Springs",
+  "state": "Florida",
+  "country": "United States",
+  "lat": 28.6615,
+  "lng": -81.3953
+ },
+ {
+  "city": "Altamura",
+  "state": "Puglia",
+  "country": "Italy",
+  "lat": 40.8167,
+  "lng": 16.55
+ },
+ {
+  "city": "Altay",
+  "state": "Xinjiang",
+  "country": "China",
+  "lat": 47.8666,
+  "lng": 88.1166
+ },
+ {
+  "city": "Altenburg",
+  "state": "Thuringia",
+  "country": "Germany",
+  "lat": 50.985,
+  "lng": 12.4333
+ },
+ {
+  "city": "Alto Hospicio",
+  "state": "Tarapacá",
+  "country": "Chile",
+  "lat": -20.25,
+  "lng": -70.1167
+ },
+ {
+  "city": "Alton",
+  "state": "Illinois",
+  "country": "United States",
+  "lat": 38.9037,
+  "lng": -90.152
+ },
+ {
+  "city": "Altoona",
+  "state": "Pennsylvania",
+  "country": "United States",
+  "lat": 40.5082,
+  "lng": -78.4007
+ },
+ {
+  "city": "Altos",
+  "state": "Piauí",
+  "country": "Brazil",
+  "lat": -5.0389,
+  "lng": -42.4608
+ },
+ {
+  "city": "Altrincham",
+  "state": "Trafford",
+  "country": "United Kingdom",
+  "lat": 53.3838,
+  "lng": -2.3547
+ },
+ {
+  "city": "Altındağ",
+  "state": "Ankara",
+  "country": "Turkey",
+  "lat": 39.9636,
+  "lng": 32.9033
+ },
+ {
+  "city": "Altınözü",
+  "state": "Hatay",
+  "country": "Turkey",
+  "lat": 36.1,
+  "lng": 36.23
+ },
+ {
+  "city": "Alubijid",
+  "state": "Misamis Oriental",
+  "country": "Philippines",
+  "lat": 8.5714,
+  "lng": 124.4751
+ },
+ {
+  "city": "Alvand",
+  "state": "Qazvīn",
+  "country": "Iran",
+  "lat": 36.1867,
+  "lng": 50.0639
+ },
+ {
+  "city": "Alvarado",
+  "state": "Veracruz",
+  "country": "Mexico",
+  "lat": 18.7811,
+  "lng": -95.7572
+ },
+ {
+  "city": "Alvorada",
+  "state": "Rio Grande do Sul",
+  "country": "Brazil",
+  "lat": -29.9897,
+  "lng": -51.0833
+ },
+ {
+  "city": "Alwar",
+  "state": "Rājasthān",
+  "country": "India",
+  "lat": 27.5498,
+  "lng": 76.6355
+ },
+ {
+  "city": "Alwāl",
+  "state": "Telangāna",
+  "country": "India",
+  "lat": 17.5047,
+  "lng": 78.5038
+ },
+ {
+  "city": "Alytus",
+  "state": "Alytaus Miestas",
+  "country": "Lithuania",
+  "lat": 54.4014,
+  "lng": 24.0492
+ },
+ {
+  "city": "Alès",
+  "state": "Occitanie",
+  "country": "France",
+  "lat": 44.1281,
+  "lng": 4.0817
+ },
+ {
+  "city": "Além Paraíba",
+  "state": "Minas Gerais",
+  "country": "Brazil",
+  "lat": -21.8878,
+  "lng": -42.7039
+ },
+ {
+  "city": "Alīgarh",
+  "state": "Uttar Pradesh",
+  "country": "India",
+  "lat": 27.88,
+  "lng": 78.08
+ },
+ {
+  "city": "Alīgūdarz",
+  "state": "Lorestān",
+  "country": "Iran",
+  "lat": 33.4025,
+  "lng": 49.6903
+ },
+ {
+  "city": "Alīpur Duār",
+  "state": "West Bengal",
+  "country": "India",
+  "lat": 26.489,
+  "lng": 89.527
+ },
+ {
+  "city": "Am-Timan",
+  "state": "Salamat",
+  "country": "Chad",
+  "lat": 11.0333,
+  "lng": 20.2833
+ },
+ {
+  "city": "Ama",
+  "state": "Aichi",
+  "country": "Japan",
+  "lat": 35.2004,
+  "lng": 136.7832
+ },
+ {
+  "city": "Amadeo",
+  "state": "Cavite",
+  "country": "Philippines",
+  "lat": 14.1728,
+  "lng": 120.9277
+ },
+ {
+  "city": "Amadora",
+  "state": "Lisboa",
+  "country": "Portugal",
+  "lat": 38.7333,
+  "lng": -9.2333
+ },
+ {
+  "city": "Amagasaki",
+  "state": "Hyōgo",
+  "country": "Japan",
+  "lat": 34.7333,
+  "lng": 135.4
+ },
+ {
+  "city": "Amagá",
+  "state": "Antioquia",
+  "country": "Colombia",
+  "lat": 6.05,
+  "lng": -75.7
+ },
+ {
+  "city": "Amahai",
+  "state": "Maluku",
+  "country": "Indonesia",
+  "lat": -3.3331,
+  "lng": 128.919
+ },
+ {
+  "city": "Amakusa",
+  "state": "Kumamoto",
+  "country": "Japan",
+  "lat": 32.4667,
+  "lng": 130.2
+ },
+ {
+  "city": "Amalner",
+  "state": "Mahārāshtra",
+  "country": "India",
+  "lat": 21.05,
+  "lng": 75.05
+ },
+ {
+  "city": "Amalāpuram",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "lat": 16.5787,
+  "lng": 82.0061
+ },
+ {
+  "city": "Amambaí",
+  "state": "Mato Grosso do Sul",
+  "country": "Brazil",
+  "lat": -23.1039,
+  "lng": -55.2258
+ },
+ {
+  "city": "Amami",
+  "state": "Okinawa",
+  "country": "Japan",
+  "lat": 28.3783,
+  "lng": 129.4944
+ },
+ {
+  "city": "Amancio",
+  "state": "Las Tunas",
+  "country": "Cuba",
+  "lat": 20.8197,
+  "lng": -77.5844
+ },
+ {
+  "city": "Amarante",
+  "state": "Porto",
+  "country": "Portugal",
+  "lat": 41.2703,
+  "lng": -8.0808
+ },
+ {
+  "city": "Amarante do Maranhão",
+  "state": "Maranhão",
+  "country": "Brazil",
+  "lat": -5.6,
+  "lng": -46.75
+ },
+ {
+  "city": "Amargosa",
+  "state": "Bahia",
+  "country": "Brazil",
+  "lat": -13.03,
+  "lng": -39.605
+ },
+ {
+  "city": "Amarillo",
+  "state": "Texas",
+  "country": "United States",
+  "lat": 35.1984,
+  "lng": -101.8316
+ },
+ {
+  "city": "Amarāvati",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "lat": 16.5131,
+  "lng": 80.5165
+ },
+ {
+  "city": "Amasya",
+  "state": "Amasya",
+  "country": "Turkey",
+  "lat": 40.65,
+  "lng": 35.8331
+ },
+ {
+  "city": "Amatenango de la Frontera",
+  "state": "Chiapas",
+  "country": "Mexico",
+  "lat": 15.5333,
+  "lng": -92.0833
+ },
+ {
+  "city": "Amatitlán",
+  "state": "Guatemala",
+  "country": "Guatemala",
+  "lat": 14.4833,
+  "lng": -90.6167
+ },
+ {
+  "city": "Ambahikily",
+  "state": "Toliara",
+  "country": "Madagascar",
+  "lat": -21.6,
+  "lng": 43.6667
+ },
+ {
+  "city": "Ambalavao",
+  "state": "Fianarantsoa",
+  "country": "Madagascar",
+  "lat": -21.8333,
+  "lng": 46.9333
+ },
+ {
+  "city": "Ambanja",
+  "state": "Antsiranana",
+  "country": "Madagascar",
+  "lat": -13.6786,
+  "lng": 48.4522
+ },
+ {
+  "city": "Ambano",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -19.8,
+  "lng": 47.0333
+ },
+ {
+  "city": "Ambarawa",
+  "state": "Jawa Tengah",
+  "country": "Indonesia",
+  "lat": -7.2667,
+  "lng": 110.4
+ },
+ {
+  "city": "Ambato",
+  "state": "Tungurahua",
+  "country": "Ecuador",
+  "lat": -1.2417,
+  "lng": -78.6197
+ },
+ {
+  "city": "Ambatofinandrahana",
+  "state": "Fianarantsoa",
+  "country": "Madagascar",
+  "lat": -20.55,
+  "lng": 46.8
+ },
+ {
+  "city": "Ambatomainty",
+  "state": "Toamasina",
+  "country": "Madagascar",
+  "lat": -17.6833,
+  "lng": 48.2167
+ },
+ {
+  "city": "Ambatomiady",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -19.6833,
+  "lng": 47.4167
+ },
+ {
+  "city": "Ambatondrazaka",
+  "state": "Toamasina",
+  "country": "Madagascar",
+  "lat": -17.8256,
+  "lng": 48.4289
+ },
+ {
+  "city": "Ambattūr",
+  "state": "Tamil Nādu",
+  "country": "India",
+  "lat": 13.1143,
+  "lng": 80.1548
+ },
+ {
+  "city": "Amberg",
+  "state": "Bavaria",
+  "country": "Germany",
+  "lat": 49.4444,
+  "lng": 11.8483
+ },
+ {
+  "city": "Ambikāpur",
+  "state": "Chhattīsgarh",
+  "country": "India",
+  "lat": 23.12,
+  "lng": 83.2
+ },
+ {
+  "city": "Ambilobe",
+  "state": "Antsiranana",
+  "country": "Madagascar",
+  "lat": -13.2,
+  "lng": 49.05
+ },
+ {
+  "city": "Ambinanitelo",
+  "state": "Toamasina",
+  "country": "Madagascar",
+  "lat": -15.35,
+  "lng": 49.5833
+ },
+ {
+  "city": "Amboasary",
+  "state": "Toliara",
+  "country": "Madagascar",
+  "lat": -25.05,
+  "lng": 46.3833
+ },
+ {
+  "city": "Ambodimanga II",
+  "state": "Toamasina",
+  "country": "Madagascar",
+  "lat": -17.2667,
+  "lng": 49.1667
+ },
+ {
+  "city": "Ambohibary",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -19.6167,
+  "lng": 47.15
+ },
+ {
+  "city": "Ambohibary",
+  "state": "Toamasina",
+  "country": "Madagascar",
+  "lat": -18.9,
+  "lng": 48.2333
+ },
+ {
+  "city": "Ambohimangakely",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -18.9167,
+  "lng": 47.6
+ },
+ {
+  "city": "Ambohitrimanjaka",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -18.8667,
+  "lng": 47.4333
+ },
+ {
+  "city": "Ambon",
+  "state": "Maluku",
+  "country": "Indonesia",
+  "lat": -3.7,
+  "lng": 128.1667
+ },
+ {
+  "city": "Ambositra",
+  "state": "Fianarantsoa",
+  "country": "Madagascar",
+  "lat": -20.5167,
+  "lng": 47.25
+ },
+ {
+  "city": "Ambovombe",
+  "state": "Toliara",
+  "country": "Madagascar",
+  "lat": -25.1764,
+  "lng": 46.0833
+ },
+ {
+  "city": "Ambājogāi",
+  "state": "Mahārāshtra",
+  "country": "India",
+  "lat": 18.73,
+  "lng": 76.38
+ },
+ {
+  "city": "Ambāla",
+  "state": "Haryāna",
+  "country": "India",
+  "lat": 30.38,
+  "lng": 76.78
+ },
+ {
+  "city": "Ambāsamudram",
+  "state": "Tamil Nādu",
+  "country": "India",
+  "lat": 8.7037,
+  "lng": 77.4527
+ },
+ {
+  "city": "Ameca",
+  "state": "Jalisco",
+  "country": "Mexico",
+  "lat": 20.5486,
+  "lng": -104.0431
+ },
+ {
+  "city": "Amecameca de Juárez",
+  "state": "México",
+  "country": "Mexico",
+  "lat": 19.75,
+  "lng": -99.1711
+ },
+ {
+  "city": "American Fork",
+  "state": "Utah",
+  "country": "United States",
+  "lat": 40.3783,
+  "lng": -111.7953
+ },
+ {
+  "city": "Americana",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -22.7386,
+  "lng": -47.3311
+ },
+ {
+  "city": "Amersfoort",
+  "state": "Utrecht",
+  "country": "Netherlands",
+  "lat": 52.15,
+  "lng": 5.3833
+ },
+ {
+  "city": "Ames",
+  "state": "Iowa",
+  "country": "United States",
+  "lat": 42.0256,
+  "lng": -93.6217
+ },
+ {
+  "city": "Amherst",
+  "state": "New York",
+  "country": "United States",
+  "lat": 43.0117,
+  "lng": -78.757
+ },
+ {
+  "city": "Ami",
+  "state": "Ibaraki",
+  "country": "Japan",
+  "lat": 36.0308,
+  "lng": 140.2148
+ },
+ {
+  "city": "Amiens",
+  "state": "Hauts-de-France",
+  "country": "France",
+  "lat": 49.892,
+  "lng": 2.299
+ },
+ {
+  "city": "Amla",
+  "state": "Madhya Pradesh",
+  "country": "India",
+  "lat": 21.9248,
+  "lng": 78.1279
+ },
+ {
+  "city": "Amman",
+  "state": "Al ‘Āşimah",
+  "country": "Jordan",
+  "lat": 31.9497,
+  "lng": 35.9328
+ },
+ {
+  "city": "Amontada",
+  "state": "Ceará",
+  "country": "Brazil",
+  "lat": -3.3833,
+  "lng": -39.8333
+ },
+ {
+  "city": "Amora",
+  "state": "Setúbal",
+  "country": "Portugal",
+  "lat": 38.623,
+  "lng": -9.12
+ },
+ {
+  "city": "Ampana",
+  "state": "Sulawesi Tengah",
+  "country": "Indonesia",
+  "lat": -0.8667,
+  "lng": 121.5833
+ },
+ {
+  "city": "Ampanihy",
+  "state": "Toliara",
+  "country": "Madagascar",
+  "lat": -24.6833,
+  "lng": 44.75
+ },
+ {
+  "city": "Amparafaravola",
+  "state": "Toamasina",
+  "country": "Madagascar",
+  "lat": -17.5833,
+  "lng": 48.2167
+ },
+ {
+  "city": "Amparo",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -22.7031,
+  "lng": -46.765
+ },
+ {
+  "city": "Ampasina-Maningory",
+  "state": "Toamasina",
+  "country": "Madagascar",
+  "lat": -17.2167,
+  "lng": 49.4167
+ },
+ {
+  "city": "Ampelókipoi",
+  "state": "Kentrikí Makedonía",
+  "country": "Greece",
+  "lat": 40.65,
+  "lng": 22.9167
+ },
+ {
+  "city": "Ampitatafika",
+  "state": "Fianarantsoa",
+  "country": "Madagascar",
+  "lat": -18.9333,
+  "lng": 47.475
+ },
+ {
+  "city": "Amreli",
+  "state": "Gujarāt",
+  "country": "India",
+  "lat": 21.6006,
+  "lng": 71.2164
+ },
+ {
+  "city": "Amritsar",
+  "state": "Punjab",
+  "country": "India",
+  "lat": 31.64,
+  "lng": 74.86
+ },
+ {
+  "city": "Amroha",
+  "state": "Uttar Pradesh",
+  "country": "India",
+  "lat": 28.9044,
+  "lng": 78.4675
+ },
+ {
+  "city": "Amrāvati",
+  "state": "Mahārāshtra",
+  "country": "India",
+  "lat": 20.9258,
+  "lng": 77.7647
+ },
+ {
+  "city": "Amstelveen",
+  "state": "Noord-Holland",
+  "country": "Netherlands",
+  "lat": 52.3,
+  "lng": 4.85
+ },
+ {
+  "city": "Amsterdam",
+  "state": "Noord-Holland",
+  "country": "Netherlands",
+  "lat": 52.3728,
+  "lng": 4.8936
+ },
+ {
+  "city": "Amudālavalasa",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "lat": 18.4167,
+  "lng": 83.9
+ },
+ {
+  "city": "Amulung",
+  "state": "Cagayan",
+  "country": "Philippines",
+  "lat": 17.8387,
+  "lng": 121.7235
+ },
+ {
+  "city": "Amuntai",
+  "state": "Kalimantan Selatan",
+  "country": "Indonesia",
+  "lat": -2.4177,
+  "lng": 115.2494
+ },
+ {
+  "city": "Amursk",
+  "state": "Khabarovskiy Kray",
+  "country": "Russia",
+  "lat": 50.2167,
+  "lng": 136.9
+ },
+ {
+  "city": "Américo Brasiliense",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -21.7361,
+  "lng": -48.1114
+ },
+ {
+  "city": "Amés",
+  "state": "Galicia",
+  "country": "Spain",
+  "lat": 42.9,
+  "lng": -8.6333
+ },
+ {
+  "city": "An",
+  "state": "Rakhine State",
+  "country": "Burma",
+  "lat": 19.7833,
+  "lng": 94.0333
+ },
+ {
+  "city": "An Khê",
+  "state": "Gia Lai",
+  "country": "Vietnam",
+  "lat": 13.9531,
+  "lng": 108.6569
+ },
+ {
+  "city": "An Nabk",
+  "state": "Rīf Dimashq",
+  "country": "Syria",
+  "lat": 34.0167,
+  "lng": 36.7167
+ },
+ {
+  "city": "An Najaf",
+  "state": "An Najaf",
+  "country": "Iraq",
+  "lat": 32,
+  "lng": 44.33
+ },
+ {
+  "city": "An Nhơn",
+  "state": "Bình Định",
+  "country": "Vietnam",
+  "lat": 13.917,
+  "lng": 109.083
+ },
+ {
+  "city": "An Nimāş",
+  "state": "‘Asīr",
+  "country": "Saudi Arabia",
+  "lat": 19.12,
+  "lng": 42.13
+ },
+ {
+  "city": "An Nuhūd",
+  "state": "West Kordofan",
+  "country": "Sudan",
+  "lat": 12.6925,
+  "lng": 28.4233
+ },
+ {
+  "city": "An Nu‘mānīyah",
+  "state": "Wāsiţ",
+  "country": "Iraq",
+  "lat": 32.5,
+  "lng": 45.3333
+ },
+ {
+  "city": "An Nāşirīyah",
+  "state": "Dhī Qār",
+  "country": "Iraq",
+  "lat": 31.0439,
+  "lng": 46.2575
+ },
+ {
+  "city": "Anaco",
+  "state": "Anzoátegui",
+  "country": "Venezuela",
+  "lat": 9.4819,
+  "lng": -64.4917
+ },
+ {
+  "city": "Anaheim",
+  "state": "California",
+  "country": "United States",
+  "lat": 33.839,
+  "lng": -117.8574
+ },
+ {
+  "city": "Anakaputtur",
+  "state": "Tamil Nādu",
+  "country": "India",
+  "lat": 12.9823,
+  "lng": 80.1282
+ },
+ {
+  "city": "Anakāpalle",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "lat": 17.6913,
+  "lng": 83.0039
+ },
+ {
+  "city": "Analavory",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -18.9667,
+  "lng": 46.7167
+ },
+ {
+  "city": "Anamur",
+  "state": "Mersin",
+  "country": "Turkey",
+  "lat": 36.0243,
+  "lng": 32.8026
+ },
+ {
+  "city": "Anan",
+  "state": "Tokushima",
+  "country": "Japan",
+  "lat": 33.9167,
+  "lng": 134.6667
+ },
+ {
+  "city": "Anandpur",
+  "state": "Odisha",
+  "country": "India",
+  "lat": 21.2141,
+  "lng": 86.1249
+ },
+ {
+  "city": "Ananindeua",
+  "state": "Pará",
+  "country": "Brazil",
+  "lat": -1.3658,
+  "lng": -48.3719
+ },
+ {
+  "city": "Ananipalle",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "lat": 13.4902,
+  "lng": 79.2895
+ },
+ {
+  "city": "Anantapur",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "lat": 14.68,
+  "lng": 77.599
+ },
+ {
+  "city": "Anapa",
+  "state": "Krasnodarskiy Kray",
+  "country": "Russia",
+  "lat": 44.8944,
+  "lng": 37.3167
+ },
+ {
+  "city": "Anchorage",
+  "state": "Alaska",
+  "country": "United States",
+  "lat": 61.1508,
+  "lng": -149.1091
+ },
+ {
+  "city": "Ancona",
+  "state": "Marche",
+  "country": "Italy",
+  "lat": 43.6169,
+  "lng": 13.5167
+ },
+ {
+  "city": "Ancud",
+  "state": "Los Lagos",
+  "country": "Chile",
+  "lat": -41.8667,
+  "lng": -73.8333
+ },
+ {
+  "city": "Anda",
+  "state": "Heilongjiang",
+  "country": "China",
+  "lat": 46.424,
+  "lng": 125.352
+ },
+ {
+  "city": "Anda",
+  "state": "Pangasinan",
+  "country": "Philippines",
+  "lat": 16.2896,
+  "lng": 119.9491
+ },
+ {
+  "city": "Andahuaylas",
+  "state": "Apurímac",
+  "country": "Peru",
+  "lat": -13.6575,
+  "lng": -73.3833
+ },
+ {
+  "city": "Andapa",
+  "state": "Antsiranana",
+  "country": "Madagascar",
+  "lat": -14.65,
+  "lng": 49.65
+ },
+ {
+  "city": "Anderlecht",
+  "state": "Brussels-Capital Region",
+  "country": "Belgium",
+  "lat": 50.8333,
+  "lng": 4.3333
+ },
+ {
+  "city": "Andernach",
+  "state": "Rhineland-Palatinate",
+  "country": "Germany",
+  "lat": 50.4397,
+  "lng": 7.4017
+ },
+ {
+  "city": "Anderson",
+  "state": "Indiana",
+  "country": "United States",
+  "lat": 40.0891,
+  "lng": -85.6892
+ },
+ {
+  "city": "Andes",
+  "state": "Antioquia",
+  "country": "Colombia",
+  "lat": 5.5833,
+  "lng": -75.9167
+ },
+ {
+  "city": "Andijon",
+  "state": "Andijon",
+  "country": "Uzbekistan",
+  "lat": 40.7833,
+  "lng": 72.3333
+ },
+ {
+  "city": "Andilamena",
+  "state": "Toamasina",
+  "country": "Madagascar",
+  "lat": -17.0167,
+  "lng": 48.5833
+ },
+ {
+  "city": "Andingcun",
+  "state": "Beijing",
+  "country": "China",
+  "lat": 39.6172,
+  "lng": 116.4944
+ },
+ {
+  "city": "Andkhōy",
+  "state": "Fāryāb",
+  "country": "Afghanistan",
+  "lat": 36.95,
+  "lng": 65.1167
+ },
+ {
+  "city": "Andoharanofotsy",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -18.975,
+  "lng": 47.5333
+ },
+ {
+  "city": "Andong",
+  "state": "Gyeongbuk",
+  "country": "Korea, South",
+  "lat": 36.5592,
+  "lng": 128.7289
+ },
+ {
+  "city": "Andover",
+  "state": "Hampshire",
+  "country": "United Kingdom",
+  "lat": 51.208,
+  "lng": -1.48
+ },
+ {
+  "city": "Andover",
+  "state": "Massachusetts",
+  "country": "United States",
+  "lat": 42.6466,
+  "lng": -71.1651
+ },
+ {
+  "city": "Andover",
+  "state": "Minnesota",
+  "country": "United States",
+  "lat": 45.2571,
+  "lng": -93.3265
+ },
+ {
+  "city": "Andradas",
+  "state": "Minas Gerais",
+  "country": "Brazil",
+  "lat": -22.0678,
+  "lng": -46.5689
+ },
+ {
+  "city": "Andradina",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -20.8958,
+  "lng": -51.3789
+ },
+ {
+  "city": "Andranomanelatra",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -19.7833,
+  "lng": 47.1
+ },
+ {
+  "city": "Andranovory",
+  "state": "Toliara",
+  "country": "Madagascar",
+  "lat": -23.1333,
+  "lng": 44.1333
+ },
+ {
+  "city": "Andria",
+  "state": "Puglia",
+  "country": "Italy",
+  "lat": 41.2167,
+  "lng": 16.3
+ },
+ {
+  "city": "Andriba",
+  "state": "Mahajanga",
+  "country": "Madagascar",
+  "lat": -17.5833,
+  "lng": 46.9333
+ },
+ {
+  "city": "Androka",
+  "state": "Toliara",
+  "country": "Madagascar",
+  "lat": -25.1167,
+  "lng": 44.45
+ },
+ {
+  "city": "Androtsy",
+  "state": "Toliara",
+  "country": "Madagascar",
+  "lat": -24.1,
+  "lng": 46.3
+ },
+ {
+  "city": "Andújar",
+  "state": "Andalusia",
+  "country": "Spain",
+  "lat": 38.0392,
+  "lng": -4.0506
+ },
+ {
+  "city": "Andīmeshk",
+  "state": "Khūzestān",
+  "country": "Iran",
+  "lat": 32.4714,
+  "lng": 48.3489
+ },
+ {
+  "city": "Andırın",
+  "state": "Kahramanmaraş",
+  "country": "Turkey",
+  "lat": 37.5764,
+  "lng": 36.3506
+ },
+ {
+  "city": "Anekal",
+  "state": "Karnātaka",
+  "country": "India",
+  "lat": 12.7105,
+  "lng": 77.6967
+ },
+ {
+  "city": "Angadanan",
+  "state": "Isabela",
+  "country": "Philippines",
+  "lat": 16.7571,
+  "lng": 121.7479
+ },
+ {
+  "city": "Angamāli",
+  "state": "Kerala",
+  "country": "India",
+  "lat": 10.196,
+  "lng": 76.386
+ },
+ {
+  "city": "Angarsk",
+  "state": "Irkutskaya Oblast’",
+  "country": "Russia",
+  "lat": 52.55,
+  "lng": 103.9
+ },
+ {
+  "city": "Angat",
+  "state": "Bulacan",
+  "country": "Philippines",
+  "lat": 14.9281,
+  "lng": 121.0293
+ },
+ {
+  "city": "Angeles City",
+  "state": "Angeles",
+  "country": "Philippines",
+  "lat": 15.1472,
+  "lng": 120.5847
+ },
+ {
+  "city": "Angers",
+  "state": "Pays de la Loire",
+  "country": "France",
+  "lat": 47.4736,
+  "lng": -0.5542
+ },
+ {
+  "city": "Anglet",
+  "state": "Nouvelle-Aquitaine",
+  "country": "France",
+  "lat": 43.485,
+  "lng": -1.5183
+ },
+ {
+  "city": "Angol",
+  "state": "Araucanía",
+  "country": "Chile",
+  "lat": -37.8,
+  "lng": -72.7167
+ },
+ {
+  "city": "Angono",
+  "state": "Rizal",
+  "country": "Philippines",
+  "lat": 14.5234,
+  "lng": 121.1536
+ },
+ {
+  "city": "Angoulême",
+  "state": "Nouvelle-Aquitaine",
+  "country": "France",
+  "lat": 45.65,
+  "lng": 0.16
+ },
+ {
+  "city": "Angra do Heroísmo",
+  "state": "Azores",
+  "country": "Portugal",
+  "lat": 38.6556,
+  "lng": -27.2194
+ },
+ {
+  "city": "Angra dos Reis",
+  "state": "Rio de Janeiro",
+  "country": "Brazil",
+  "lat": -23.0067,
+  "lng": -44.3181
+ },
+ {
+  "city": "Angren",
+  "state": "Toshkent",
+  "country": "Uzbekistan",
+  "lat": 41.0167,
+  "lng": 70.1436
+ },
+ {
+  "city": "Angri",
+  "state": "Campania",
+  "country": "Italy",
+  "lat": 40.7333,
+  "lng": 14.5667
+ },
+ {
+  "city": "Angul",
+  "state": "Odisha",
+  "country": "India",
+  "lat": 20.8381,
+  "lng": 85.0956
+ },
+ {
+  "city": "Anguo",
+  "state": "Hebei",
+  "country": "China",
+  "lat": 38.418,
+  "lng": 115.327
+ },
+ {
+  "city": "Anilao",
+  "state": "Iloilo",
+  "country": "Philippines",
+  "lat": 10.9785,
+  "lng": 122.7531
+ },
+ {
+  "city": "Anjad",
+  "state": "Madhya Pradesh",
+  "country": "India",
+  "lat": 22.0417,
+  "lng": 75.0552
+ },
+ {
+  "city": "Anjangaon",
+  "state": "Mahārāshtra",
+  "country": "India",
+  "lat": 21.15,
+  "lng": 77.28
+ },
+ {
+  "city": "Anju",
+  "state": "P’yŏngnam",
+  "country": "Korea, North",
+  "lat": 39.62,
+  "lng": 125.66
+ },
+ {
+  "city": "Anjōmachi",
+  "state": "Aichi",
+  "country": "Japan",
+  "lat": 34.9587,
+  "lng": 137.0803
+ },
+ {
+  "city": "Ankadinondry-Sakay",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -19,
+  "lng": 46.4639
+ },
+ {
+  "city": "Ankang",
+  "state": "Shaanxi",
+  "country": "China",
+  "lat": 32.6854,
+  "lng": 109.029
+ },
+ {
+  "city": "Ankara",
+  "state": "Ankara",
+  "country": "Turkey",
+  "lat": 39.93,
+  "lng": 32.85
+ },
+ {
+  "city": "Ankazoabokely",
+  "state": "Toliara",
+  "country": "Madagascar",
+  "lat": -21.5036,
+  "lng": 45.2094
+ },
+ {
+  "city": "Ankazomiriotra",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -19.65,
+  "lng": 46.5
+ },
+ {
+  "city": "Ankeny",
+  "state": "Iowa",
+  "country": "United States",
+  "lat": 41.7288,
+  "lng": -93.6031
+ },
+ {
+  "city": "Ankola",
+  "state": "Karnātaka",
+  "country": "India",
+  "lat": 14.6605,
+  "lng": 74.3047
+ },
+ {
+  "city": "Anloga",
+  "state": "Volta",
+  "country": "Ghana",
+  "lat": 5.7919,
+  "lng": 0.9003
+ },
+ {
+  "city": "Anlu",
+  "state": "Hubei",
+  "country": "China",
+  "lat": 31.2667,
+  "lng": 113.6667
+ },
+ {
+  "city": "Ann Arbor",
+  "state": "Michigan",
+  "country": "United States",
+  "lat": 42.2759,
+  "lng": -83.731
+ },
+ {
+  "city": "Annaba",
+  "state": "Annaba",
+  "country": "Algeria",
+  "lat": 36.9,
+  "lng": 7.7667
+ },
+ {
+  "city": "Annaka",
+  "state": "Gunma",
+  "country": "Japan",
+  "lat": 36.3263,
+  "lng": 138.8871
+ },
+ {
+  "city": "Annandale",
+  "state": "Virginia",
+  "country": "United States",
+  "lat": 38.8324,
+  "lng": -77.196
+ },
+ {
+  "city": "Annapolis",
+  "state": "Maryland",
+  "country": "United States",
+  "lat": 38.9706,
+  "lng": -76.5047
+ },
+ {
+  "city": "Annecy",
+  "state": "Auvergne-Rhône-Alpes",
+  "country": "France",
+  "lat": 45.916,
+  "lng": 6.133
+ },
+ {
+  "city": "Annemasse",
+  "state": "Auvergne-Rhône-Alpes",
+  "country": "France",
+  "lat": 46.1958,
+  "lng": 6.2364
+ },
+ {
+  "city": "Annigeri",
+  "state": "Karnātaka",
+  "country": "India",
+  "lat": 15.4251,
+  "lng": 75.4335
+ },
+ {
+  "city": "Anniston",
+  "state": "Alabama",
+  "country": "United States",
+  "lat": 33.6712,
+  "lng": -85.8135
+ },
+ {
+  "city": "Anosiala",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -18.7833,
+  "lng": 47.4167
+ },
+ {
+  "city": "Anqing",
+  "state": "Anhui",
+  "country": "China",
+  "lat": 30.5318,
+  "lng": 117.1153
+ },
+ {
+  "city": "Anqiu",
+  "state": "Shandong",
+  "country": "China",
+  "lat": 36.478,
+  "lng": 119.219
+ },
+ {
+  "city": "Ansan",
+  "state": "Gyeonggi",
+  "country": "Korea, South",
+  "lat": 37.3167,
+  "lng": 126.8333
+ },
+ {
+  "city": "Ansbach",
+  "state": "Bavaria",
+  "country": "Germany",
+  "lat": 49.3,
+  "lng": 10.5833
+ },
+ {
+  "city": "Anse Rouge",
+  "state": "Artibonite",
+  "country": "Haiti",
+  "lat": 19.6333,
+  "lng": -73.05
+ },
+ {
+  "city": "Anse d’Hainault",
+  "state": "Grand’Anse",
+  "country": "Haiti",
+  "lat": 18.5,
+  "lng": -74.45
+ },
+ {
+  "city": "Anse à Galets",
+  "state": "Ouest",
+  "country": "Haiti",
+  "lat": 18.8333,
+  "lng": -72.8667
+ },
+ {
+  "city": "Anse à Pitre",
+  "state": "Sud-Est",
+  "country": "Haiti",
+  "lat": 18.05,
+  "lng": -71.75
+ },
+ {
+  "city": "Anse-à-Foleur",
+  "state": "Nord-Ouest",
+  "country": "Haiti",
+  "lat": 19.9,
+  "lng": -72.6167
+ },
+ {
+  "city": "Anse-à-Veau",
+  "state": "Nippes",
+  "country": "Haiti",
+  "lat": 18.5167,
+  "lng": -73.35
+ },
+ {
+  "city": "Anseong",
+  "state": "Gyeonggi",
+  "country": "Korea, South",
+  "lat": 37.0078,
+  "lng": 127.2797
+ },
+ {
+  "city": "Anserma",
+  "state": "Caldas",
+  "country": "Colombia",
+  "lat": 5.2381,
+  "lng": -75.784
+ },
+ {
+  "city": "Anshan",
+  "state": "Liaoning",
+  "country": "China",
+  "lat": 41.108,
+  "lng": 122.994
+ },
+ {
+  "city": "Anshan",
+  "state": "Hebei",
+  "country": "China",
+  "lat": 39.7144,
+  "lng": 118.9964
+ },
+ {
+  "city": "Anshun",
+  "state": "Guizhou",
+  "country": "China",
+  "lat": 26.2531,
+  "lng": 105.9476
+ },
+ {
+  "city": "Ansongo",
+  "state": "Gao",
+  "country": "Mali",
+  "lat": 15.6594,
+  "lng": 0.5017
+ },
+ {
+  "city": "Antalaha",
+  "state": "Antsiranana",
+  "country": "Madagascar",
+  "lat": -14.8833,
+  "lng": 50.25
+ },
+ {
+  "city": "Antalya",
+  "state": "Antalya",
+  "country": "Turkey",
+  "lat": 36.8874,
+  "lng": 30.7075
+ },
+ {
+  "city": "Antananarivo",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -18.91,
+  "lng": 47.525
+ },
+ {
+  "city": "Antanifotsy",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -19.68,
+  "lng": 47.33
+ },
+ {
+  "city": "Antehiroka",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -18.85,
+  "lng": 47.4833
+ },
+ {
+  "city": "Antelope",
+  "state": "California",
+  "country": "United States",
+  "lat": 38.7153,
+  "lng": -121.361
+ },
+ {
+  "city": "Antequera",
+  "state": "Andalusia",
+  "country": "Spain",
+  "lat": 37.0183,
+  "lng": -4.5597
+ },
+ {
+  "city": "Antibes",
+  "state": "Provence-Alpes-Côte d’Azur",
+  "country": "France",
+  "lat": 43.5808,
+  "lng": 7.1239
+ },
+ {
+  "city": "Antigua Guatemala",
+  "state": "Sacatepéquez",
+  "country": "Guatemala",
+  "lat": 14.5667,
+  "lng": -90.7333
+ },
+ {
+  "city": "Antiguo Cuscatlán",
+  "state": "La Libertad",
+  "country": "El Salvador",
+  "lat": 13.6731,
+  "lng": -89.2406
+ },
+ {
+  "city": "Antioch",
+  "state": "California",
+  "country": "United States",
+  "lat": 37.9787,
+  "lng": -121.796
+ },
+ {
+  "city": "Antipolo",
+  "state": "Rizal",
+  "country": "Philippines",
+  "lat": 14.5842,
+  "lng": 121.1763
+ },
+ {
+  "city": "Antofagasta",
+  "state": "Antofagasta",
+  "country": "Chile",
+  "lat": -23.65,
+  "lng": -70.4
+ },
+ {
+  "city": "Antony",
+  "state": "Île-de-France",
+  "country": "France",
+  "lat": 48.7539,
+  "lng": 2.2975
+ },
+ {
+  "city": "Antratsyt",
+  "state": "Luhanska Oblast",
+  "country": "Ukraine",
+  "lat": 48.1192,
+  "lng": 39.09
+ },
+ {
+  "city": "Antsalova",
+  "state": "Mahajanga",
+  "country": "Madagascar",
+  "lat": -18.6667,
+  "lng": 44.6167
+ },
+ {
+  "city": "Antsinanantsena",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -18.8333,
+  "lng": 47.55
+ },
+ {
+  "city": "Antsirabe",
+  "state": "Antananarivo",
+  "country": "Madagascar",
+  "lat": -19.8667,
+  "lng": 47.0333
+ },
+ {
+  "city": "Antsiranana",
+  "state": "Antsiranana",
+  "country": "Madagascar",
+  "lat": -12.3,
+  "lng": 49.2833
+ },
+ {
+  "city": "Antsohihy",
+  "state": "Mahajanga",
+  "country": "Madagascar",
+  "lat": -14.8762,
+  "lng": 47.9834
+ },
+ {
+  "city": "Antsohimbondrona",
+  "state": "Antsiranana",
+  "country": "Madagascar",
+  "lat": -13.0833,
+  "lng": 48.85
+ },
+ {
+  "city": "Antwerp",
+  "state": "Flanders",
+  "country": "Belgium",
+  "lat": 51.2178,
+  "lng": 4.4003
+ },
+ {
+  "city": "António Enes",
+  "state": "Nampula",
+  "country": "Mozambique",
+  "lat": -16.2333,
+  "lng": 39.9167
+ },
+ {
+  "city": "Anuradhapura",
+  "state": "Northern",
+  "country": "Sri Lanka",
+  "lat": 8.335,
+  "lng": 80.4108
+ },
+ {
+  "city": "Anyang",
+  "state": "Gyeonggi",
+  "country": "Korea, South",
+  "lat": 37.3833,
+  "lng": 126.9333
+ },
+ {
+  "city": "Anyuan",
+  "state": "Gansu",
+  "country": "China",
+  "lat": 34.8839,
+  "lng": 105.2758
+ },
+ {
+  "city": "Anzhero-Sudzhensk",
+  "state": "Kemerovskaya Oblast’",
+  "country": "Russia",
+  "lat": 56.0833,
+  "lng": 86.0333
+ },
+ {
+  "city": "Anzio",
+  "state": "Lazio",
+  "country": "Italy",
+  "lat": 41.4472,
+  "lng": 12.6283
+ },
+ {
+  "city": "Anápolis",
+  "state": "Goiás",
+  "country": "Brazil",
+  "lat": -16.3339,
+  "lng": -48.9519
+ },
+ {
+  "city": "An’gang",
+  "state": "Gyeongbuk",
+  "country": "Korea, South",
+  "lat": 35.99,
+  "lng": 129.227
+ },
+ {
+  "city": "Aomori",
+  "state": "Aomori",
+  "country": "Japan",
+  "lat": 40.8228,
+  "lng": 140.7469
+ },
+ {
+  "city": "Aosta",
+  "state": "Valle d’Aosta",
+  "country": "Italy",
+  "lat": 45.7333,
+  "lng": 7.3167
+ },
+ {
+  "city": "Aourir",
+  "state": "Souss-Massa",
+  "country": "Morocco",
+  "lat": 30.4833,
+  "lng": -9.6333
+ },
+ {
+  "city": "Apac",
+  "state": "Apac",
+  "country": "Uganda",
+  "lat": 1.985,
+  "lng": 32.535
+ },
+ {
+  "city": "Apache Junction",
+  "state": "Arizona",
+  "country": "United States",
+  "lat": 33.3985,
+  "lng": -111.535
+ },
+ {
+  "city": "Apalit",
+  "state": "Pampanga",
+  "country": "Philippines",
+  "lat": 14.9496,
+  "lng": 120.7587
+ },
+ {
+  "city": "Apan",
+  "state": "Hidalgo",
+  "country": "Mexico",
+  "lat": 19.7,
+  "lng": -98.4333
+ },
+ {
+  "city": "Apapa",
+  "state": "Lagos",
+  "country": "Nigeria",
+  "lat": 6.45,
+  "lng": 3.3667
+ },
+ {
+  "city": "Aparecida",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -22.8472,
+  "lng": -45.23
+ },
+ {
+  "city": "Aparri",
+  "state": "Cagayan",
+  "country": "Philippines",
+  "lat": 18.3575,
+  "lng": 121.6372
+ },
+ {
+  "city": "Apartadó",
+  "state": "Antioquia",
+  "country": "Colombia",
+  "lat": 7.8833,
+  "lng": -76.6333
+ },
+ {
+  "city": "Apaseo el Alto",
+  "state": "Guanajuato",
+  "country": "Mexico",
+  "lat": 20.45,
+  "lng": -100.6167
+ },
+ {
+  "city": "Apaseo el Grande",
+  "state": "Guanajuato",
+  "country": "Mexico",
+  "lat": 20.5531,
+  "lng": -100.6347
+ },
+ {
+  "city": "Apatity",
+  "state": "Murmanskaya Oblast’",
+  "country": "Russia",
+  "lat": 67.5667,
+  "lng": 33.4
+ },
+ {
+  "city": "Apatzingan de la Constitucion",
+  "state": "Michoacán",
+  "country": "Mexico",
+  "lat": 19.0886,
+  "lng": -102.3508
+ },
+ {
+  "city": "Apeldoorn",
+  "state": "Gelderland",
+  "country": "Netherlands",
+  "lat": 52.2167,
+  "lng": 5.9667
+ },
+ {
+  "city": "Apex",
+  "state": "North Carolina",
+  "country": "United States",
+  "lat": 35.7237,
+  "lng": -78.8743
+ },
+ {
+  "city": "Apia",
+  "state": "Tuamasaga",
+  "country": "Samoa",
+  "lat": -13.8333,
+  "lng": -171.75
+ },
+ {
+  "city": "Apizaco",
+  "state": "Tlaxcala",
+  "country": "Mexico",
+  "lat": 19.4167,
+  "lng": -98.1333
+ },
+ {
+  "city": "Aplahoué",
+  "state": "Couffo",
+  "country": "Benin",
+  "lat": 6.9333,
+  "lng": 1.6833
+ },
+ {
+  "city": "Apodi",
+  "state": "Rio Grande do Norte",
+  "country": "Brazil",
+  "lat": -5.6639,
+  "lng": -37.7989
+ },
+ {
+  "city": "Apopa",
+  "state": "San Salvador",
+  "country": "El Salvador",
+  "lat": 13.8,
+  "lng": -89.1833
+ },
+ {
+  "city": "Apopka",
+  "state": "Florida",
+  "country": "United States",
+  "lat": 28.7015,
+  "lng": -81.5316
+ },
+ {
+  "city": "Apple Valley",
+  "state": "California",
+  "country": "United States",
+  "lat": 34.5352,
+  "lng": -117.2109
+ },
+ {
+  "city": "Apple Valley",
+  "state": "Minnesota",
+  "country": "United States",
+  "lat": 44.7457,
+  "lng": -93.2004
+ },
+ {
+  "city": "Appleton",
+  "state": "Wisconsin",
+  "country": "United States",
+  "lat": 44.278,
+  "lng": -88.3892
+ },
+ {
+  "city": "Aprilia",
+  "state": "Lazio",
+  "country": "Italy",
+  "lat": 41.5833,
+  "lng": 12.65
+ },
+ {
+  "city": "Apsheronsk",
+  "state": "Krasnodarskiy Kray",
+  "country": "Russia",
+  "lat": 44.4667,
+  "lng": 39.7333
+ },
+ {
+  "city": "Apucarana",
+  "state": "Paraná",
+  "country": "Brazil",
+  "lat": -23.5508,
+  "lng": -51.4608
+ },
+ {
+  "city": "Apóstoles",
+  "state": "Misiones",
+  "country": "Argentina",
+  "lat": -27.9167,
+  "lng": -55.7667
+ },
+ {
+  "city": "Aqsū",
+  "state": "Pavlodar",
+  "country": "Kazakhstan",
+  "lat": 52.0333,
+  "lng": 76.9167
+ },
+ {
+  "city": "Aqtaū",
+  "state": "Mangghystaū",
+  "country": "Kazakhstan",
+  "lat": 43.6525,
+  "lng": 51.1575
+ },
+ {
+  "city": "Aqtöbe",
+  "state": "Aqtöbe",
+  "country": "Kazakhstan",
+  "lat": 50.2836,
+  "lng": 57.2297
+ },
+ {
+  "city": "Aquidauana",
+  "state": "Mato Grosso do Sul",
+  "country": "Brazil",
+  "lat": -20.4708,
+  "lng": -55.7869
+ },
+ {
+  "city": "Aquin",
+  "state": "Sud",
+  "country": "Haiti",
+  "lat": 18.2833,
+  "lng": -73.4
+ },
+ {
+  "city": "Aquiraz",
+  "state": "Ceará",
+  "country": "Brazil",
+  "lat": -3.9,
+  "lng": -38.3831
+ },
+ {
+  "city": "Ar Ramthā",
+  "state": "Irbid",
+  "country": "Jordan",
+  "lat": 32.5589,
+  "lng": 36.0147
+ },
+ {
+  "city": "Ar Ramādī",
+  "state": "Al Anbār",
+  "country": "Iraq",
+  "lat": 33.4258,
+  "lng": 43.2992
+ },
+ {
+  "city": "Ar Raqqah",
+  "state": "Ar Raqqah",
+  "country": "Syria",
+  "lat": 35.95,
+  "lng": 39.01
+ },
+ {
+  "city": "Ar Rass",
+  "state": "Al Qaşīm",
+  "country": "Saudi Arabia",
+  "lat": 25.8667,
+  "lng": 43.5
+ },
+ {
+  "city": "Ar Rastan",
+  "state": "Ḩimş",
+  "country": "Syria",
+  "lat": 34.9167,
+  "lng": 36.7333
+ },
+ {
+  "city": "Ar Rayyān",
+  "state": "Ar Rayyān",
+  "country": "Qatar",
+  "lat": 25.25,
+  "lng": 51.4
+ },
+ {
+  "city": "Ar Raḩmānīyah",
+  "state": "Al Buḩayrah",
+  "country": "Egypt",
+  "lat": 31.1062,
+  "lng": 30.6337
+ },
+ {
+  "city": "Ar Riqqah",
+  "state": "Al Aḩmadī",
+  "country": "Kuwait",
+  "lat": 29.1489,
+  "lng": 48.1057
+ },
+ {
+  "city": "Ar Rumaythah",
+  "state": "Al Muthanná",
+  "country": "Iraq",
+  "lat": 31.5209,
+  "lng": 45.2017
+ },
+ {
+  "city": "Ar Ruseris",
+  "state": "Blue Nile",
+  "country": "Sudan",
+  "lat": 11.85,
+  "lng": 34.3833
+ },
+ {
+  "city": "Ar Rustāq",
+  "state": "Janūb al Bāţinah",
+  "country": "Oman",
+  "lat": 23.3908,
+  "lng": 57.4244
+ },
+ {
+  "city": "Ar Ruşayfah",
+  "state": "Az Zarqā’",
+  "country": "Jordan",
+  "lat": 32.0178,
+  "lng": 36.0464
+ },
+ {
+  "city": "Ar Ruḩaybah",
+  "state": "Rīf Dimashq",
+  "country": "Syria",
+  "lat": 33.7436,
+  "lng": 36.7012
+ },
+ {
+  "city": "Araban",
+  "state": "Gaziantep",
+  "country": "Turkey",
+  "lat": 37.4247,
+  "lng": 37.6928
+ },
+ {
+  "city": "Aracaju",
+  "state": "Sergipe",
+  "country": "Brazil",
+  "lat": -10.9167,
+  "lng": -37.05
+ },
+ {
+  "city": "Aracataca",
+  "state": "Magdalena",
+  "country": "Colombia",
+  "lat": 10.5937,
+  "lng": -74.1928
+ },
+ {
+  "city": "Aracati",
+  "state": "Ceará",
+  "country": "Brazil",
+  "lat": -4.5619,
+  "lng": -37.77
+ },
+ {
+  "city": "Araci",
+  "state": "Bahia",
+  "country": "Brazil",
+  "lat": -11.3328,
+  "lng": -38.9669
+ },
+ {
+  "city": "Aracruz",
+  "state": "Espírito Santo",
+  "country": "Brazil",
+  "lat": -19.82,
+  "lng": -40.2728
+ },
+ {
+  "city": "Arad",
+  "state": "Arad",
+  "country": "Romania",
+  "lat": 46.175,
+  "lng": 21.3125
+ },
+ {
+  "city": "Arafat",
+  "state": "Nouakchott Sud",
+  "country": "Mauritania",
+  "lat": 18.0464,
+  "lng": -15.9719
+ },
+ {
+  "city": "Araguari",
+  "state": "Minas Gerais",
+  "country": "Brazil",
+  "lat": -18.6489,
+  "lng": -48.1869
+ },
+ {
+  "city": "Araguatins",
+  "state": "Tocantins",
+  "country": "Brazil",
+  "lat": -5.6508,
+  "lng": -48.1239
+ },
+ {
+  "city": "Araguaína",
+  "state": "Tocantins",
+  "country": "Brazil",
+  "lat": -7.1908,
+  "lng": -48.2069
+ },
+ {
+  "city": "Araioses",
+  "state": "Maranhão",
+  "country": "Brazil",
+  "lat": -2.89,
+  "lng": -41.9028
+ },
+ {
+  "city": "Arakawa",
+  "state": "Tōkyō",
+  "country": "Japan",
+  "lat": 35.7333,
+  "lng": 139.7833
+ },
+ {
+  "city": "Araklı",
+  "state": "Trabzon",
+  "country": "Turkey",
+  "lat": 40.9333,
+  "lng": 40.05
+ },
+ {
+  "city": "Aral",
+  "state": "Xinjiang",
+  "country": "China",
+  "lat": 40.548,
+  "lng": 81.281
+ },
+ {
+  "city": "Aranda de Duero",
+  "state": "Castille-Leon",
+  "country": "Spain",
+  "lat": 41.6833,
+  "lng": -3.6833
+ },
+ {
+  "city": "Aranjuez",
+  "state": "Madrid",
+  "country": "Spain",
+  "lat": 40.0333,
+  "lng": -3.6028
+ },
+ {
+  "city": "Arankhola",
+  "state": "Dhaka",
+  "country": "Bangladesh",
+  "lat": 24.661,
+  "lng": 90.0884
+ },
+ {
+  "city": "Arantāngi",
+  "state": "Tamil Nādu",
+  "country": "India",
+  "lat": 10.1686,
+  "lng": 78.992
+ },
+ {
+  "city": "Aranđelovac",
+  "state": "Aranđelovac",
+  "country": "Serbia",
+  "lat": 44.3,
+  "lng": 20.5667
+ },
+ {
+  "city": "Arao",
+  "state": "Kumamoto",
+  "country": "Japan",
+  "lat": 32.9833,
+  "lng": 130.4353
+ },
+ {
+  "city": "Arapiraca",
+  "state": "Alagoas",
+  "country": "Brazil",
+  "lat": -9.7519,
+  "lng": -36.6608
+ },
+ {
+  "city": "Arapongas",
+  "state": "Paraná",
+  "country": "Brazil",
+  "lat": -23.4189,
+  "lng": -51.4239
+ },
+ {
+  "city": "Araquari",
+  "state": "Santa Catarina",
+  "country": "Brazil",
+  "lat": -26.3833,
+  "lng": -48.7167
+ },
+ {
+  "city": "Araranguá",
+  "state": "Santa Catarina",
+  "country": "Brazil",
+  "lat": -28.935,
+  "lng": -49.4858
+ },
+ {
+  "city": "Araraquara",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -21.7939,
+  "lng": -48.1758
+ },
+ {
+  "city": "Araras",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -22.3572,
+  "lng": -47.3844
+ },
+ {
+  "city": "Araripina",
+  "state": "Pernambuco",
+  "country": "Brazil",
+  "lat": -7.55,
+  "lng": -40.5667
+ },
+ {
+  "city": "Araruama",
+  "state": "Rio de Janeiro",
+  "country": "Brazil",
+  "lat": -22.8728,
+  "lng": -42.3428
+ },
+ {
+  "city": "Arauca",
+  "state": "Arauca",
+  "country": "Colombia",
+  "lat": 7.0903,
+  "lng": -70.7617
+ },
+ {
+  "city": "Araucária",
+  "state": "Paraná",
+  "country": "Brazil",
+  "lat": -25.4167,
+  "lng": -49.25
+ },
+ {
+  "city": "Arauquita",
+  "state": "Arauca",
+  "country": "Colombia",
+  "lat": 7.0303,
+  "lng": -71.4356
+ },
+ {
+  "city": "Araure",
+  "state": "Portuguesa",
+  "country": "Venezuela",
+  "lat": 9.5667,
+  "lng": -69.2167
+ },
+ {
+  "city": "Aravan",
+  "state": "Osh",
+  "country": "Kyrgyzstan",
+  "lat": 40.515,
+  "lng": 72.4992
+ },
+ {
+  "city": "Aravankara",
+  "state": "Kerala",
+  "country": "India",
+  "lat": 11.0745,
+  "lng": 75.9369
+ },
+ {
+  "city": "Arawa",
+  "state": "Bougainville",
+  "country": "Papua New Guinea",
+  "lat": -6.225,
+  "lng": 155.5667
+ },
+ {
+  "city": "Araxá",
+  "state": "Minas Gerais",
+  "country": "Brazil",
+  "lat": -19.5928,
+  "lng": -46.9408
+ },
+ {
+  "city": "Arayat",
+  "state": "Pampanga",
+  "country": "Philippines",
+  "lat": 15.1493,
+  "lng": 120.7692
+ },
+ {
+  "city": "Araçatuba",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -21.2089,
+  "lng": -50.4328
+ },
+ {
+  "city": "Araçoiaba da Serra",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -23.5053,
+  "lng": -47.6142
+ },
+ {
+  "city": "Araçuaí",
+  "state": "Minas Gerais",
+  "country": "Brazil",
+  "lat": -16.85,
+  "lng": -42.07
+ },
+ {
+  "city": "Arbaoua",
+  "state": "Rabat-Salé-Kénitra",
+  "country": "Morocco",
+  "lat": 34.9,
+  "lng": -5.9167
+ },
+ {
+  "city": "Arboletes",
+  "state": "Antioquia",
+  "country": "Colombia",
+  "lat": 8.8517,
+  "lng": -76.4283
+ },
+ {
+  "city": "Arcadia",
+  "state": "California",
+  "country": "United States",
+  "lat": 34.1342,
+  "lng": -118.0373
+ },
+ {
+  "city": "Arcahaie",
+  "state": "Ouest",
+  "country": "Haiti",
+  "lat": 18.7667,
+  "lng": -72.5167
+ },
+ {
+  "city": "Arcos",
+  "state": "Minas Gerais",
+  "country": "Brazil",
+  "lat": -20.2914,
+  "lng": -45.5397
+ },
+ {
+  "city": "Arcos de la Frontera",
+  "state": "Andalusia",
+  "country": "Spain",
+  "lat": 36.75,
+  "lng": -5.8
+ },
+ {
+  "city": "Arcot",
+  "state": "Tamil Nādu",
+  "country": "India",
+  "lat": 12.9047,
+  "lng": 79.3238
+ },
+ {
+  "city": "Arcoverde",
+  "state": "Pernambuco",
+  "country": "Brazil",
+  "lat": -8.4189,
+  "lng": -37.0539
+ },
+ {
+  "city": "Ardabīl",
+  "state": "Ardabīl",
+  "country": "Iran",
+  "lat": 38.2425,
+  "lng": 48.29
+ },
+ {
+  "city": "Ardakān",
+  "state": "Yazd",
+  "country": "Iran",
+  "lat": 32.3061,
+  "lng": 54.0081
+ },
+ {
+  "city": "Ardea",
+  "state": "Lazio",
+  "country": "Italy",
+  "lat": 41.6167,
+  "lng": 12.55
+ },
+ {
+  "city": "Arden-Arcade",
+  "state": "California",
+  "country": "United States",
+  "lat": 38.6017,
+  "lng": -121.3845
+ },
+ {
+  "city": "Ardeşen",
+  "state": "Rize",
+  "country": "Turkey",
+  "lat": 41.19,
+  "lng": 40.9831
+ },
+ {
+  "city": "Arecibo",
+  "state": "Puerto Rico",
+  "country": "Puerto Rico",
+  "lat": 18.4491,
+  "lng": -66.7387
+ },
+ {
+  "city": "Areguá",
+  "state": "Central",
+  "country": "Paraguay",
+  "lat": -25.2953,
+  "lng": -57.4147
+ },
+ {
+  "city": "Arendal",
+  "state": "Agder",
+  "country": "Norway",
+  "lat": 58.4608,
+  "lng": 8.7664
+ },
+ {
+  "city": "Arequipa",
+  "state": "Arequipa",
+  "country": "Peru",
+  "lat": -16.4,
+  "lng": -71.5333
+ },
+ {
+  "city": "Arezzo",
+  "state": "Tuscany",
+  "country": "Italy",
+  "lat": 43.4633,
+  "lng": 11.8783
+ },
+ {
+  "city": "Argao",
+  "state": "Cebu",
+  "country": "Philippines",
+  "lat": 9.88,
+  "lng": 123.6
+ },
+ {
+  "city": "Argenteuil",
+  "state": "Île-de-France",
+  "country": "France",
+  "lat": 48.95,
+  "lng": 2.25
+ },
+ {
+  "city": "Argun",
+  "state": "Chechnya",
+  "country": "Russia",
+  "lat": 43.2944,
+  "lng": 45.8839
+ },
+ {
+  "city": "Argyroúpoli",
+  "state": "Attikí",
+  "country": "Greece",
+  "lat": 37.9,
+  "lng": 23.75
+ },
+ {
+  "city": "Ariana",
+  "state": "L’Ariana",
+  "country": "Tunisia",
+  "lat": 36.8625,
+  "lng": 10.1956
+ },
+ {
+  "city": "Aribinda",
+  "state": "Sahel",
+  "country": "Burkina Faso",
+  "lat": 14.2292,
+  "lng": -0.8633
+ },
+ {
+  "city": "Arica",
+  "state": "Arica y Parinacota",
+  "country": "Chile",
+  "lat": -18.4778,
+  "lng": -70.3181
+ },
+ {
+  "city": "Arifiye",
+  "state": "Sakarya",
+  "country": "Turkey",
+  "lat": 40.7167,
+  "lng": 30.3667
+ },
+ {
+  "city": "Arifwala",
+  "state": "Punjab",
+  "country": "Pakistan",
+  "lat": 30.2981,
+  "lng": 73.0561
+ },
+ {
+  "city": "Arima",
+  "state": "Arima",
+  "country": "Trinidad and Tobago",
+  "lat": 10.6333,
+  "lng": -61.2833
+ },
+ {
+  "city": "Aringay",
+  "state": "La Union",
+  "country": "Philippines",
+  "lat": 16.3982,
+  "lng": 120.3555
+ },
+ {
+  "city": "Ariquemes",
+  "state": "Rondônia",
+  "country": "Brazil",
+  "lat": -9.9161,
+  "lng": -63.0408
+ },
+ {
+  "city": "Aristóbulo del Valle",
+  "state": "Misiones",
+  "country": "Argentina",
+  "lat": -27.1167,
+  "lng": -54.9167
+ },
+ {
+  "city": "Aritao",
+  "state": "Nueva Vizcaya",
+  "country": "Philippines",
+  "lat": 16.2973,
+  "lng": 121.0338
+ },
+ {
+  "city": "Arjona",
+  "state": "Bolívar",
+  "country": "Colombia",
+  "lat": 10.2586,
+  "lng": -75.3461
+ },
+ {
+  "city": "Arkhangelsk",
+  "state": "Arkhangel’skaya Oblast’",
+  "country": "Russia",
+  "lat": 64.5333,
+  "lng": 40.5333
+ },
+ {
+  "city": "Arkonam",
+  "state": "Tamil Nādu",
+  "country": "India",
+  "lat": 13.0778,
+  "lng": 79.6667
+ },
+ {
+  "city": "Arles",
+  "state": "Provence-Alpes-Côte d’Azur",
+  "country": "France",
+  "lat": 43.6767,
+  "lng": 4.6278
+ },
+ {
+  "city": "Arlington",
+  "state": "Texas",
+  "country": "United States",
+  "lat": 32.6998,
+  "lng": -97.125
+ },
+ {
+  "city": "Arlington",
+  "state": "Virginia",
+  "country": "United States",
+  "lat": 38.8786,
+  "lng": -77.1011
+ },
+ {
+  "city": "Arlington",
+  "state": "Massachusetts",
+  "country": "United States",
+  "lat": 42.4187,
+  "lng": -71.1639
+ },
+ {
+  "city": "Arlington Heights",
+  "state": "Illinois",
+  "country": "United States",
+  "lat": 42.0955,
+  "lng": -87.9826
+ },
+ {
+  "city": "Arlit",
+  "state": "Agadez",
+  "country": "Niger",
+  "lat": 18.7333,
+  "lng": 7.3833
+ },
+ {
+  "city": "Arlon",
+  "state": "Wallonia",
+  "country": "Belgium",
+  "lat": 49.6833,
+  "lng": 5.8167
+ },
+ {
+  "city": "Armant",
+  "state": "Qinā",
+  "country": "Egypt",
+  "lat": 25.6167,
+  "lng": 32.5333
+ },
+ {
+  "city": "Armavir",
+  "state": "Krasnodarskiy Kray",
+  "country": "Russia",
+  "lat": 45,
+  "lng": 41.1167
+ },
+ {
+  "city": "Armavir",
+  "state": "Armavir",
+  "country": "Armenia",
+  "lat": 40.15,
+  "lng": 44.04
+ },
+ {
+  "city": "Armação dos Búzios",
+  "state": "Rio de Janeiro",
+  "country": "Brazil",
+  "lat": -22.7469,
+  "lng": -41.8819
+ },
+ {
+  "city": "Armenia",
+  "state": "Quindío",
+  "country": "Colombia",
+  "lat": 4.53,
+  "lng": -75.68
+ },
+ {
+  "city": "Armenia",
+  "state": "Sonsonate",
+  "country": "El Salvador",
+  "lat": 13.75,
+  "lng": -89.5
+ },
+ {
+  "city": "Armūr",
+  "state": "Telangāna",
+  "country": "India",
+  "lat": 18.79,
+  "lng": 78.29
+ },
+ {
+  "city": "Arnavutköy",
+  "state": "İstanbul",
+  "country": "Turkey",
+  "lat": 41.1856,
+  "lng": 28.7406
+ },
+ {
+  "city": "Arnhem",
+  "state": "Gelderland",
+  "country": "Netherlands",
+  "lat": 51.9833,
+  "lng": 5.9167
+ },
+ {
+  "city": "Arni",
+  "state": "Tamil Nādu",
+  "country": "India",
+  "lat": 12.6677,
+  "lng": 79.2853
+ },
+ {
+  "city": "Arnold",
+  "state": "Nottinghamshire",
+  "country": "United Kingdom",
+  "lat": 53.005,
+  "lng": -1.127
+ },
+ {
+  "city": "Arnsberg",
+  "state": "North Rhine-Westphalia",
+  "country": "Germany",
+  "lat": 51.3833,
+  "lng": 8.0833
+ },
+ {
+  "city": "Arona",
+  "state": "Canary Islands",
+  "country": "Spain",
+  "lat": 28.1,
+  "lng": -16.6667
+ },
+ {
+  "city": "Aroroy",
+  "state": "Masbate",
+  "country": "Philippines",
+  "lat": 12.5125,
+  "lng": 123.3989
+ },
+ {
+  "city": "Arrah",
+  "state": "Bihār",
+  "country": "India",
+  "lat": 25.5514,
+  "lng": 84.6603
+ },
+ {
+  "city": "Arraial do Cabo",
+  "state": "Rio de Janeiro",
+  "country": "Brazil",
+  "lat": -22.9658,
+  "lng": -42.0278
+ },
+ {
+  "city": "Arraiján",
+  "state": "Panamá Oeste",
+  "country": "Panama",
+  "lat": 8.95,
+  "lng": -79.65
+ },
+ {
+  "city": "Arras",
+  "state": "Hauts-de-France",
+  "country": "France",
+  "lat": 50.292,
+  "lng": 2.78
+ },
+ {
+  "city": "Arrecife",
+  "state": "Canary Islands",
+  "country": "Spain",
+  "lat": 28.9625,
+  "lng": -13.5506
+ },
+ {
+  "city": "Arris",
+  "state": "Batna",
+  "country": "Algeria",
+  "lat": 35.25,
+  "lng": 6.35
+ },
+ {
+  "city": "Arroyo Naranjo",
+  "state": "La Habana",
+  "country": "Cuba",
+  "lat": 23.0436,
+  "lng": -82.3328
+ },
+ {
+  "city": "Arroyomolinos",
+  "state": "Madrid",
+  "country": "Spain",
+  "lat": 40.2667,
+  "lng": -3.9
+ },
+ {
+  "city": "Arsenyev",
+  "state": "Primorskiy Kray",
+  "country": "Russia",
+  "lat": 44.1667,
+  "lng": 133.25
+ },
+ {
+  "city": "Arsikere",
+  "state": "Karnātaka",
+  "country": "India",
+  "lat": 13.3139,
+  "lng": 76.2369
+ },
+ {
+  "city": "Arsin",
+  "state": "Trabzon",
+  "country": "Turkey",
+  "lat": 40.95,
+  "lng": 39.9333
+ },
+ {
+  "city": "Arsuz",
+  "state": "Hatay",
+  "country": "Turkey",
+  "lat": 36.4128,
+  "lng": 35.8867
+ },
+ {
+  "city": "Arta",
+  "state": "Arta",
+  "country": "Djibouti",
+  "lat": 11.5236,
+  "lng": 42.8472
+ },
+ {
+  "city": "Arteijo",
+  "state": "Galicia",
+  "country": "Spain",
+  "lat": 43.3044,
+  "lng": -8.5114
+ },
+ {
+  "city": "Artemisa",
+  "state": "Artemisa",
+  "country": "Cuba",
+  "lat": 22.8136,
+  "lng": -82.7633
+ },
+ {
+  "city": "Artigas",
+  "state": "Artigas",
+  "country": "Uruguay",
+  "lat": -30.4667,
+  "lng": -56.4667
+ },
+ {
+  "city": "Artur Nogueira",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -22.5731,
+  "lng": -47.1725
+ },
+ {
+  "city": "Artëm",
+  "state": "Primorskiy Kray",
+  "country": "Russia",
+  "lat": 43.3667,
+  "lng": 132.2
+ },
+ {
+  "city": "Arua",
+  "state": "Arua",
+  "country": "Uganda",
+  "lat": 3.0353,
+  "lng": 30.9108
+ },
+ {
+  "city": "Arucas",
+  "state": "Canary Islands",
+  "country": "Spain",
+  "lat": 28.1188,
+  "lng": -15.5231
+ },
+ {
+  "city": "Arujá",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -23.3967,
+  "lng": -46.3211
+ },
+ {
+  "city": "Aruppukkottai",
+  "state": "Tamil Nādu",
+  "country": "India",
+  "lat": 9.5139,
+  "lng": 78.1002
+ },
+ {
+  "city": "Arusha",
+  "state": "Arusha",
+  "country": "Tanzania",
+  "lat": -3.3667,
+  "lng": 36.6833
+ },
+ {
+  "city": "Arvada",
+  "state": "Colorado",
+  "country": "United States",
+  "lat": 39.832,
+  "lng": -105.151
+ },
+ {
+  "city": "Arwal",
+  "state": "Bihār",
+  "country": "India",
+  "lat": 25.2442,
+  "lng": 84.6631
+ },
+ {
+  "city": "Arys",
+  "state": "Türkistan",
+  "country": "Kazakhstan",
+  "lat": 42.4333,
+  "lng": 68.8
+ },
+ {
+  "city": "Arzamas",
+  "state": "Nizhegorodskaya Oblast’",
+  "country": "Russia",
+  "lat": 55.4,
+  "lng": 43.8167
+ },
+ {
+  "city": "Arzano",
+  "state": "Campania",
+  "country": "Italy",
+  "lat": 40.9167,
+  "lng": 14.2667
+ },
+ {
+  "city": "Arzew",
+  "state": "Oran",
+  "country": "Algeria",
+  "lat": 35.85,
+  "lng": -0.3167
+ },
+ {
+  "city": "Arāk",
+  "state": "Markazī",
+  "country": "Iran",
+  "lat": 34.0914,
+  "lng": 49.6933
+ },
+ {
+  "city": "Arāmbāgh",
+  "state": "West Bengal",
+  "country": "India",
+  "lat": 22.88,
+  "lng": 87.78
+ },
+ {
+  "city": "Arāria",
+  "state": "Bihār",
+  "country": "India",
+  "lat": 26.15,
+  "lng": 87.52
+ },
+ {
+  "city": "As Safīrah",
+  "state": "Ḩalab",
+  "country": "Syria",
+  "lat": 36.0778,
+  "lng": 37.3733
+ },
+ {
+  "city": "As Salamīyah",
+  "state": "Ḩamāh",
+  "country": "Syria",
+  "lat": 35.0118,
+  "lng": 37.0525
+ },
+ {
+  "city": "As Salţ",
+  "state": "Al Balqā’",
+  "country": "Jordan",
+  "lat": 32.0333,
+  "lng": 35.7333
+ },
+ {
+  "city": "As Samāwah",
+  "state": "Al Muthanná",
+  "country": "Iraq",
+  "lat": 31.3167,
+  "lng": 45.2833
+ },
+ {
+  "city": "As Sa‘dīyah",
+  "state": "Diyālá",
+  "country": "Iraq",
+  "lat": 34.1906,
+  "lng": 45.1208
+ },
+ {
+  "city": "As Sulaymānīyah",
+  "state": "As Sulaymānīyah",
+  "country": "Iraq",
+  "lat": 35.5572,
+  "lng": 45.4356
+ },
+ {
+  "city": "As Suwaydā’",
+  "state": "As Suwaydā’",
+  "country": "Syria",
+  "lat": 32.7125,
+  "lng": 36.5667
+ },
+ {
+  "city": "As Suwayq",
+  "state": "Shamāl al Bāţinah",
+  "country": "Oman",
+  "lat": 23.8494,
+  "lng": 57.4386
+ },
+ {
+  "city": "As Sīb",
+  "state": "Masqaţ",
+  "country": "Oman",
+  "lat": 23.6703,
+  "lng": 58.1891
+ },
+ {
+  "city": "Asaba",
+  "state": "Delta",
+  "country": "Nigeria",
+  "lat": 6.1833,
+  "lng": 6.7333
+ },
+ {
+  "city": "Asadābād",
+  "state": "Hamadān",
+  "country": "Iran",
+  "lat": 34.7825,
+  "lng": 48.1219
+ },
+ {
+  "city": "Asadābād",
+  "state": "Kunaṟ",
+  "country": "Afghanistan",
+  "lat": 34.8742,
+  "lng": 71.1528
+ },
+ {
+  "city": "Asahi",
+  "state": "Chiba",
+  "country": "Japan",
+  "lat": 35.7167,
+  "lng": 140.65
+ },
+ {
+  "city": "Asahikawa",
+  "state": "Hokkaidō",
+  "country": "Japan",
+  "lat": 43.7667,
+  "lng": 142.3667
+ },
+ {
+  "city": "Asaka",
+  "state": "Saitama",
+  "country": "Japan",
+  "lat": 35.7972,
+  "lng": 139.5939
+ },
+ {
+  "city": "Asaka",
+  "state": "Andijon",
+  "country": "Uzbekistan",
+  "lat": 40.6333,
+  "lng": 72.2333
+ },
+ {
+  "city": "Asakuchi",
+  "state": "Okayama",
+  "country": "Japan",
+  "lat": 34.5247,
+  "lng": 133.5875
+ },
+ {
+  "city": "Asakura",
+  "state": "Fukuoka",
+  "country": "Japan",
+  "lat": 33.4167,
+  "lng": 130.6667
+ },
+ {
+  "city": "Asamankese",
+  "state": "Eastern",
+  "country": "Ghana",
+  "lat": 5.8667,
+  "lng": -0.6667
+ },
+ {
+  "city": "Asan",
+  "state": "Chungnam",
+  "country": "Korea, South",
+  "lat": 36.7833,
+  "lng": 126.9833
+ },
+ {
+  "city": "Asan",
+  "state": "Chungnam",
+  "country": "Korea, South",
+  "lat": 36.35,
+  "lng": 126.9167
+ },
+ {
+  "city": "Asbest",
+  "state": "Sverdlovskaya Oblast’",
+  "country": "Russia",
+  "lat": 57,
+  "lng": 61.4667
+ },
+ {
+  "city": "Aschaffenburg",
+  "state": "Bavaria",
+  "country": "Germany",
+  "lat": 49.9667,
+  "lng": 9.15
+ },
+ {
+  "city": "Ascoli Piceno",
+  "state": "Marche",
+  "country": "Italy",
+  "lat": 42.85,
+  "lng": 13.5833
+ },
+ {
+  "city": "Asenovgrad",
+  "state": "Plovdiv",
+  "country": "Bulgaria",
+  "lat": 42.0167,
+  "lng": 24.8667
+ },
+ {
+  "city": "Ash Shaykh Badr",
+  "state": "Ţarţūs",
+  "country": "Syria",
+  "lat": 34.9833,
+  "lng": 36.0833
+ },
+ {
+  "city": "Ash Shaykh Zuwayd",
+  "state": "Shamāl Sīnā’",
+  "country": "Egypt",
+  "lat": 31.2119,
+  "lng": 34.1106
+ },
+ {
+  "city": "Ash Shaykh ‘Uthmān",
+  "state": "‘Adan",
+  "country": "Yemen",
+  "lat": 12.8864,
+  "lng": 45.0156
+ },
+ {
+  "city": "Ash Shaţrah",
+  "state": "Dhī Qār",
+  "country": "Iraq",
+  "lat": 31.4097,
+  "lng": 46.1717
+ },
+ {
+  "city": "Ash Shinān",
+  "state": "Ḩā’il",
+  "country": "Saudi Arabia",
+  "lat": 27.1782,
+  "lng": 42.443
+ },
+ {
+  "city": "Ash Shiḩr",
+  "state": "Ḩaḑramawt",
+  "country": "Yemen",
+  "lat": 14.7608,
+  "lng": 49.6069
+ },
+ {
+  "city": "Ash Shuhadā’",
+  "state": "Al Minūfīyah",
+  "country": "Egypt",
+  "lat": 30.6039,
+  "lng": 30.9021
+ },
+ {
+  "city": "Ash Shāmīyah",
+  "state": "Al Qādisīyah",
+  "country": "Iraq",
+  "lat": 31.9636,
+  "lng": 44.5989
+ },
+ {
+  "city": "Ash Shīḩānīyah",
+  "state": "Ash Shīḩānīyah",
+  "country": "Qatar",
+  "lat": 25.3722,
+  "lng": 51.2047
+ },
+ {
+  "city": "Ashaiman",
+  "state": "Greater Accra",
+  "country": "Ghana",
+  "lat": 5.7,
+  "lng": -0.0333
+ },
+ {
+  "city": "Ashburn",
+  "state": "Virginia",
+  "country": "United States",
+  "lat": 39.0277,
+  "lng": -77.4714
+ },
+ {
+  "city": "Ashdod",
+  "state": "Southern",
+  "country": "Israel",
+  "lat": 31.8,
+  "lng": 34.65
+ },
+ {
+  "city": "Asheville",
+  "state": "North Carolina",
+  "country": "United States",
+  "lat": 35.5707,
+  "lng": -82.5537
+ },
+ {
+  "city": "Ashford",
+  "state": "Kent",
+  "country": "United Kingdom",
+  "lat": 51.1465,
+  "lng": 0.8676
+ },
+ {
+  "city": "Ashgabat",
+  "state": "Aşgabat",
+  "country": "Turkmenistan",
+  "lat": 37.9375,
+  "lng": 58.38
+ },
+ {
+  "city": "Ashikaga",
+  "state": "Tochigi",
+  "country": "Japan",
+  "lat": 36.3402,
+  "lng": 139.4497
+ },
+ {
+  "city": "Ashiya",
+  "state": "Hyōgo",
+  "country": "Japan",
+  "lat": 34.7278,
+  "lng": 135.3033
+ },
+ {
+  "city": "Ashmūn",
+  "state": "Al Minūfīyah",
+  "country": "Egypt",
+  "lat": 30.2941,
+  "lng": 31.0342
+ },
+ {
+  "city": "Ashoknagar",
+  "state": "Madhya Pradesh",
+  "country": "India",
+  "lat": 24.58,
+  "lng": 77.73
+ },
+ {
+  "city": "Ashqelon",
+  "state": "Southern",
+  "country": "Israel",
+  "lat": 31.6667,
+  "lng": 34.5667
+ },
+ {
+  "city": "Ashta",
+  "state": "Madhya Pradesh",
+  "country": "India",
+  "lat": 23.0175,
+  "lng": 76.7221
+ },
+ {
+  "city": "Ashton",
+  "state": "Tameside",
+  "country": "United Kingdom",
+  "lat": 53.4897,
+  "lng": -2.0952
+ },
+ {
+  "city": "Asilah",
+  "state": "Tanger-Tétouan-Al Hoceïma",
+  "country": "Morocco",
+  "lat": 35.4667,
+  "lng": -6.0333
+ },
+ {
+  "city": "Asingan",
+  "state": "Pangasinan",
+  "country": "Philippines",
+  "lat": 16.0023,
+  "lng": 120.6695
+ },
+ {
+  "city": "Asker",
+  "state": "Viken",
+  "country": "Norway",
+  "lat": 59.8353,
+  "lng": 10.435
+ },
+ {
+  "city": "Asmara",
+  "state": "Ma’ĭkel",
+  "country": "Eritrea",
+  "lat": 15.3228,
+  "lng": 38.925
+ },
+ {
+  "city": "Aspen Hill",
+  "state": "Maryland",
+  "country": "United States",
+  "lat": 39.0927,
+  "lng": -77.0826
+ },
+ {
+  "city": "Asprópyrgos",
+  "state": "Attikí",
+  "country": "Greece",
+  "lat": 38.0667,
+  "lng": 23.5833
+ },
+ {
+  "city": "Assab",
+  "state": "Debubawi K’eyyĭḥ Baḥri",
+  "country": "Eritrea",
+  "lat": 13.0167,
+  "lng": 42.7333
+ },
+ {
+  "city": "Asse",
+  "state": "Flanders",
+  "country": "Belgium",
+  "lat": 50.9,
+  "lng": 4.2
+ },
+ {
+  "city": "Assen",
+  "state": "Drenthe",
+  "country": "Netherlands",
+  "lat": 53,
+  "lng": 6.5667
+ },
+ {
+  "city": "Assi Bou Nif",
+  "state": "Oran",
+  "country": "Algeria",
+  "lat": 35.7,
+  "lng": -0.5
+ },
+ {
+  "city": "Assis",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -22.6619,
+  "lng": -50.4119
+ },
+ {
+  "city": "Astana",
+  "state": "Nur-Sultan",
+  "country": "Kazakhstan",
+  "lat": 51.1472,
+  "lng": 71.4222
+ },
+ {
+  "city": "Asti",
+  "state": "Piedmont",
+  "country": "Italy",
+  "lat": 44.9,
+  "lng": 8.2069
+ },
+ {
+  "city": "Astrakhan",
+  "state": "Astrakhanskaya Oblast’",
+  "country": "Russia",
+  "lat": 46.35,
+  "lng": 48.035
+ },
+ {
+  "city": "Asturias",
+  "state": "Cebu",
+  "country": "Philippines",
+  "lat": 10.5679,
+  "lng": 123.7172
+ },
+ {
+  "city": "Asunción",
+  "state": "Asunción",
+  "country": "Paraguay",
+  "lat": -25.3,
+  "lng": -57.6333
+ },
+ {
+  "city": "Asunción Mita",
+  "state": "Jutiapa",
+  "country": "Guatemala",
+  "lat": 14.3333,
+  "lng": -89.7167
+ },
+ {
+  "city": "Aswān",
+  "state": "Aswān",
+  "country": "Egypt",
+  "lat": 24.0889,
+  "lng": 32.8997
+ },
+ {
+  "city": "Asyūţ",
+  "state": "Asyūţ",
+  "country": "Egypt",
+  "lat": 27.1833,
+  "lng": 31.1667
+ },
+ {
+  "city": "At Tall",
+  "state": "Rīf Dimashq",
+  "country": "Syria",
+  "lat": 33.6,
+  "lng": 36.3
+ },
+ {
+  "city": "At Tawāhī",
+  "state": "‘Adan",
+  "country": "Yemen",
+  "lat": 12.7833,
+  "lng": 44.9833
+ },
+ {
+  "city": "At Tājī",
+  "state": "Baghdād",
+  "country": "Iraq",
+  "lat": 33.5092,
+  "lng": 44.2342
+ },
+ {
+  "city": "Atakpamé",
+  "state": "Plateaux",
+  "country": "Togo",
+  "lat": 7.5269,
+  "lng": 1.1267
+ },
+ {
+  "city": "Atalaia",
+  "state": "Alagoas",
+  "country": "Brazil",
+  "lat": -9.5019,
+  "lng": -36.0228
+ },
+ {
+  "city": "Atambua",
+  "state": "Nusa Tenggara Timur",
+  "country": "Indonesia",
+  "lat": -9.1061,
+  "lng": 124.8925
+ },
+ {
+  "city": "Atami",
+  "state": "Shizuoka",
+  "country": "Japan",
+  "lat": 35.096,
+  "lng": 139.0716
+ },
+ {
+  "city": "Atamyrat",
+  "state": "Lebap",
+  "country": "Turkmenistan",
+  "lat": 37.8531,
+  "lng": 65.2369
+ },
+ {
+  "city": "Ataq",
+  "state": "Shabwah",
+  "country": "Yemen",
+  "lat": 14.5364,
+  "lng": 46.8331
+ },
+ {
+  "city": "Atarra",
+  "state": "Uttar Pradesh",
+  "country": "India",
+  "lat": 25.28,
+  "lng": 80.57
+ },
+ {
+  "city": "Atascocita",
+  "state": "Texas",
+  "country": "United States",
+  "lat": 29.9777,
+  "lng": -95.1953
+ },
+ {
+  "city": "Atbara",
+  "state": "River Nile",
+  "country": "Sudan",
+  "lat": 17.6972,
+  "lng": 33.9783
+ },
+ {
+  "city": "Atchampeta",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "lat": 15.5412,
+  "lng": 78.9503
+ },
+ {
+  "city": "Atebubu",
+  "state": "Bono East",
+  "country": "Ghana",
+  "lat": 7.75,
+  "lng": -0.9833
+ },
+ {
+  "city": "Atenco",
+  "state": "México",
+  "country": "Mexico",
+  "lat": 19.5167,
+  "lng": -98.9167
+ },
+ {
+  "city": "Ath Thawrah",
+  "state": "Ar Raqqah",
+  "country": "Syria",
+  "lat": 35.8367,
+  "lng": 38.5481
+ },
+ {
+  "city": "Athens",
+  "state": "Attikí",
+  "country": "Greece",
+  "lat": 37.9842,
+  "lng": 23.7281
+ },
+ {
+  "city": "Athens",
+  "state": "Georgia",
+  "country": "United States",
+  "lat": 33.9508,
+  "lng": -83.3689
+ },
+ {
+  "city": "Athi River",
+  "state": "Machakos",
+  "country": "Kenya",
+  "lat": -1.45,
+  "lng": 36.9833
+ },
+ {
+  "city": "Athis-Mons",
+  "state": "Île-de-France",
+  "country": "France",
+  "lat": 48.7074,
+  "lng": 2.3889
+ },
+ {
+  "city": "Athiémé",
+  "state": "Mono",
+  "country": "Benin",
+  "lat": 6.5833,
+  "lng": 1.6667
+ },
+ {
+  "city": "Athni",
+  "state": "Karnātaka",
+  "country": "India",
+  "lat": 16.73,
+  "lng": 75.07
+ },
+ {
+  "city": "Athurugiriya",
+  "state": "Western",
+  "country": "Sri Lanka",
+  "lat": 6.8922,
+  "lng": 79.9428
+ },
+ {
+  "city": "Atibaia",
+  "state": "São Paulo",
+  "country": "Brazil",
+  "lat": -23.1172,
+  "lng": -46.5506
+ },
+ {
+  "city": "Atimonan",
+  "state": "Quezon",
+  "country": "Philippines",
+  "lat": 14.0036,
+  "lng": 121.9199
+ },
+ {
+  "city": "Atiquizaya",
+  "state": "Ahuachapán",
+  "country": "El Salvador",
+  "lat": 13.9667,
+  "lng": -89.75
+ },
+ {
+  "city": "Atlanta",
+  "state": "Georgia",
+  "country": "United States",
+  "lat": 33.7628,
+  "lng": -84.422
+ },
+ {
+  "city": "Atlantic City",
+  "state": "New Jersey",
+  "country": "United States",
+  "lat": 39.3797,
+  "lng": -74.4527
+ },
+ {
+  "city": "Atmakūr",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "lat": 15.8779,
+  "lng": 78.5884
+ },
+ {
+  "city": "Atotonilco el Alto",
+  "state": "Jalisco",
+  "country": "Mexico",
+  "lat": 20.5333,
+  "lng": -102.5
+ },
+ {
+  "city": "Atsugichō",
+  "state": "Kanagawa",
+  "country": "Japan",
+  "lat": 35.4333,
+  "lng": 139.3667
+ },
+ {
+  "city": "Attiecoubé",
+  "state": "Abidjan",
+  "country": "Côte d’Ivoire",
+  "lat": 5.3333,
+  "lng": -4.0333
+ },
+ {
+  "city": "Attingal",
+  "state": "Kerala",
+  "country": "India",
+  "lat": 8.68,
+  "lng": 76.83
+ },
+ {
+  "city": "Attleboro",
+  "state": "Massachusetts",
+  "country": "United States",
+  "lat": 41.9311,
+  "lng": -71.295
+ },
+ {
+  "city": "Attock Khurd",
+  "state": "Punjab",
+  "country": "Pakistan",
+  "lat": 33.7667,
+  "lng": 72.3667
+ },
+ {
+  "city": "Atushi",
+  "state": "Xinjiang",
+  "country": "China",
+  "lat": 39.7162,
+  "lng": 76.1684
+ },
+ {
+  "city": "Atwater",
+  "state": "California",
+  "country": "United States",
+  "lat": 37.3529,
+  "lng": -120.5959
+ },
+ {
+  "city": "Atyraū",
+  "state": "Atyraū",
+  "country": "Kazakhstan",
+  "lat": 47.1167,
+  "lng": 51.8833
+ },
+ {
+  "city": "Aubagne",
+  "state": "Provence-Alpes-Côte d’Azur",
+  "country": "France",
+  "lat": 43.2908,
+  "lng": 5.5708
+ },
+ {
+  "city": "Aubervilliers",
+  "state": "Île-de-France",
+  "country": "France",
+  "lat": 48.9131,
+  "lng": 2.3831
+ },
+ {
+  "city": "Auburn",
+  "state": "Alabama",
+  "country": "United States",
+  "lat": 32.6087,
+  "lng": -85.4903
+ },
+ {
+  "city": "Auburn",
+  "state": "Washington",
+  "country": "United States",
+  "lat": 47.3039,
+  "lng": -122.2108
+ },
+ {
+  "city": "Auchi",
+  "state": "Edo",
+  "country": "Nigeria",
+  "lat": 7.0667,
+  "lng": 6.2667
+ },
+ {
+  "city": "Auckland",
+  "state": "Auckland",
+  "country": "New Zealand",
+  "lat": -36.8406,
+  "lng": 174.74
+ },
+ {
+  "city": "Augsburg",
+  "state": "Bavaria",
+  "country": "Germany",
+  "lat": 48.3689,
+  "lng": 10.8978
+ },
+ {
+  "city": "Augusta",
+  "state": "Georgia",
+  "country": "United States",
+  "lat": 33.3645,
+  "lng": -82.0708
+ },
+ {
+  "city": "Augusta",
+  "state": "Sicilia",
+  "country": "Italy",
+  "lat": 37.25,
+  "lng": 15.2167
+ },
+ {
+  "city": "Augusto Correa",
+  "state": "Pará",
+  "country": "Brazil",
+  "lat": -1.0272,
+  "lng": -46.6446
+ },
+ {
+  "city": "Aul",
+  "state": "Odisha",
+  "country": "India",
+  "lat": 20.67,
+  "lng": 86.64
+ },
+ {
+  "city": "Aulnay-sous-Bois",
+  "state": "Île-de-France",
+  "country": "France",
+  "lat": 48.9386,
+  "lng": 2.4906
+ },
+ {
+  "city": "Aungban",
+  "state": "Shan State",
+  "country": "Burma",
+  "lat": 20.6667,
+  "lng": 96.6333
+ },
+ {
+  "city": "Aurangābād",
+  "state": "Mahārāshtra",
+  "country": "India",
+  "lat": 19.88,
+  "lng": 75.32
+ }
+]
+}
