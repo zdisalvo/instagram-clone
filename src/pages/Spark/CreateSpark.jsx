@@ -27,33 +27,68 @@ const CreateSpark = () => {
   const { sparkProfile } = useGetSparkProfileById(authUser?.uid);
   const { isUpdating, editSparkProfile } = useCreateSparkProfile();
 
-  const [formData, setFormData] = useState({
-    name: sparkProfile?.name || "",
-    birthday: sparkProfile?.birthday || "",
-    work: sparkProfile?.work || "",
-    school: sparkProfile?.school || "",
-    gender: sparkProfile?.gender || "",
-    interested_in: sparkProfile?.interested_in || [],
-    location: sparkProfile?.location || "",
-    hometown: sparkProfile?.hometown || "",
-    ethnicity: sparkProfile?.ethnicity || "",
-    height: sparkProfile?.height || "",
-    exercise: sparkProfile?.exercise || "",
-    education_level: sparkProfile?.education_level || "",
-    drinking: sparkProfile?.drinking || "",
-    smoking: sparkProfile?.smoking || "",
-    cannabis: sparkProfile?.cannabis || "",
-    looking_for: sparkProfile?.looking_for || "",
-    family_plans: sparkProfile?.family_plans || "",
-    have_kids: sparkProfile?.have_kids || "",
-    star_sign: sparkProfile?.star_sign || "",
-    politics: sparkProfile?.politics || "",
-    religion: sparkProfile?.religion || "",
-    pronouns: sparkProfile?.pronouns || [],
-    languages: sparkProfile?.languages || [],
-    interests: sparkProfile?.interests || [],
-    profilePic: null,
-  });
+  
+    const [formData, setFormData] = useState({
+        name: "",
+        birthday: "",
+        work: "",
+        school: "",
+        gender: "",
+        interested_in: [],
+        location: "",
+        hometown: "",
+        ethnicity: "",
+        height: "",
+        exercise: "",
+        education_level: "",
+        drinking: "",
+        smoking: "",
+        cannabis: "",
+        looking_for: "",
+        family_plans: "",
+        have_kids: "",
+        star_sign: "",
+        politics: "",
+        religion: "",
+        pronouns: [],
+        languages: [],
+        interests: [],
+        profilePic: null,
+      });
+    
+      // useEffect to update formData when sparkProfile changes
+      useEffect(() => {
+        if (sparkProfile) {
+          setFormData((prevFormData) => ({
+            ...prevFormData,
+            name: sparkProfile.name || "",
+            birthday: sparkProfile.birthday || "",
+            work: sparkProfile.work || "",
+            school: sparkProfile.school || "",
+            gender: sparkProfile.gender || "",
+            interested_in: sparkProfile.interested_in || [],
+            location: sparkProfile.location || "",
+            hometown: sparkProfile.hometown || "",
+            ethnicity: sparkProfile.ethnicity || "",
+            height: sparkProfile.height || "",
+            exercise: sparkProfile.exercise || "",
+            education_level: sparkProfile.education_level || "",
+            drinking: sparkProfile.drinking || "",
+            smoking: sparkProfile.smoking || "",
+            cannabis: sparkProfile.cannabis || "",
+            looking_for: sparkProfile.looking_for || "",
+            family_plans: sparkProfile.family_plans || "",
+            have_kids: sparkProfile.have_kids || "",
+            star_sign: sparkProfile.star_sign || "",
+            politics: sparkProfile.politics || "",
+            religion: sparkProfile.religion || "",
+            pronouns: sparkProfile.pronouns || [],
+            languages: sparkProfile.languages || [],
+            interests: sparkProfile.interests || [],
+            profilePic: sparkProfile.profilePic || null,
+          }));
+        }
+      }, [sparkProfile]);
 
   const [preview, setPreview] = useState(null);
 
