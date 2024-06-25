@@ -18,6 +18,7 @@ import Select from "react-select";
 import languagesData from "../../../languages/languages.json";
 
 
+
 const CreateSpark = () => {
   const authUser = useAuthStore((state) => state.user);
 
@@ -548,7 +549,7 @@ const CreateSpark = () => {
             </Box>
           </FormControl>
 
-          <Button type="submit" colorScheme="teal" isLoading={isUpdating}>
+          <Button type="submit" colorScheme="orange" isLoading={isUpdating}>
             Update Profile
           </Button>
         </Stack>
