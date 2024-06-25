@@ -19,34 +19,9 @@ import useGetSparkProfileById from "../../hooks/useGetSparkProfileById";
 import Select from "react-select";
 import languagesData from "../../../languages/languages.json";
 
-const emojiOptions = [
-  "🎨",
-  "🎵",
-  "⚽️",
-  "🎮",
-  "📚",
-  "🍔",
-  "✈️",
-  "🏕️",
-  "🎥",
-  "🖥️",
-  "💃",
-  "🧘",
-  "🏋️",
-  "🎧",
-  "🧩",
-];
 
-const predefinedLanguages = languagesData.map((language) => ({
-  label: language.name,
-  value: language.name,
-}));
 
-const genderOptions = [
-  { value: "male", label: "Male" },
-  { value: "female", label: "Female" },
-  { value: "other", label: "Other" },
-];
+
 
 const CreateSpark = () => {
   const authUser = useAuthStore((state) => state.user);
@@ -86,6 +61,8 @@ const CreateSpark = () => {
 
   const [preview, setPreview] = useState(null);
 
+  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -122,6 +99,87 @@ const CreateSpark = () => {
     console.log("Profile updated", formData);
   };
 
+  const genderOptions = [
+    { value: "male", label: "Male" },
+    { value: "female", label: "Female" },
+    { value: "other", label: "Other" },
+  ];
+
+  const handleGenderChange = (selectedOption) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      gender: selectedOption.value,
+    }));
+  };
+
+  const handleGenderClick = (gender) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      gender: prevState.gender === gender ? "" : gender,
+    }));
+  };
+
+  const interestedInOptions = ["Women", "Men", "Trans women", "Trans men", "Non-binary"];
+
+  const handleInterestedInClick = (interestedIn) => {
+    setFormData((prevState) => {
+      const currentInterestedIn = [...prevState.interested_in];
+      if (currentInterestedIn.includes(interestedIn)) {
+        // Remove the option if it's already selected
+        return { ...prevState, interested_in: currentInterestedIn.filter((e) => e !== interestedIn) };
+      } else {
+        // Add the option if it's not already selected
+        return { ...prevState, interested_in: [...currentInterestedIn, interestedIn] };
+      }
+    });
+  };
+
+//   const preloadSelectedLanguages = (sparkProfile ? sparkProfile.languages : "") => {
+//     setFormData((prevState) => ({
+//         ...prevState,
+//         languages: 
+//     }))
+//   }
+
+//LANGUAGES
+
+    const predefinedLanguages = languagesData.map((language) => ({
+    label: language.name,
+    value: language.name,
+    }));
+
+
+  const handleLanguageChange = (selectedOptions) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      languages: selectedOptions.map((option) => option.value),
+    }));
+  };
+
+  const filterLanguages = (candidate, input) => {
+    return candidate.label.toLowerCase().startsWith(input.toLowerCase());
+  };
+
+  //INTEREST EMOJIS
+
+  const emojiOptions = [
+    "🎨",
+    "🎵",
+    "⚽️",
+    "🎮",
+    "📚",
+    "🍔",
+    "✈️",
+    "🏕️",
+    "🎥",
+    "🖥️",
+    "💃",
+    "🧘",
+    "🏋️",
+    "🎧",
+    "🧩",
+  ];
+
   const handleEmojiClick = (emoji) => {
     setFormData((prevState) => {
       const currentInterests = [...prevState.interests];
@@ -137,27 +195,9 @@ const CreateSpark = () => {
     });
   };
 
-//   const preloadSelectedLanguages = (sparkProfile ? sparkProfile.languages : "") => {
-//     setFormData((prevState) => ({
-//         ...prevState,
-//         languages: 
-//     }))
-//   }
+  
 
-  const handleLanguageChange = (selectedOptions) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      languages: selectedOptions.map((option) => option.value),
-    }));
-  };
-
-  const handleGenderChange = (selectedOption) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      gender: selectedOption.value,
-    }));
-  };
-
+  
   return (
     <Container maxW="container.md" mb={{ base: "10vh", md: "60px" }}>
       <Heading as="h1" textAlign="center" mb={6}>
@@ -228,16 +268,19 @@ const CreateSpark = () => {
 
           <FormControl id="interested_in">
             <FormLabel>Interested In</FormLabel>
-            <CheckboxGroup
-              value={formData.interested_in}
-              onChange={(values) => handleCheckboxChange("interested_in", values)}
-            >
-              <Stack direction="row">
-                <Checkbox value="men">Men</Checkbox>
-                <Checkbox value="women">Women</Checkbox>
-                <Checkbox value="other">Other</Checkbox>
-              </Stack>
-            </CheckboxGroup>
+            <Box display="flex" flexWrap="wrap">
+              {interestedInOptions.map((interestedIn) => (
+                <Button
+                  key={interestedIn}
+                  onClick={() => handleInterestedInClick(interestedIn)}
+                  colorScheme={formData.interested_in.includes(interestedIn) ? "orange" : "gray"}
+                  //variant={formData.interested_in.includes(interestedIn) ? "solid" : "outline"}
+                  m={1}
+                >
+                  {interestedIn}
+                </Button>
+              ))}
+            </Box>
           </FormControl>
 
           <FormControl id="location">
@@ -424,8 +467,8 @@ const CreateSpark = () => {
                 }),
                 option: (provided, state) => ({
                   ...provided,
-                  backgroundColor: state.isSelected ? 'blue' : 'white', // Customizing option background color
-                  color: state.isSelected ? 'white' : 'black', // Customizing option text color
+                  backgroundColor: state.isSelected ? 'sandybrown' : state.isFocused ? 'sandybrown' : 'white', // Customizing option background color for selected and focused states
+                  color: state.isSelected || state.isFocused ? 'white' : 'black', // Customizing option text color
                 }),
                 input: (provided) => ({
                   ...provided,
@@ -436,6 +479,7 @@ const CreateSpark = () => {
               options={predefinedLanguages}
               value={(formData.languages || (sparkProfile ? sparkProfile.languages : "")).map((lang) => ({ label: lang, value: lang }))}
               onChange={handleLanguageChange}
+              filterOption={filterLanguages}
               placeholder="Type or select languages..."
             />
           </FormControl>
