@@ -424,6 +424,16 @@ const CreateSpark = () => {
                 width: '10ch', // Width to fit 10 characters
                 textAlign: 'center', // Center the text
               }),
+              clearIndicator: (provided) => ({
+                ...provided,
+                color: 'grey', // Color of the clear indicator
+                position: 'absolute', // Absolute positioning
+                left: '11ch', // Positioning to the right of the control box
+                padding: '0px', // Removing padding to fit in smaller box
+                '&:hover': {
+                color: 'sandybrown', // Change color to orange on hover
+                },
+              }),
             }}
             options={predefinedHeights}
             value={predefinedHeights.find((height) => height.value === formData.height)}
@@ -579,10 +589,13 @@ const CreateSpark = () => {
           borderColor: 'sandybrown', // Border color on hover
         },
       }),
-    //   clearIndicator: (provided) => ({
-    //     ...provided,
-    //     color: 'white', // Change color to white
-    //   }),
+      clearIndicator: (provided) => ({
+        ...provided,
+        //color: 'white', // Change color to white
+        '&:hover': {
+              color: 'sandybrown', // Change color to orange on hover
+            },
+      }),
       multiValue: provided => ({
         ...provided,
         backgroundColor: '#333333', // Background color of selected value
