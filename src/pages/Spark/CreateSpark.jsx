@@ -16,7 +16,8 @@ import useAuthStore from "../../store/authStore";
 import useCreateSparkProfile from "../../hooks/useCreateSparkProfile";
 import useGetSparkProfileById from "../../hooks/useGetSparkProfileById";
 import Select from "react-select";
-import languagesData from "../../../languages/languages.json";
+import languagesData from "../../../json-files/languages.json";
+import heightsData from "../../../json-files/heights.json"
 
 
 
@@ -106,12 +107,7 @@ const CreateSpark = () => {
     }));
   };
 
-//   const handleCheckboxChange = (name, values) => {
-//     setFormData((prevState) => ({
-//       ...prevState,
-//       [name]: values,
-//     }));
-//   };
+
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -170,12 +166,25 @@ const CreateSpark = () => {
     });
   };
 
-//   const preloadSelectedLanguages = (sparkProfile ? sparkProfile.languages : "") => {
-//     setFormData((prevState) => ({
-//         ...prevState,
-//         languages: 
-//     }))
-//   }
+//HEIGHT
+
+    const predefinedHeights = heightsData.map((height) => ({
+        label: height,
+        value: height,
+        }));  
+
+
+        const handleHeightChange = (selectedOption) => {
+            setFormData((prevState) => ({
+              ...prevState,
+              height: selectedOption ? selectedOption.value : "", // Single value
+            }));
+          };
+        
+          const filterHeights = (candidate, input) => {
+            return candidate.label.toLowerCase().startsWith(input.toLowerCase());
+          };
+        
 
 //LANGUAGES
 
@@ -297,8 +306,10 @@ const CreateSpark = () => {
             <Button
               key={gender}
               onClick={() => handleGenderClick(gender)}
-              colorScheme={formData.gender === gender ? "orange" : "gray"}
-              variant={formData.gender === gender ? "outline" : "outline"}
+              colorScheme={formData.gender.includes(gender) ? "orange" : "gray"}
+              variant="outline" // Always use "outline" variant
+                color="white" // Set text color to white
+                borderColor={formData.gender.includes(gender) ? "orange" : "gray"} // Border color based on selection
               m={1}
             >
               {gender}
@@ -363,12 +374,63 @@ const CreateSpark = () => {
 
           <FormControl id="height">
             <FormLabel>Height</FormLabel>
-            <Input
-              type="number"
-              name="height"
-              value={formData.height}
-              onChange={handleChange}
-            />
+            <Select
+            name="height"
+            isClearable
+            styles={{
+            control: (provided, state) => ({
+                ...provided,
+                backgroundColor: 'black', // Background color of the select box
+                color: 'grey', // Text color of the select box
+                borderColor: state.isFocused ? 'sandybrown' : 'grey', // Border color when focused or hovered
+                boxShadow: 'none', // Removing box shadow
+                '&:hover': {
+                borderColor: 'sandybrown', // Border color on hover
+                },
+            }),
+            //   clearIndicator: (provided) => ({
+            //     ...provided,
+            //     color: 'white', // Change color to white
+            //   }),
+            
+            option: (provided, state) => ({
+                ...provided,
+                backgroundColor: state.isSelected ? '#333333' : 'black', // Customizing option background color for selected state
+                
+                color: state.isSelected ? 'sandybrown' : 'grey', // Customizing option text color
+                //fontWeight: state.isSelected ? 'bold' : 'normal', // Setting font weight when selected
+                '&:hover': {
+                backgroundColor: '#333333', // Background color on hover
+                color: 'sandybrown', // Text color on hover
+                //fontWeight: 'bold',
+                },
+            }),
+            input: (provided) => ({
+                ...provided,
+                color: 'grey', // Customizing input text color
+            }),
+            menu: (provided) => ({
+                ...provided,
+                backgroundColor: 'black', // Background color of the dropdown menu
+                marginTop: 0, // Removing the default margin-top
+                borderRadius: 0, // Removing default border radius
+                boxShadow: 'none', // Removing box shadow
+                borderWidth: 0, // Removing border width
+            }),
+            singleValue: (provided) => ({
+                ...provided,
+                color: 'white', // Color of the single selected value
+                backgroundColor: '#333333',
+                width: '10ch', // Width to fit 10 characters
+                textAlign: 'center', // Center the text
+              }),
+            }}
+            options={predefinedHeights}
+            value={predefinedHeights.find((height) => height.value === formData.height)}
+            onChange={handleHeightChange}
+            filterOption={filterHeights}
+            placeholder="Type or select your height..."
+        />
           </FormControl>
 
           <FormControl id="exercise">
