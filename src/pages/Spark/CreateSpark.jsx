@@ -194,7 +194,7 @@ const CreateSpark = () => {
     };
 
     const filterCitiesLocation = (candidate, input) => {
-      if (isTyping && input.length > 1) {
+      if (isTyping && input.length > 2) {
           return candidate.label.toLowerCase().startsWith(input.toLowerCase());
       }
       return null; // or handle non-typing state behavior
@@ -221,7 +221,7 @@ const CreateSpark = () => {
   };
 
   const filterCitiesHometown = (candidate, input) => {
-    if (isTyping && input.length > 1) {
+    if (isTyping && input.length > 2) {
         return candidate.label.toLowerCase().startsWith(input.toLowerCase());
     }
     return null; // or handle non-typing state behavior
@@ -266,7 +266,7 @@ const CreateSpark = () => {
             backgroundColor: '#333333',
             width: 'auto',
             textAlign: 'left',
-            paddingLeft: '3ch'
+            paddingLeft: '1ch'
         }),
         clearIndicator: (provided) => ({
             ...provided,
