@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   Box,
   Button,
@@ -17,8 +17,8 @@ import useCreateSparkProfile from "../../hooks/useCreateSparkProfile";
 import useGetSparkProfileById from "../../hooks/useGetSparkProfileById";
 import Select from "react-select";
 import languagesData from "../../../json-files/languages.json";
-import heightsData from "../../../json-files/heights.json"
-import citiesData from "../../../json-files/worldcities.json"
+import heightsData from "../../../json-files/heights.json";
+import citiesData from "../../../json-files/worldcities.json";
 
 
 
@@ -171,6 +171,8 @@ const CreateSpark = () => {
 
   const [cities, setCities] = useState([]);
     const [selectedCity, setSelectedCity] = useState(null);
+    const [isTyping, setIsTyping] = useState(false);
+    //const prevPrefixLenRef = useRef(0);
 
     useEffect(() => {
         const formattedCities = citiesData.cities.map(city => ({
@@ -182,7 +184,6 @@ const CreateSpark = () => {
 
 
 
-    //let prevPrefixLen = 0;
 
     const handleCityChange = (selectedOption) => {
         setSelectedCity(selectedOption);
@@ -190,14 +191,27 @@ const CreateSpark = () => {
     };
 
     const filterCities = (candidate, input) => {
-        // if (prevPrefixLen < input.length) {
-        //     console.log(prevPrefixLen);
-        //     prevPrefixLen = input.length;
-            return candidate.label.toLowerCase().startsWith(input.toLowerCase());
-        // }
-        // else 
-        //     return null;
-      };
+      if (isTyping && input.length > 2) {
+          return candidate.label.toLowerCase().startsWith(input.toLowerCase());
+      }
+      return null; // or handle non-typing state behavior
+  };
+
+      const handleKeyDown = (event) => {
+        // Detecting if the key pressed is a delete key or backspace
+        if (event.key === 'Delete' || event.key === 'Backspace') {
+            setIsTyping(false); // Assuming setIsTyping is a state setter function
+            //filterCities.flush(); // Assuming filterCities.flush() is a function to flush any pending debounce calls
+        } 
+        else {
+          setIsTyping(true);
+        }
+    };
+
+  //   const handleInputChange = (newValue) => {
+  //     setInputValue(newValue);
+  //     setIsTyping(true); // Always consider typing state true on input change
+  // };
 
     const customStyles = {
         control: (provided, state) => ({
@@ -456,6 +470,8 @@ const CreateSpark = () => {
                 value={selectedCity}
                 onChange={handleCityChange}
                 filterOption={filterCities}
+                onKeyDown={handleKeyDown}
+                //onInputChange={handleInputChange}
                 placeholder="Type or select your city..."
             />
         </FormControl>
