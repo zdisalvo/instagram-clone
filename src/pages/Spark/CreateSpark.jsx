@@ -18,7 +18,9 @@ import useGetSparkProfileById from "../../hooks/useGetSparkProfileById";
 import Select from "react-select";
 import languagesData from "../../../json-files/languages.json";
 import heightsData from "../../../json-files/heights.json";
-import citiesData from "../../../json-files/worldcities.json";
+import citiesData from "../../../json-files/worldcities2.json";
+import countryCodeToFlagEmoji from 'country-code-to-flag-emoji';
+
 
 
 
@@ -177,8 +179,8 @@ const CreateSpark = () => {
 
     useEffect(() => {
         const formattedCities = citiesData.cities.map(city => ({
-            value: `${city.city}, ${city.state}, ${city.country}`,
-            label: `${city.city}, ${city.state}, ${city.country}`
+            value: `${city.city}, ${city.state}, ${city.country}, ${countryCodeToFlagEmoji(city.iso2)}`,
+            label: `${city.city}, ${city.state}, ${city.country}, ${countryCodeToFlagEmoji(city.iso2)}`
         }));
         setCities(formattedCities);
     }, []);
