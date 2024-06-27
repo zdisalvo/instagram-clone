@@ -471,7 +471,7 @@ const CreateSpark = () => {
                 onChange={handleLocationChange}
                 filterOption={filterCitiesLocation}
                 onKeyDown={handleKeyDown}
-                placeholder="Type or select your location..."
+                placeholder="Type and select your location..."
             />
         </FormControl>
 
@@ -486,7 +486,7 @@ const CreateSpark = () => {
                 onChange={handleHometownChange}
                 filterOption={filterCitiesHometown}
                 onKeyDown={handleKeyDown}
-                placeholder="Type or select your hometown..."
+                placeholder="Type and select your hometown..."
             />
           </FormControl>
 
