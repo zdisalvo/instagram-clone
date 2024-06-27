@@ -170,9 +170,10 @@ const CreateSpark = () => {
   //LOCATION
 
   const [cities, setCities] = useState([]);
-    const [selectedCity, setSelectedCity] = useState(null);
+    const [selectedLocation, setSelectedLocation] = useState(null);
+    
     const [isTyping, setIsTyping] = useState(false);
-    //const prevPrefixLenRef = useRef(0);
+    
 
     useEffect(() => {
         const formattedCities = citiesData.cities.map(city => ({
@@ -185,13 +186,13 @@ const CreateSpark = () => {
 
 
 
-    const handleCityChange = (selectedOption) => {
-        setSelectedCity(selectedOption);
+    const handleLocationChange = (selectedOption) => {
+        setSelectedLocation(selectedOption);
         setFormData({ ...formData, location: selectedOption ? selectedOption.value : '' });
     };
 
-    const filterCities = (candidate, input) => {
-      if (isTyping && input.length > 2) {
+    const filterCitiesLocation = (candidate, input) => {
+      if (isTyping && input.length > 1) {
           return candidate.label.toLowerCase().startsWith(input.toLowerCase());
       }
       return null; // or handle non-typing state behavior
@@ -200,18 +201,30 @@ const CreateSpark = () => {
       const handleKeyDown = (event) => {
         // Detecting if the key pressed is a delete key or backspace
         if (event.key === 'Delete' || event.key === 'Backspace') {
-            setIsTyping(false); // Assuming setIsTyping is a state setter function
-            //filterCities.flush(); // Assuming filterCities.flush() is a function to flush any pending debounce calls
+            setIsTyping(false); 
+            
         } 
         else {
           setIsTyping(true);
         }
     };
 
-  //   const handleInputChange = (newValue) => {
-  //     setInputValue(newValue);
-  //     setIsTyping(true); // Always consider typing state true on input change
-  // };
+    //HOMETOWN
+
+    const [selectedHometown, setSelectedHometown] = useState(null);
+
+    const handleHometownChange = (selectedOption) => {
+      setSelectedHometown(selectedOption);
+      setFormData({ ...formData, hometown: selectedOption ? selectedOption.value : '' });
+  };
+
+  const filterCitiesHometown = (candidate, input) => {
+    if (isTyping && input.length > 1) {
+        return candidate.label.toLowerCase().startsWith(input.toLowerCase());
+    }
+    return null; // or handle non-typing state behavior
+};
+  
 
     const customStyles = {
         control: (provided, state) => ({
@@ -264,6 +277,8 @@ const CreateSpark = () => {
     };
 
 
+
+
 //HEIGHT
 
     const predefinedHeights = heightsData.map((height) => ({
@@ -284,24 +299,7 @@ const CreateSpark = () => {
           };
 
 
-// //LOCATION
 
-// const predefinedCities = citiesData.map((location) => ({
-//     label: location,
-//     value: location,
-//     }));  
-
-
-//     const handleLocationChange = (selectedOption) => {
-//         setFormData((prevState) => ({
-//           ...prevState,
-//           location: selectedOption ? selectedOption.value : "", // Single value
-//         }));
-//       };
-    
-//       const filterCities = (candidate, input) => {
-//         return candidate.label.toLowerCase().startsWith(input.toLowerCase());
-//       };
         
 
 //LANGUAGES
@@ -467,22 +465,26 @@ const CreateSpark = () => {
                 isClearable
                 styles={customStyles}
                 options={cities}
-                value={selectedCity}
-                onChange={handleCityChange}
-                filterOption={filterCities}
+                value={selectedLocation}
+                onChange={handleLocationChange}
+                filterOption={filterCitiesLocation}
                 onKeyDown={handleKeyDown}
-                //onInputChange={handleInputChange}
-                placeholder="Type or select your city..."
+                placeholder="Type or select your location..."
             />
         </FormControl>
 
           <FormControl id="hometown">
             <FormLabel>Hometown</FormLabel>
-            <Input
-              type="text"
-              name="hometown"
-              value={formData.hometown}
-              onChange={handleChange}
+            <Select
+                name="location"
+                isClearable
+                styles={customStyles}
+                options={cities}
+                value={selectedHometown}
+                onChange={handleHometownChange}
+                filterOption={filterCitiesHometown}
+                onKeyDown={handleKeyDown}
+                placeholder="Type or select your hometown..."
             />
           </FormControl>
 
