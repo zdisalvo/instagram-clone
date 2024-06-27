@@ -180,7 +180,9 @@ const CreateSpark = () => {
         setCities(formattedCities);
     }, []);
 
-    
+
+
+    let prevPrefixLen = 0;
 
     const handleCityChange = (selectedOption) => {
         setSelectedCity(selectedOption);
@@ -188,7 +190,13 @@ const CreateSpark = () => {
     };
 
     const filterCities = (candidate, input) => {
-        return candidate.label.toLowerCase().startsWith(input.toLowerCase());
+        // if (prevPrefixLen < input.length) {
+        //     console.log(prevPrefixLen);
+        //     prevPrefixLen = input.length;
+            return candidate.label.toLowerCase().startsWith(input.toLowerCase());
+        // }
+        // else 
+        //     return null;
       };
 
     const customStyles = {
@@ -228,7 +236,8 @@ const CreateSpark = () => {
             color: 'white',
             backgroundColor: '#333333',
             width: 'auto',
-            textAlign: 'center',
+            textAlign: 'left',
+            paddingLeft: '3ch'
         }),
         clearIndicator: (provided) => ({
             ...provided,
