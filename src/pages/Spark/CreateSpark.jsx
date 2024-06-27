@@ -182,7 +182,7 @@ const CreateSpark = () => {
 
 
 
-    let prevPrefixLen = 0;
+    //let prevPrefixLen = 0;
 
     const handleCityChange = (selectedOption) => {
         setSelectedCity(selectedOption);
