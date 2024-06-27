@@ -1,5 +1,5 @@
 import { firestore } from '../firebase/firebase';
-import * as geofireCommon from '/node_modules/.vite/deps/geofire-common.js?v=484117d3';
+import * as geofireCommon from 'geofire-common';
 import { collection, query, where, getDocs } from "firebase/firestore";
 
 const usersCollection = collection(firestore, 'users'); // Assuming 'users' is your Firestore collection
