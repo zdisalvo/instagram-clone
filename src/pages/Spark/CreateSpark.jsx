@@ -393,6 +393,30 @@ const handleLookingForClick = (lookingForSelection) => {
   });
 };
 
+//FAMILY PLANS
+
+const familyPlansOptions = ["Don't want kids", "Open to kids", "Want kids", "Not sure"];
+
+const handleFamilyPlansClick = (family_plans) => {
+  setFormData((prevState) => ({
+    ...prevState,
+    family_plans: prevState.family_plans === family_plans ? "" : family_plans,
+  }));
+};
+
+//HAVE KIDS
+
+const haveKidsOptions = ["Have one", "Have kids", "Don't have kids"];
+
+const handleHaveKidsClick = (have_kids) => {
+  setFormData((prevState) => ({
+    ...prevState,
+    have_kids: prevState.have_kids === have_kids ? "" : have_kids,
+  }));
+};
+
+//STAR
+
 
 //LANGUAGES
 
@@ -823,22 +847,46 @@ const handleLookingForClick = (lookingForSelection) => {
 
           <FormControl id="family_plans">
             <FormLabel>Family Plans</FormLabel>
-            <Input
-              type="text"
-              name="family_plans"
-              value={formData.family_plans}
-              onChange={handleChange}
-            />
+            <Box display="flex" flexWrap="wrap">
+          {familyPlansOptions.map((family_plans) => (
+            <Button
+              key={family_plans}
+              onClick={() => handleFamilyPlansClick(family_plans)}
+              variant="solid"
+              bg={formData.family_plans === family_plans ? "darkorange" : "#1B2328"}
+              color={formData.family_plans === family_plans ? "black" : "white"}
+              _hover={{
+                bg: formData.family_plans === family_plans ? "orange" : "orange",
+              }}
+              size="sm"
+              m={1}
+            >
+              {family_plans}
+            </Button>
+          ))}
+        </Box>
           </FormControl>
 
           <FormControl id="have_kids">
             <FormLabel>Have Kids</FormLabel>
-            <Input
-              type="text"
-              name="have_kids"
-              value={formData.have_kids}
-              onChange={handleChange}
-            />
+            <Box display="flex" flexWrap="wrap">
+          {haveKidsOptions.map((have_kids) => (
+            <Button
+              key={have_kids}
+              onClick={() => handleHaveKidsClick(have_kids)}
+              variant="solid"
+              bg={formData.have_kids === have_kids ? "darkorange" : "#1B2328"}
+              color={formData.have_kids === have_kids ? "black" : "white"}
+              _hover={{
+                bg: formData.have_kids === have_kids ? "orange" : "orange",
+              }}
+              size="sm"
+              m={1}
+            >
+              {have_kids}
+            </Button>
+          ))}
+        </Box>
           </FormControl>
 
           <FormControl id="star_sign">
