@@ -317,9 +317,51 @@ const CreateSpark = () => {
             return candidate.label.toLowerCase().startsWith(input.toLowerCase());
           };
 
+//EXERCISE
+
+const exerciseOptions = ["Active", "Sometimes", "Rarely"];
 
 
+const handleExerciseClick = (exercise) => {
+  setFormData((prevState) => ({
+    ...prevState,
+    exercise: prevState.exercise === exercise ? "" : exercise,
+  }));
+};
+
+//EDUCATION LEVEL
+
+const educationOptions = ["High School", "Trade/Tech School", "In College", "Undergraduate Degree", "In Grad School", "Graduate Degree", "PhD", "MD"];
         
+const handleEducationClick = (education_level) => {
+  setFormData((prevState) => ({
+    ...prevState,
+    education_level: prevState.education_level === education_level ? "" : education_level,
+  }));
+};
+
+//DRINKING
+
+const drinkingOptions = ["Often", "Socially", "On Special Occasion", "Never"];
+
+const handleDrinkingClick = (drinking) => {
+  setFormData((prevState) => ({
+    ...prevState,
+    drinking: prevState.drinking === drinking ? "" : drinking,
+  }));
+};
+
+//SMOKING
+
+const smokingOptions = ["Often", "Socially", "On Special Occasion", "Never"];
+
+const handleSmokingClick = (smoking) => {
+  setFormData((prevState) => ({
+    ...prevState,
+    smoking: prevState.smoking === smoking ? "" : smoking,
+  }));
+};
+
 
 //LANGUAGES
 
@@ -448,6 +490,7 @@ const CreateSpark = () => {
               _hover={{
                 bg: formData.gender === gender ? "orange" : "orange",
               }}
+              size="sm"
               m={1}
             >
               {gender}
@@ -475,6 +518,7 @@ const CreateSpark = () => {
                   _hover={{
                     bg: formData.interested_in.includes(interestedIn) ? "orange" : "orange",
                   }}
+                  size="sm"
                   m={1}
                 >
                   {interestedIn}
@@ -514,7 +558,12 @@ const CreateSpark = () => {
           </FormControl>
 
           <FormControl id="ethnicity">
+          <Stack direction="row" align="baseline">
             <FormLabel>Ethnicity</FormLabel>
+            <Text fontSize="sm" color="gray.500">
+            (Select up to 5)
+          </Text>
+          </Stack>
             <Box display="flex" flexWrap="wrap">
               {ethnicityOptions.map((ethnicitySelection) => (
                 <Button
@@ -527,6 +576,7 @@ const CreateSpark = () => {
                   _hover={{
                     bg: formData.ethnicity.includes(ethnicitySelection) ? "orange" : "orange",
                   }}
+                  size="sm"
                   m={1}
                 >
                   {ethnicitySelection}
@@ -608,42 +658,94 @@ const CreateSpark = () => {
 
           <FormControl id="exercise">
             <FormLabel>Exercise</FormLabel>
-            <Input
-              type="text"
-              name="exercise"
-              value={formData.exercise}
-              onChange={handleChange}
-            />
+            <Box display="flex" flexWrap="wrap">
+          {exerciseOptions.map((exercise) => (
+            <Button
+              key={exercise}
+              onClick={() => handleExerciseClick(exercise)}
+              //colorScheme={formData.gender === gender ? "darkorange" : "#1B2328"}
+              variant="solid"
+              bg={formData.exercise === exercise ? "darkorange" : "#1B2328"}
+              color={formData.exercise === exercise ? "black" : "white"}
+              _hover={{
+                bg: formData.exercise === exercise ? "orange" : "orange",
+              }}
+              size="sm"
+              m={1}
+            >
+              {exercise}
+            </Button>
+          ))}
+        </Box>
           </FormControl>
 
           <FormControl id="education_level">
             <FormLabel>Education Level</FormLabel>
-            <Input
-              type="text"
-              name="education_level"
-              value={formData.education_level}
-              onChange={handleChange}
-            />
+            <Box display="flex" flexWrap="wrap">
+          {educationOptions.map((education_level) => (
+            <Button
+              key={education_level}
+              onClick={() => handleEducationClick(education_level)}
+              //colorScheme={formData.gender === gender ? "darkorange" : "#1B2328"}
+              variant="solid"
+              bg={formData.education_level === education_level ? "darkorange" : "#1B2328"}
+              color={formData.education_level === education_level ? "black" : "white"}
+              _hover={{
+                bg: formData.education_level === education_level ? "orange" : "orange",
+              }}
+              size="sm"
+              m={1}
+            >
+              {education_level}
+            </Button>
+          ))}
+        </Box>
           </FormControl>
 
           <FormControl id="drinking">
             <FormLabel>Drinking</FormLabel>
-            <Input
-              type="text"
-              name="drinking"
-              value={formData.drinking}
-              onChange={handleChange}
-            />
+            <Box display="flex" flexWrap="wrap">
+          {drinkingOptions.map((drinking) => (
+            <Button
+              key={drinking}
+              onClick={() => handleDrinkingClick(drinking)}
+              //colorScheme={formData.gender === gender ? "darkorange" : "#1B2328"}
+              variant="solid"
+              bg={formData.drinking === drinking ? "darkorange" : "#1B2328"}
+              color={formData.drinking === drinking ? "black" : "white"}
+              _hover={{
+                bg: formData.drinking === drinking ? "orange" : "orange",
+              }}
+              size="sm"
+              m={1}
+            >
+              {drinking}
+            </Button>
+          ))}
+        </Box>
           </FormControl>
 
           <FormControl id="smoking">
             <FormLabel>Smoking</FormLabel>
-            <Input
-              type="text"
-              name="smoking"
-              value={formData.smoking}
-              onChange={handleChange}
-            />
+            <Box display="flex" flexWrap="wrap">
+          {smokingOptions.map((smoking) => (
+            <Button
+              key={smoking}
+              onClick={() => handleSmokingClick(smoking)}
+              //colorScheme={formData.gender === gender ? "darkorange" : "#1B2328"}
+              variant="solid"
+              bg={formData.smoking === smoking ? "darkorange" : "#1B2328"}
+              color={formData.smoking === smoking ? "black" : "white"}
+              _hover={{
+                bg: formData.smoking === smoking ? "orange" : "orange",
+              }}
+              size="sm"
+              m={1}
+            >
+              {smoking}
+            </Button>
+          ))}
+        </Box>
           </FormControl>
 
           <FormControl id="cannabis">
