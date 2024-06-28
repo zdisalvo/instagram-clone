@@ -49,7 +49,7 @@ const CreateSpark = () => {
         drinking: "",
         smoking: "",
         cannabis: "",
-        looking_for: "",
+        looking_for: [],
         family_plans: "",
         have_kids: "",
         star_sign: "",
@@ -81,7 +81,7 @@ const CreateSpark = () => {
             drinking: sparkProfile.drinking || "",
             smoking: sparkProfile.smoking || "",
             cannabis: sparkProfile.cannabis || "",
-            looking_for: sparkProfile.looking_for || "",
+            looking_for: sparkProfile.looking_for || [],
             family_plans: sparkProfile.family_plans || "",
             have_kids: sparkProfile.have_kids || "",
             star_sign: sparkProfile.star_sign || "",
@@ -363,6 +363,37 @@ const handleSmokingClick = (smoking) => {
 };
 
 
+//CANNABIS
+
+const cannabisOptions = ["Often", "Socially", "On Special Occasion", "Never"];
+
+const handleCannabisClick = (cannabis) => {
+  setFormData((prevState) => ({
+    ...prevState,
+    cannabis: prevState.cannabis === cannabis ? "" : cannabis,
+  }));
+};
+
+//LOOKING FOR
+
+const lookingForOptions = ["Exploring", "Casual Dating", "Monogamous Relationship", "Open Relationship", "Long Term", "Marriage"];
+
+const handleLookingForClick = (lookingForSelection) => {
+  setFormData((prevState) => {
+    const currentLookingFor = [...prevState.looking_for];
+    if (currentLookingFor.includes(lookingForSelection)) {
+
+      return { ...prevState, looking_for: currentLookingFor.filter((e) => e !== lookingForSelection) };
+    } else if (currentLookingFor.length < 3) {
+ 
+      return { ...prevState, looking_for: [...currentLookingFor, lookingForSelection] };
+    } else {
+      return prevState; 
+    }
+  });
+};
+
+
 //LANGUAGES
 
     const predefinedLanguages = languagesData.map((language) => ({
@@ -483,7 +514,6 @@ const handleSmokingClick = (smoking) => {
             <Button
               key={gender}
               onClick={() => handleGenderClick(gender)}
-              //colorScheme={formData.gender === gender ? "darkorange" : "#1B2328"}
               variant="solid"
               bg={formData.gender === gender ? "darkorange" : "#1B2328"}
               color={formData.gender === gender ? "black" : "white"}
@@ -511,7 +541,6 @@ const handleSmokingClick = (smoking) => {
                 <Button
                   key={interestedIn}
                   onClick={() => handleInterestedInClick(interestedIn)}
-                  //colorScheme={formData.interested_in.includes(interestedIn) ? "orange" : "gray"}
                   variant="solid"
                   bg={formData.interested_in.includes(interestedIn) ? "darkorange" : "#1B2328"}
                   color={formData.interested_in.includes(interestedIn) ? "black" : "white"}
@@ -569,7 +598,6 @@ const handleSmokingClick = (smoking) => {
                 <Button
                   key={ethnicitySelection}
                   onClick={() => handleEthnicityClick(ethnicitySelection)}
-                  //colorScheme={formData.ethnicity.includes(ethnicitySelection) ? "blue" : "gray"}
                   variant="solid"
                   bg={formData.ethnicity.includes(ethnicitySelection) ? "darkorange" : "#1B2328"}
                   color={formData.ethnicity.includes(ethnicitySelection) ? "black" : "white"}
@@ -663,7 +691,6 @@ const handleSmokingClick = (smoking) => {
             <Button
               key={exercise}
               onClick={() => handleExerciseClick(exercise)}
-              //colorScheme={formData.gender === gender ? "darkorange" : "#1B2328"}
               variant="solid"
               bg={formData.exercise === exercise ? "darkorange" : "#1B2328"}
               color={formData.exercise === exercise ? "black" : "white"}
@@ -686,7 +713,6 @@ const handleSmokingClick = (smoking) => {
             <Button
               key={education_level}
               onClick={() => handleEducationClick(education_level)}
-              //colorScheme={formData.gender === gender ? "darkorange" : "#1B2328"}
               variant="solid"
               bg={formData.education_level === education_level ? "darkorange" : "#1B2328"}
               color={formData.education_level === education_level ? "black" : "white"}
@@ -709,7 +735,6 @@ const handleSmokingClick = (smoking) => {
             <Button
               key={drinking}
               onClick={() => handleDrinkingClick(drinking)}
-              //colorScheme={formData.gender === gender ? "darkorange" : "#1B2328"}
               variant="solid"
               bg={formData.drinking === drinking ? "darkorange" : "#1B2328"}
               color={formData.drinking === drinking ? "black" : "white"}
@@ -732,7 +757,6 @@ const handleSmokingClick = (smoking) => {
             <Button
               key={smoking}
               onClick={() => handleSmokingClick(smoking)}
-              //colorScheme={formData.gender === gender ? "darkorange" : "#1B2328"}
               variant="solid"
               bg={formData.smoking === smoking ? "darkorange" : "#1B2328"}
               color={formData.smoking === smoking ? "black" : "white"}
@@ -750,22 +774,51 @@ const handleSmokingClick = (smoking) => {
 
           <FormControl id="cannabis">
             <FormLabel>Cannabis</FormLabel>
-            <Input
-              type="text"
-              name="cannabis"
-              value={formData.cannabis}
-              onChange={handleChange}
-            />
+            <Box display="flex" flexWrap="wrap">
+          {cannabisOptions.map((cannabis) => (
+            <Button
+              key={cannabis}
+              onClick={() => handleCannabisClick(cannabis)}
+              variant="solid"
+              bg={formData.cannabis === cannabis ? "darkorange" : "#1B2328"}
+              color={formData.cannabis === cannabis ? "black" : "white"}
+              _hover={{
+                bg: formData.cannabis === cannabis ? "orange" : "orange",
+              }}
+              size="sm"
+              m={1}
+            >
+              {cannabis}
+            </Button>
+          ))}
+        </Box>
           </FormControl>
 
           <FormControl id="looking_for">
-            <FormLabel>Looking For</FormLabel>
-            <Input
-              type="text"
-              name="looking_for"
-              value={formData.looking_for}
-              onChange={handleChange}
-            />
+          <Stack direction="row" align="baseline">
+            <FormLabel>Open To</FormLabel>
+            <Text fontSize="sm" color="gray.500">
+            (Select up to 3)
+          </Text>
+          </Stack>
+            <Box display="flex" flexWrap="wrap">
+              {lookingForOptions.map((lookingForSelection) => (
+                <Button
+                  key={lookingForSelection}
+                  onClick={() => handleLookingForClick(lookingForSelection)}
+                  variant="solid"
+                  bg={formData.looking_for.includes(lookingForSelection) ? "darkorange" : "#1B2328"}
+                  color={formData.looking_for.includes(lookingForSelection) ? "black" : "white"}
+                  _hover={{
+                    bg: formData.looking_for.includes(lookingForSelection) ? "orange" : "orange",
+                  }}
+                  size="sm"
+                  m={1}
+                >
+                  {lookingForSelection}
+                </Button>
+              ))}
+            </Box>
           </FormControl>
 
           <FormControl id="family_plans">
