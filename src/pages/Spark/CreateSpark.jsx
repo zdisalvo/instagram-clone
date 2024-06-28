@@ -11,6 +11,7 @@ import {
   Image,
   Heading,
   Text,
+  Center,
 } from "@chakra-ui/react";
 import useAuthStore from "../../store/authStore";
 import useCreateSparkProfile from "../../hooks/useCreateSparkProfile";
@@ -481,23 +482,58 @@ const handlePronounsClick = (pronouns) => {
 
   //INTEREST EMOJIS
 
-  const emojiOptions = [
-    "🎨",
-    "🎵",
-    "⚽️",
-    "🎮",
-    "📚",
-    "🍔",
-    "✈️",
-    "🏕️",
-    "🎥",
-    "🖥️",
-    "💃",
-    "🧘",
-    "🏋️",
-    "🎧",
-    "🧩",
-  ];
+  const emojiCategories = {
+    "Creativity": [
+      "🖌️ Art", "🎨 Painting", "📸 Photography", 
+      "🎹 Piano", "🎸 Guitar", "🎷 Saxophone", "🎭 Theatre", "🎺 Trumpet", "🎻 Violin", "📝 Writing"
+    ],
+    "Date Ideas": [
+      "🎡 Amusement Park", "🏹 Archery", "🖼️ Art Gallery", "🏖️ Beach Day", "🎳 Bowling", "🎧 Concert", "🚴 Cycling",    
+      "🍽️ Dinner", "🧩 Escape Room", "🎤 Karaoke", "🎬 Movie Night", "🏛️ Museum", "🏞️ Nature Walk", "🎨 Painting Class", "🌅 Sunsets", 
+      "🎭 Theatre"
+    ],
+    "Diet": [
+      "🍱 Bento", "🍔 Burgers", "🥩 Carnivore", "🍫 Chocolate", "🍪 Cookies", "🍩 Donuts", "🍟 Fries",    
+      "🌭 Hot Dogs", "🍝 Pasta", "🥙 Pita", "🍕 Pizza","🌱 Plant-based", "🍿 Popcorn", "🍜 Ramen", "🥪 Sandwiches", "🍣 Sushi",
+      "🌮 Tacos", "🥦 Vegan", "🥗 Vegetarian"
+    ],
+    "Fitness": [
+      "🚴 Cycling", "🤸 Gymnastics", "🤾 Handball",  
+      "🧗 Climbing", "🥋 Martial Arts", "🏃 Running", "🚣 Rowing",  
+      "⛷️ Skiing", "🏊 Swimming", "🏋️ Weightlifting", "🧘 Yoga", 
+    ],
+    "Hobbies": [
+      "🕹️ Arcade Games", "🍰 Baking", "♟️ Chess", "🎯 Darts", "🎣 Fishing", "🌱 Gardening", "⛰️ Hiking", "🎧 Listening to Music",  
+      "🎨 Painting", "💻 Programming", "🧩 Puzzles", "📚 Reading", 
+      "🧵 Sewing", "🎤 Singing", "🎭 Theatre", "🎮 Video Games", 
+    ],
+    "Night In": [
+      "🎲 Board Games", "👩‍🍳 Cooking", "🎥 Movies",   
+      "📚 Reading", "🎮 Video Games", "🍷 Wine", 
+    ],
+    "Going Out": [
+      "🍺 Beer", "☕ Cafes", "🥂 Champagne", "🎛️ Clubs", "🍸 Cocktails", "💃 Dancing",
+      "🎪 Festivals", "🎭 Improv", "🎤 Karaoke", "🎉 Parties", "🎤 Stand-up Comedy",
+      "🥃 Whiskey", "🍷 Wine", 
+    ],
+    "Pets": [
+      "🐦 Birds", "🐱 Cats", "🐶 Dogs", "🐠 Fish", "🐸 Frogs", "🐹 Hamsters", "🐭 Mice", "🐵 Monkeys", "🐰 Rabbits",
+      "🦎 Reptiles", "🐢 Turtles"
+    ],
+    "Self-care": [
+      "🛁 Bubble Baths", "📝 Journaling", "💆 Massage", "🧘‍♀️ Meditation",
+      "🧖 Sauna", "🧘 Yoga"
+    ],
+    "Sports": [
+      "🏈 American Football", "⚾️ Baseball", "🏀 Basketball", "🚴 Cycling", "⛳ Golf", "🏇 Horse Racing",   
+      "🏒 Ice Hockey", "⛸️ Ice Skating", "🏓 Ping Pong", "🏉 Rugby", "⛷️ Skiing",
+      "⚽ Soccer", "🏂 Snowboarding", "🏄 Surfing", "🏊 Swimming", "🎾 Tennis", "🏐 Volleyball", 
+    ],
+    "Travel": [
+      "🎒 Backpacking", "🏖️ Beaches", "🏕️ Camping", "🚢 Cruise", "🏜️ Desert", "🎪 Festivals", "🏝️ Islands", "⛰️ Mountains", "🏞️ National Parks", "✈️ New Cities", 
+      "🚗 Road Trips", "🧖‍♀️ Spa Weekend", "🌌 Space" 
+    ]
+  };
 
   const handleEmojiClick = (emoji) => {
     setFormData((prevState) => {
@@ -505,7 +541,7 @@ const handlePronounsClick = (pronouns) => {
       if (currentInterests.includes(emoji)) {
         // Remove the emoji if it's already selected
         return { ...prevState, interests: currentInterests.filter((e) => e !== emoji) };
-      } else if (currentInterests.length < 7) {
+      } else if (currentInterests.length < 10) {
         // Add the emoji if less than 7 are selected
         return { ...prevState, interests: [...currentInterests, emoji] };
       } else {
@@ -515,7 +551,6 @@ const handlePronounsClick = (pronouns) => {
   };
 
   
-
   
   return (
     <Container maxW="container.md" mb={{ base: "10vh", md: "60px" }}>
@@ -563,7 +598,7 @@ const handlePronounsClick = (pronouns) => {
             />
           </FormControl>
 
-          <FormControl id="school">
+          <FormControl id="school" mb={4}>
             <FormLabel>School</FormLabel>
             <Input
               type="text"
@@ -573,7 +608,7 @@ const handlePronounsClick = (pronouns) => {
             />
           </FormControl>
 
-          <FormControl id="gender">
+          <FormControl id="gender" mb={4}>
         <FormLabel>Gender</FormLabel>
         <Box display="flex" flexWrap="wrap">
           {genderOptions.map((gender) => (
@@ -595,7 +630,7 @@ const handlePronounsClick = (pronouns) => {
         </Box>
       </FormControl>
 
-          <FormControl id="interested_in">
+          <FormControl id="interested_in" mb={4}>
           <Stack direction="row" align="baseline">
           <FormLabel>Interested In</FormLabel>
           <Text fontSize="sm" color="gray.500">
@@ -622,7 +657,7 @@ const handlePronounsClick = (pronouns) => {
             </Box>
           </FormControl>
 
-          <FormControl id="location">
+          <FormControl id="location" mb={4}>
             <FormLabel>Location</FormLabel>
             <Select
                 name="location"
@@ -637,7 +672,7 @@ const handlePronounsClick = (pronouns) => {
             />
         </FormControl>
 
-          <FormControl id="hometown">
+          <FormControl id="hometown" mb={4}>
             <FormLabel>Hometown</FormLabel>
             <Select
                 name="location"
@@ -652,7 +687,7 @@ const handlePronounsClick = (pronouns) => {
             />
           </FormControl>
 
-          <FormControl id="languages">
+          <FormControl id="languages" mb={4}>
   <FormLabel>Languages</FormLabel>
   <Select
     isMulti
@@ -730,7 +765,7 @@ const handlePronounsClick = (pronouns) => {
   />
 </FormControl>
 
-          <FormControl id="ethnicity">
+          <FormControl id="ethnicity" mb={4}>
           <Stack direction="row" align="baseline">
             <FormLabel>Ethnicity</FormLabel>
             <Text fontSize="sm" color="gray.500">
@@ -757,9 +792,10 @@ const handlePronounsClick = (pronouns) => {
             </Box>
           </FormControl>
 
-          <FormControl id="height">
+          <FormControl id="height" mb={4}>
             <FormLabel>Height</FormLabel>
             <Select
+             
             name="height"
             isClearable
             styles={{
@@ -828,7 +864,7 @@ const handlePronounsClick = (pronouns) => {
         />
           </FormControl>
 
-          <FormControl id="exercise">
+          <FormControl id="exercise" mb={4}>
             <FormLabel>Exercise</FormLabel>
             <Box display="flex" flexWrap="wrap">
           {exerciseOptions.map((exercise) => (
@@ -850,7 +886,7 @@ const handlePronounsClick = (pronouns) => {
         </Box>
           </FormControl>
 
-          <FormControl id="education_level">
+          <FormControl id="education_level" mb={4}>
             <FormLabel>Education Level</FormLabel>
             <Box display="flex" flexWrap="wrap">
           {educationOptions.map((education_level) => (
@@ -872,7 +908,7 @@ const handlePronounsClick = (pronouns) => {
         </Box>
           </FormControl>
 
-          <FormControl id="drinking">
+          <FormControl id="drinking" mb={4}>
             <FormLabel>Drinking</FormLabel>
             <Box display="flex" flexWrap="wrap">
           {drinkingOptions.map((drinking) => (
@@ -894,7 +930,7 @@ const handlePronounsClick = (pronouns) => {
         </Box>
           </FormControl>
 
-          <FormControl id="smoking">
+          <FormControl id="smoking" mb={4}>
             <FormLabel>Smoking</FormLabel>
             <Box display="flex" flexWrap="wrap">
           {smokingOptions.map((smoking) => (
@@ -916,7 +952,7 @@ const handlePronounsClick = (pronouns) => {
         </Box>
           </FormControl>
 
-          <FormControl id="cannabis">
+          <FormControl id="cannabis" mb={4}>
             <FormLabel>Cannabis</FormLabel>
             <Box display="flex" flexWrap="wrap">
           {cannabisOptions.map((cannabis) => (
@@ -938,7 +974,7 @@ const handlePronounsClick = (pronouns) => {
         </Box>
           </FormControl>
 
-          <FormControl id="looking_for">
+          <FormControl id="looking_for" mb={4}>
           <Stack direction="row" align="baseline">
             <FormLabel>Open To</FormLabel>
             <Text fontSize="sm" color="gray.500">
@@ -965,7 +1001,7 @@ const handlePronounsClick = (pronouns) => {
             </Box>
           </FormControl>
 
-          <FormControl id="family_plans">
+          <FormControl id="family_plans" mb={4}>
             <FormLabel>Family Plans</FormLabel>
             <Box display="flex" flexWrap="wrap">
           {familyPlansOptions.map((family_plans) => (
@@ -987,7 +1023,7 @@ const handlePronounsClick = (pronouns) => {
         </Box>
           </FormControl>
 
-          <FormControl id="have_kids">
+          <FormControl id="have_kids" mb={4}>
             <FormLabel>Have Kids</FormLabel>
             <Box display="flex" flexWrap="wrap">
           {haveKidsOptions.map((have_kids) => (
@@ -1009,7 +1045,7 @@ const handlePronounsClick = (pronouns) => {
         </Box>
           </FormControl>
 
-          <FormControl id="star_sign">
+          <FormControl id="star_sign" mb={4}>
             <FormLabel>Zodiac Sign</FormLabel>
             <Box display="flex" flexWrap="wrap">
           {starSignOptions.map((star_sign) => (
@@ -1031,7 +1067,7 @@ const handlePronounsClick = (pronouns) => {
         </Box>
           </FormControl>
 
-          <FormControl id="politics">
+          <FormControl id="politics" mb={4}>
             <FormLabel>Politics</FormLabel>
             <Box display="flex" flexWrap="wrap">
           {politicsOptions.map((politics) => (
@@ -1053,7 +1089,7 @@ const handlePronounsClick = (pronouns) => {
         </Box>
           </FormControl>
 
-          <FormControl id="religion">
+          <FormControl id="religion" mb={4}>
             <FormLabel>Religion</FormLabel>
             <Box display="flex" flexWrap="wrap">
           {religionOptions.map((religion) => (
@@ -1075,7 +1111,7 @@ const handlePronounsClick = (pronouns) => {
         </Box>
           </FormControl>
 
-          <FormControl id="pronouns">
+          <FormControl id="pronouns" mb={4}>
             <FormLabel>Pronouns</FormLabel>
             <Box display="flex" flexWrap="wrap">
           {pronounsOptions.map((pronouns) => (
@@ -1100,25 +1136,52 @@ const handlePronounsClick = (pronouns) => {
           
 
 
-          <FormControl id="interests">
+          <FormControl id="interests" mb={2}>
+          <Stack direction="row" align="baseline">
             <FormLabel>Interests</FormLabel>
-            <Box display="flex" flexWrap="wrap">
-              {emojiOptions.map((emoji) => (
-                <Button
-                  key={emoji}
-                  onClick={() => handleEmojiClick(emoji)}
-                  colorScheme={formData.interests.includes(emoji) ? "blue" : "gray"}
-                  m={1}
-                >
-                  {emoji}
-                </Button>
-              ))}
-            </Box>
+            <Text fontSize="sm" color="gray.500">
+            (Select up to 10)
+          </Text>
+          </Stack>
+            <Box>
+      {Object.entries(emojiCategories).map(([category, emojis]) => (
+        <Box key={category} mb={8}>
+          <Center>
+          <FormLabel fontSize="sm">{category}</FormLabel>
+          </Center>
+          <Box>
+            {emojis.map((emoji) => (
+              <Button
+                key={emoji}
+                onClick={() => handleEmojiClick(emoji)}
+                variant="solid"
+                bg={formData.interests.includes(emoji) ? "darkorange" : "#1B2328"}
+                color={formData.interests.includes(emoji) ? "black" : "white"}
+                _hover={{
+                  bg: formData.interests.includes(emoji) ? "orange" : "orange",
+                }}
+                size="sm"
+                m={1}
+              >
+                {emoji}
+              </Button>
+            ))}
+          </Box>
+        </Box>
+      ))}
+    </Box>
           </FormControl>
 
-          <Button type="submit" colorScheme="orange" isLoading={isUpdating}>
-            Update Profile
-          </Button>
+          <Button
+          type="submit"
+          bg="darkorange" // Background color
+          color="black" // Text color
+          isLoading={isUpdating}
+          mb={8}
+          _hover={{ bg: "orange" }} // Hover state background color
+        >
+          Save Profile
+        </Button>
         </Stack>
       </Box>
     </Container>
