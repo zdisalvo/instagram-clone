@@ -424,10 +424,13 @@ const CreateSpark = () => {
             <Button
               key={gender}
               onClick={() => handleGenderClick(gender)}
-              colorScheme={formData.gender === gender ? "orange" : "gray"}
-              variant="outline" // Always use "outline" variant
-                color="white" // Set text color to white
-                borderColor={formData.gender === gender ? "orange" : "gray"} // Border color based on selection
+              //colorScheme={formData.gender === gender ? "darkorange" : "#1B2328"}
+              variant="solid"
+              bg={formData.gender === gender ? "darkorange" : "#1B2328"}
+              color={formData.gender === gender ? "black" : "white"}
+              _hover={{
+                bg: formData.gender === gender ? "orange" : "orange",
+              }}
               m={1}
             >
               {gender}
@@ -448,10 +451,13 @@ const CreateSpark = () => {
                 <Button
                   key={interestedIn}
                   onClick={() => handleInterestedInClick(interestedIn)}
-                  colorScheme={formData.interested_in.includes(interestedIn) ? "orange" : "gray"}
-                  variant="outline" // Always use "outline" variant
-                    color="white" // Set text color to white
-                    borderColor={formData.interested_in.includes(interestedIn) ? "orange" : "gray"} // Border color based on selection
+                  //colorScheme={formData.interested_in.includes(interestedIn) ? "orange" : "gray"}
+                  variant="solid"
+                  bg={formData.interested_in.includes(interestedIn) ? "darkorange" : "#1B2328"}
+                  color={formData.interested_in.includes(interestedIn) ? "black" : "white"}
+                  _hover={{
+                    bg: formData.interested_in.includes(interestedIn) ? "orange" : "orange",
+                  }}
                   m={1}
                 >
                   {interestedIn}
