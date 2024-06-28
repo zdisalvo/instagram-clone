@@ -448,6 +448,18 @@ const handleReligionClick = (religion) => {
   }));
 };
 
+//PRONOUNS
+
+const pronounsOptions = ["she/her", "he/him", "they/them", "she/they", "he/they", "ze/zir", "xe/xim", "co/co", "ey/em", "ve/ver", "per/per"];
+
+const handlePronounsClick = (pronouns) => {
+  setFormData((prevState) => ({
+    ...prevState,
+    pronouns: prevState.pronouns === pronouns ? "" : pronouns,
+  }));
+};
+
+
 //LANGUAGES
 
     const predefinedLanguages = languagesData.map((language) => ({
@@ -639,6 +651,84 @@ const handleReligionClick = (religion) => {
                 placeholder="Type and select your hometown..."
             />
           </FormControl>
+
+          <FormControl id="languages">
+  <FormLabel>Languages</FormLabel>
+  <Select
+    isMulti
+    name="languages"
+    styles={{
+      control: (provided, state) => ({
+        ...provided,
+        backgroundColor: 'black', // Background color of the select box
+        color: 'grey', // Text color of the select box
+        borderColor: state.isFocused ? 'sandybrown' : 'grey', // Border color when focused or hovered
+        boxShadow: 'none', // Removing box shadow
+        '&:hover': {
+          borderColor: 'sandybrown', // Border color on hover
+        },
+      }),
+      clearIndicator: (provided) => ({
+        ...provided,
+        //color: 'white', // Change color to white
+        '&:hover': {
+              color: 'sandybrown', // Change color to orange on hover
+            },
+      }),
+      multiValue: provided => ({
+        ...provided,
+        backgroundColor: '#333333', // Background color of selected value
+        color: 'white', // Text color of selected value
+      }),
+      multiValueLabel: provided => ({
+        ...provided,
+        color: 'white', // Text color of label in selected value
+      }),
+      multiValueRemove: (provided, state) => ({
+        ...provided,
+        color: 'white', // Color of remove icon in selected value
+        '&:hover': {
+          backgroundColor: '#333333', // Background color on hover for remove icon
+          color: 'sandybrown', // Text color on hover for remove icon
+        },
+      }),
+      option: (provided, state) => ({
+        ...provided,
+        backgroundColor: state.isSelected ? '#333333' : 'black', // Customizing option background color for selected state
+        
+        color: state.isSelected ? 'sandybrown' : 'grey', // Customizing option text color
+        //fontWeight: state.isSelected ? 'bold' : 'normal', // Setting font weight when selected
+        '&:hover': {
+          backgroundColor: '#333333', // Background color on hover
+          color: 'sandybrown', // Text color on hover
+          //fontWeight: 'bold',
+        },
+      }),
+      input: (provided) => ({
+        ...provided,
+        color: 'grey', // Customizing input text color
+      }),
+      menu: (provided) => ({
+        ...provided,
+        backgroundColor: 'black', // Background color of the dropdown menu
+        marginTop: 0, // Removing the default margin-top
+        borderRadius: 0, // Removing default border radius
+        boxShadow: 'none', // Removing box shadow
+        borderWidth: 0, // Removing border width
+      }),
+      singleValue: (provided) => ({
+        ...provided,
+        color: 'grey', // Color of the single selected value
+        backgroundColor: '#333333'
+      }),
+    }}
+    options={predefinedLanguages}
+    value={(formData.languages).map((lang) => ({ label: lang, value: lang }))}
+    onChange={handleLanguageChange}
+    filterOption={filterLanguages}
+    placeholder="Type or select languages..."
+  />
+</FormControl>
 
           <FormControl id="ethnicity">
           <Stack direction="row" align="baseline">
@@ -987,101 +1077,27 @@ const handleReligionClick = (religion) => {
 
           <FormControl id="pronouns">
             <FormLabel>Pronouns</FormLabel>
-            <Select
-              isMulti
-              name="pronouns"
-              options={[
-                { value: "he/him", label: "he/him" },
-                { value: "she/her", label: "she/her" },
-                { value: "they/them", label: "they/them" },
-              ]}
-              value={formData.pronouns.map((pronoun) => ({ label: pronoun, value: pronoun }))}
-              onChange={(selectedOptions) =>
-                setFormData((prevState) => ({
-                  ...prevState,
-                  pronouns: selectedOptions ? selectedOptions.map((option) => option.value) : [],
-                }))
-              }
-            />
+            <Box display="flex" flexWrap="wrap">
+          {pronounsOptions.map((pronouns) => (
+            <Button
+              key={pronouns}
+              onClick={() => handlePronounsClick(pronouns)}
+              variant="solid"
+              bg={formData.pronouns === pronouns ? "darkorange" : "#1B2328"}
+              color={formData.pronouns === pronouns ? "black" : "white"}
+              _hover={{
+                bg: formData.pronouns === pronouns ? "orange" : "orange",
+              }}
+              size="sm"
+              m={1}
+            >
+              {pronouns}
+            </Button>
+          ))}
+        </Box>
           </FormControl>
 
-          <FormControl id="languages">
-  <FormLabel>Languages</FormLabel>
-  <Select
-    isMulti
-    name="languages"
-    styles={{
-      control: (provided, state) => ({
-        ...provided,
-        backgroundColor: 'black', // Background color of the select box
-        color: 'grey', // Text color of the select box
-        borderColor: state.isFocused ? 'sandybrown' : 'grey', // Border color when focused or hovered
-        boxShadow: 'none', // Removing box shadow
-        '&:hover': {
-          borderColor: 'sandybrown', // Border color on hover
-        },
-      }),
-      clearIndicator: (provided) => ({
-        ...provided,
-        //color: 'white', // Change color to white
-        '&:hover': {
-              color: 'sandybrown', // Change color to orange on hover
-            },
-      }),
-      multiValue: provided => ({
-        ...provided,
-        backgroundColor: '#333333', // Background color of selected value
-        color: 'white', // Text color of selected value
-      }),
-      multiValueLabel: provided => ({
-        ...provided,
-        color: 'white', // Text color of label in selected value
-      }),
-      multiValueRemove: (provided, state) => ({
-        ...provided,
-        color: 'white', // Color of remove icon in selected value
-        '&:hover': {
-          backgroundColor: '#333333', // Background color on hover for remove icon
-          color: 'sandybrown', // Text color on hover for remove icon
-        },
-      }),
-      option: (provided, state) => ({
-        ...provided,
-        backgroundColor: state.isSelected ? '#333333' : 'black', // Customizing option background color for selected state
-        
-        color: state.isSelected ? 'sandybrown' : 'grey', // Customizing option text color
-        //fontWeight: state.isSelected ? 'bold' : 'normal', // Setting font weight when selected
-        '&:hover': {
-          backgroundColor: '#333333', // Background color on hover
-          color: 'sandybrown', // Text color on hover
-          //fontWeight: 'bold',
-        },
-      }),
-      input: (provided) => ({
-        ...provided,
-        color: 'grey', // Customizing input text color
-      }),
-      menu: (provided) => ({
-        ...provided,
-        backgroundColor: 'black', // Background color of the dropdown menu
-        marginTop: 0, // Removing the default margin-top
-        borderRadius: 0, // Removing default border radius
-        boxShadow: 'none', // Removing box shadow
-        borderWidth: 0, // Removing border width
-      }),
-      singleValue: (provided) => ({
-        ...provided,
-        color: 'grey', // Color of the single selected value
-        backgroundColor: '#333333'
-      }),
-    }}
-    options={predefinedLanguages}
-    value={(formData.languages).map((lang) => ({ label: lang, value: lang }))}
-    onChange={handleLanguageChange}
-    filterOption={filterLanguages}
-    placeholder="Type or select languages..."
-  />
-</FormControl>
+          
 
 
           <FormControl id="interests">
