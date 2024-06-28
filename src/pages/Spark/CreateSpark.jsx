@@ -135,7 +135,7 @@ const CreateSpark = () => {
 
 //GENDER
 
-  const genderOptions = ["Female", "Male", "Trans Female", "Trans Man", "Non-binary"];
+  const genderOptions = ["Female", "Male", "Trans Female", "Trans Male", "Non-binary"];
 
   const handleGenderChange = (selectedOption) => {
     setFormData((prevState) => ({
@@ -424,10 +424,10 @@ const CreateSpark = () => {
             <Button
               key={gender}
               onClick={() => handleGenderClick(gender)}
-              colorScheme={formData.gender.includes(gender) ? "orange" : "gray"}
+              colorScheme={formData.gender === gender ? "orange" : "gray"}
               variant="outline" // Always use "outline" variant
                 color="white" // Set text color to white
-                borderColor={formData.gender.includes(gender) ? "orange" : "gray"} // Border color based on selection
+                borderColor={formData.gender === gender ? "orange" : "gray"} // Border color based on selection
               m={1}
             >
               {gender}
