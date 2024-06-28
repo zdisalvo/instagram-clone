@@ -20,7 +20,7 @@ import languagesData from "../../../json-files/languages.json";
 import heightsData from "../../../json-files/heights.json";
 import citiesData from "../../../json-files/worldcities2.json";
 import countryCodeToFlagEmoji from 'country-code-to-flag-emoji';
-
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 
@@ -42,7 +42,7 @@ const CreateSpark = () => {
         interested_in: [],
         location: "",
         hometown: "",
-        ethnicity: "",
+        ethnicity: [],
         height: "",
         exercise: "",
         education_level: "",
@@ -74,7 +74,7 @@ const CreateSpark = () => {
             interested_in: sparkProfile.interested_in || [],
             location: sparkProfile.location || "",
             hometown: sparkProfile.hometown || "",
-            ethnicity: sparkProfile.ethnicity || "",
+            ethnicity: sparkProfile.ethnicity || [],
             height: sparkProfile.height || "",
             exercise: sparkProfile.exercise || "",
             education_level: sparkProfile.education_level || "",
@@ -279,7 +279,24 @@ const CreateSpark = () => {
     };
 
 
+//ETHNICITY
 
+    const ethnicityOptions = ["Asian", "Black", "Indian", "Jewish", "Latin", "Middle Eastern", "Pacific Islander", "Persian", "White"];
+
+    const handleEthnicityClick = (ethnicitySelection) => {
+      setFormData((prevState) => {
+        const currentEthnicities = [...prevState.ethnicity];
+        if (currentEthnicities.includes(ethnicitySelection)) {
+          // Remove the ethnicity if it's already selected
+          return { ...prevState, ethnicity: currentEthnicities.filter((e) => e !== ethnicitySelection) };
+        } else if (currentEthnicities.length < 5) {
+          // Add the ethnicity if less than 5 are selected
+          return { ...prevState, ethnicity: [...currentEthnicities, ethnicitySelection] };
+        } else {
+          return prevState; // Do nothing if already 7 are selected
+        }
+      });
+    };
 
 //HEIGHT
 
@@ -498,12 +515,24 @@ const CreateSpark = () => {
 
           <FormControl id="ethnicity">
             <FormLabel>Ethnicity</FormLabel>
-            <Input
-              type="text"
-              name="ethnicity"
-              value={formData.ethnicity}
-              onChange={handleChange}
-            />
+            <Box display="flex" flexWrap="wrap">
+              {ethnicityOptions.map((ethnicitySelection) => (
+                <Button
+                  key={ethnicitySelection}
+                  onClick={() => handleEthnicityClick(ethnicitySelection)}
+                  //colorScheme={formData.ethnicity.includes(ethnicitySelection) ? "blue" : "gray"}
+                  variant="solid"
+                  bg={formData.ethnicity.includes(ethnicitySelection) ? "darkorange" : "#1B2328"}
+                  color={formData.ethnicity.includes(ethnicitySelection) ? "black" : "white"}
+                  _hover={{
+                    bg: formData.ethnicity.includes(ethnicitySelection) ? "orange" : "orange",
+                  }}
+                  m={1}
+                >
+                  {ethnicitySelection}
+                </Button>
+              ))}
+            </Box>
           </FormControl>
 
           <FormControl id="height">
