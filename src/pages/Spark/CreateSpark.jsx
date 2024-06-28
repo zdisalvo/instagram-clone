@@ -415,8 +415,38 @@ const handleHaveKidsClick = (have_kids) => {
   }));
 };
 
-//STAR
+//STAR SIGN
 
+const starSignOptions = ["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn"];
+
+const handleStarSignClick = (star_sign) => {
+  setFormData((prevState) => ({
+    ...prevState,
+    star_sign: prevState.star_sign === star_sign ? "" : star_sign,
+  }));
+};
+
+//POLITICS
+
+const politicsOptions = ["Apolitical", "Liberal", "Moderate", "Conservative"];
+
+const handlePoliticsClick = (politics) => {
+  setFormData((prevState) => ({
+    ...prevState,
+    politics: prevState.politics === politics ? "" : politics,
+  }));
+};
+
+//RELIGION
+
+const religionOptions = ["Agnostic", "Atheist", "Buddhist", "Catholic", "Christian", "Hindu", "Jain", "Jewish", "Mormon", "Latter-day Saint", "Muslim", "Zoroastrian", "Sikh", "Spiritual", "Other"];
+
+const handleReligionClick = (religion) => {
+  setFormData((prevState) => ({
+    ...prevState,
+    religion: prevState.religion === religion ? "" : religion,
+  }));
+};
 
 //LANGUAGES
 
@@ -890,33 +920,69 @@ const handleHaveKidsClick = (have_kids) => {
           </FormControl>
 
           <FormControl id="star_sign">
-            <FormLabel>Star Sign</FormLabel>
-            <Input
-              type="text"
-              name="star_sign"
-              value={formData.star_sign}
-              onChange={handleChange}
-            />
+            <FormLabel>Zodiac Sign</FormLabel>
+            <Box display="flex" flexWrap="wrap">
+          {starSignOptions.map((star_sign) => (
+            <Button
+              key={star_sign}
+              onClick={() => handleStarSignClick(star_sign)}
+              variant="solid"
+              bg={formData.star_sign === star_sign ? "darkorange" : "#1B2328"}
+              color={formData.star_sign === star_sign ? "black" : "white"}
+              _hover={{
+                bg: formData.star_sign === star_sign ? "orange" : "orange",
+              }}
+              size="sm"
+              m={1}
+            >
+              {star_sign}
+            </Button>
+          ))}
+        </Box>
           </FormControl>
 
           <FormControl id="politics">
             <FormLabel>Politics</FormLabel>
-            <Input
-              type="text"
-              name="politics"
-              value={formData.politics}
-              onChange={handleChange}
-            />
+            <Box display="flex" flexWrap="wrap">
+          {politicsOptions.map((politics) => (
+            <Button
+              key={politics}
+              onClick={() => handlePoliticsClick(politics)}
+              variant="solid"
+              bg={formData.politics === politics ? "darkorange" : "#1B2328"}
+              color={formData.politics === politics ? "black" : "white"}
+              _hover={{
+                bg: formData.politics === politics ? "orange" : "orange",
+              }}
+              size="sm"
+              m={1}
+            >
+              {politics}
+            </Button>
+          ))}
+        </Box>
           </FormControl>
 
           <FormControl id="religion">
             <FormLabel>Religion</FormLabel>
-            <Input
-              type="text"
-              name="religion"
-              value={formData.religion}
-              onChange={handleChange}
-            />
+            <Box display="flex" flexWrap="wrap">
+          {religionOptions.map((religion) => (
+            <Button
+              key={religion}
+              onClick={() => handleReligionClick(religion)}
+              variant="solid"
+              bg={formData.religion === religion ? "darkorange" : "#1B2328"}
+              color={formData.religion === religion ? "black" : "white"}
+              _hover={{
+                bg: formData.religion === religion ? "orange" : "orange",
+              }}
+              size="sm"
+              m={1}
+            >
+              {religion}
+            </Button>
+          ))}
+        </Box>
           </FormControl>
 
           <FormControl id="pronouns">
