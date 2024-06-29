@@ -613,7 +613,14 @@ const handlePronounsClick = (pronouns) => {
             {preview && (
               <Image src={preview} alt="Profile Picture Preview" boxSize="150px" mt={2} />
             )}
-            <Box mt={4} position="relative">
+            <Box
+        mt={4}
+        position="relative"
+        overflow="hidden"
+        height="220px" // Ensure this height accommodates exactly 2 rows
+        border="1px solid #ccc"
+        borderRadius="md"
+      >
         <Button
           position="absolute"
           top="50%"
@@ -626,10 +633,20 @@ const handlePronounsClick = (pronouns) => {
         </Button>
         <Box
           ref={scrollContainerRef}
-          display="flex"
+          //display="flex"
+          display="grid"
+          gridTemplateColumns="repeat(auto-fill, minmax(150px, 1fr))"
+          gridTemplateRows="repeat(2, 110px)"
+          maxHeight={{base: "23vw", md: "250px"}}
+          scrollBehavior="smooth"
+          height="100%"
+          gap={2}
+
           overflowX="auto"
-          whiteSpace="nowrap"
+          overflowY="hidden"
+          //whiteSpace="nowrap"
           p={2}
+          px={{base: "5vw", md: "50px"}}
           border="1px solid #ccc"
           borderRadius="md"
           pr={10} // Adding right padding to prevent clipping of the last image
