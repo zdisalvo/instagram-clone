@@ -12,6 +12,7 @@ import {
   Heading,
   Text,
   Center,
+  Spinner,
 } from "@chakra-ui/react";
 import useAuthStore from "../../store/authStore";
 import useCreateSparkProfile from "../../hooks/useCreateSparkProfile";
@@ -22,13 +23,20 @@ import heightsData from "../../../json-files/heights.json";
 import citiesData from "../../../json-files/worldcities2.json";
 import countryCodeToFlagEmoji from 'country-code-to-flag-emoji';
 import ReCAPTCHA from "react-google-recaptcha";
-
+import useGetUserPostsById from "../../hooks/useGetUserPostsById";
 
 
 const CreateSpark = () => {
   const authUser = useAuthStore((state) => state.user);
+  if (!authUser) return;
 
-  if (!authUser) return null;
+  console.log(authUser.uid);
+
+  const { userPosts, isLoading: postsLoading } = useGetUserPostsById(authUser.uid);
+  if (postsLoading) return <Spinner size="xl" />; // Adjust this based on your needs
+
+
+  console.log(userPosts.length);
 
   const { sparkProfile } = useGetSparkProfileById(authUser?.uid);
   const { isUpdating, editSparkProfile } = useCreateSparkProfile();
