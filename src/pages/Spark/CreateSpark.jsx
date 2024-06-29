@@ -17,13 +17,14 @@ import {
 import useAuthStore from "../../store/authStore";
 import useCreateSparkProfile from "../../hooks/useCreateSparkProfile";
 import useGetSparkProfileById from "../../hooks/useGetSparkProfileById";
+import useGetUserPostsById from "../../hooks/useGetUserPostsById";
 import Select from "react-select";
 import languagesData from "../../../json-files/languages.json";
 import heightsData from "../../../json-files/heights.json";
 import citiesData from "../../../json-files/worldcities2.json";
 import countryCodeToFlagEmoji from 'country-code-to-flag-emoji';
 import ReCAPTCHA from "react-google-recaptcha";
-import useGetUserPostsById from "../../hooks/useGetUserPostsById";
+
 
 
 const CreateSpark = () => {
@@ -32,15 +33,14 @@ const CreateSpark = () => {
 
   console.log(authUser.uid);
 
-  const { userPosts, isLoading: postsLoading } = useGetUserPostsById(authUser.uid);
-  if (postsLoading) return <Spinner size="xl" />; // Adjust this based on your needs
+  
+  const { isUpdating, editSparkProfile } = useCreateSparkProfile();
+  const { sparkProfile } = useGetSparkProfileById(authUser.uid);
 
+  const { userPosts, isLoading: postsLoading } = useGetUserPostsById(authUser.uid);
+  //if (postsLoading) return <Spinner size="xl" />; // Adjust this based on your needs
 
   console.log(userPosts.length);
-
-  const { sparkProfile } = useGetSparkProfileById(authUser?.uid);
-  const { isUpdating, editSparkProfile } = useCreateSparkProfile();
-
   
     const [formData, setFormData] = useState({
         name: "",
@@ -117,6 +117,23 @@ const CreateSpark = () => {
       ...prevState,
       [name]: capitalizedValue,
     }));
+  };
+
+  const [selectedImages, setSelectedImages] = useState([]);
+
+
+  const handleImageClick = (id) => {
+    setSelectedImages((prevSelectedImages) => {
+      if (prevSelectedImages.includes(id)) {
+        // Remove the image if it's already selected
+        return prevSelectedImages.filter((imgId) => imgId !== id);
+      } else if (prevSelectedImages.length < 5) {
+        // Add the image if less than 5 are selected
+        return [...prevSelectedImages, id];
+      } else {
+        return prevSelectedImages; // Do nothing if already 5 are selected
+      }
+    });
   };
 
 
@@ -584,6 +601,32 @@ const handlePronounsClick = (pronouns) => {
             {preview && (
               <Image src={preview} alt="Profile Picture Preview" boxSize="150px" mt={2} />
             )}
+            <Box
+        mt={4}
+        display="flex"
+        overflowX="scroll"
+        whiteSpace="nowrap"
+        p={2}
+        border="1px solid #ccc"
+        borderRadius="md"
+      >
+        {!postsLoading && userPosts.map((post, index) => (
+          <Box
+            key={index}
+            onClick={() => handleImageClick(post.id)}
+            cursor="pointer"
+            mx={2}
+          >
+            <Image
+              src={post.imageURL}
+              alt={`Post ${index + 1}`}
+              boxSize="100px"
+              borderRadius="md"
+              border={selectedImages.includes(post.id) ? "2px solid orange" : "none"}
+            />
+          </Box>
+        ))}
+      </Box>
           </FormControl>
 
           <FormControl id="birthday">
