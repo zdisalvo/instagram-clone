@@ -24,6 +24,7 @@ import heightsData from "../../../json-files/heights.json";
 import citiesData from "../../../json-files/worldcities2.json";
 import countryCodeToFlagEmoji from 'country-code-to-flag-emoji';
 import ReCAPTCHA from "react-google-recaptcha";
+import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 
 
 
@@ -32,6 +33,8 @@ const CreateSpark = () => {
   if (!authUser) return;
 
   console.log(authUser.uid);
+
+  const scrollContainerRef = useRef(null);
 
   
   const { isUpdating, editSparkProfile } = useCreateSparkProfile();
@@ -575,6 +578,15 @@ const handlePronounsClick = (pronouns) => {
     });
   };
 
+  const scroll = (direction) => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: direction === 'left' ? -100 : 100,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   
   
   return (
@@ -601,31 +613,56 @@ const handlePronounsClick = (pronouns) => {
             {preview && (
               <Image src={preview} alt="Profile Picture Preview" boxSize="150px" mt={2} />
             )}
+            <Box mt={4} position="relative">
+        <Button
+          position="absolute"
+          top="50%"
+          left="0"
+          transform="translateY(-50%)"
+          onClick={() => scroll('left')}
+          zIndex="1"
+        >
+          <ChevronLeftIcon />
+        </Button>
+        <Box
+          ref={scrollContainerRef}
+          display="flex"
+          overflowX="auto"
+          whiteSpace="nowrap"
+          p={2}
+          border="1px solid #ccc"
+          borderRadius="md"
+          pr={10} // Adding right padding to prevent clipping of the last image
+        >
+          {!postsLoading && userPosts.map((post, index) => (
             <Box
-        mt={4}
-        display="flex"
-        overflowX="scroll"
-        whiteSpace="nowrap"
-        p={2}
-        border="1px solid #ccc"
-        borderRadius="md"
-      >
-        {!postsLoading && userPosts.map((post, index) => (
-          <Box
-            key={index}
-            onClick={() => handleImageClick(post.id)}
-            cursor="pointer"
-            mx={2}
-          >
-            <Image
-              src={post.imageURL}
-              alt={`Post ${index + 1}`}
-              boxSize="100px"
-              borderRadius="md"
-              border={selectedImages.includes(post.id) ? "2px solid orange" : "none"}
-            />
-          </Box>
-        ))}
+              key={index}
+              onClick={() => handleImageClick(post.id)}
+              cursor="pointer"
+              mx={2}
+              display="inline-block"
+            >
+              <Image
+                src={post.imageURL}
+                alt={`Post ${index + 1}`}
+                maxWidth={{base: "10vw", md: "100px"}}
+                maxHeight={{base: "auto", md: "auto"}}
+                borderRadius="md"
+                border={selectedImages.includes(post.id) ? "2px solid orange" : "none"}
+              />
+            </Box>
+          ))}
+        </Box>
+        <Button
+          position="absolute"
+          top="50%"
+          right="0"
+          transform="translateY(-50%)"
+          onClick={() => scroll('right')}
+          zIndex="1"
+        >
+          <ChevronRightIcon />
+        </Button>
       </Box>
           </FormControl>
 
