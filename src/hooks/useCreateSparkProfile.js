@@ -63,6 +63,7 @@ const useCreateSparkProfile = () => {
 				languages: inputs.languages || sparkProfile?.languages || [],
 				photos: sparkProfile?.photos || [],
 				interests: inputs.interests || sparkProfile?.interests || [],
+				selectedImages: inputs.selectedImages || sparkProfile?.selectedImages || [],
 			};
 
 			const updatedUser = {

@@ -61,6 +61,7 @@ const useSignUpWithEmailAndPassword = () => {
 					photos: [],
 					interests: [],
 					profilePic: null,
+					selectedImages: [],
 				}
 
 				const userDoc = {

@@ -32,7 +32,7 @@ const CreateSpark = () => {
   const authUser = useAuthStore((state) => state.user);
   if (!authUser) return;
 
-  console.log(authUser.uid);
+  //console.log(authUser.uid);
 
   const scrollContainerRef = useRef(null);
 
@@ -43,7 +43,9 @@ const CreateSpark = () => {
   const { userPosts, isLoading: postsLoading } = useGetUserPostsById(authUser.uid);
   //if (postsLoading) return <Spinner size="xl" />; // Adjust this based on your needs
 
-  console.log(userPosts.length);
+  //const [selectedImages, setSelectedImages] = useState([]);
+
+  //console.log(userPosts.length);
   
     const [formData, setFormData] = useState({
         name: "",
@@ -106,6 +108,7 @@ const CreateSpark = () => {
             profilePic: sparkProfile.profilePic || null,
             selectedImages: sparkProfile.selectedImages || [],
           }));
+          //setSelectedImages(sparkProfile.selectedImages || []);
         }
       }, [sparkProfile]);
 
@@ -124,12 +127,17 @@ const CreateSpark = () => {
     }));
   };
 
+  
+  
+
+
   const handleImageClick = (id) => {
     setFormData((prevState) => {
+      //console.log(prevState.selectedImages);
       const currentSelectedImages = [...prevState.selectedImages];
       if (currentSelectedImages.includes(id)) {
         // Remove the emoji if it's already selected
-        return { ...prevState, selectedImages: currentSelectedImages.filter((e) => e !== id) };
+        return { ...prevState, selectedImages: currentSelectedImages.filter((p) => p !== id) };
       } else if (currentSelectedImages.length < 5) {
         // Add the emoji if less than 7 are selected
         return { ...prevState, selectedImages: [...currentSelectedImages, id] };
@@ -139,8 +147,8 @@ const CreateSpark = () => {
     });
   };
 
-  // const [selectedImages, setSelectedImages] = useState([]);
-
+  
+  //const [selectedImages, setSelectedImages] = useState([]);
 
   // const handleImageClick = (id) => {
   //   setSelectedImages((prevSelectedImages) => {
@@ -183,7 +191,7 @@ const CreateSpark = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await editSparkProfile(formData);
-    console.log("Profile updated", formData);
+    //console.log("Profile updated", formData);
   };
 
 //GENDER
@@ -630,6 +638,11 @@ const handlePronounsClick = (pronouns) => {
             {preview && (
               <Image src={preview} alt="Profile Picture Preview" boxSize="150px" mt={2} />
             )}
+            </FormControl>
+            
+
+          <FormControl id="selectedImages">
+            <FormLabel>Select profile pictures</FormLabel>
             <Box
         mt={4}
         position="relative"
@@ -670,9 +683,13 @@ const handlePronounsClick = (pronouns) => {
           borderRadius="md"
          
         >
-          {!postsLoading && userPosts.map((post, index) => (
+          {!postsLoading && userPosts.map((post) => (
+            // <Button
+            //   key={post.id}
+            //   onClick={() => handleImageClick(post.id)}
+            // >
             <Box
-              key={index}
+              key={post.id}
               onClick={() => handleImageClick(post.id)}
               cursor="pointer"
               mx={2}
@@ -680,13 +697,14 @@ const handlePronounsClick = (pronouns) => {
             >
               <Image
                 src={post.imageURL}
-                alt={`Post ${index + 1}`}
+                //alt={`Post ${index + 1}`}
                 maxWidth={{base: "10vw", md: "100px"}}
                 maxHeight={{base: "auto", md: "auto"}}
                 borderRadius="md"
                 border={formData.selectedImages.includes(post.id) ? "2px solid orange" : "none"}
               />
             </Box>
+            //</Button>
           ))}
         </Box>
         <Button
