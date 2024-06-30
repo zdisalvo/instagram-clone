@@ -25,6 +25,7 @@ import citiesData from "../../../json-files/worldcities2.json";
 import countryCodeToFlagEmoji from 'country-code-to-flag-emoji';
 import ReCAPTCHA from "react-google-recaptcha";
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
+import CreateSparkPic from "./CreateSparkPic";
 
 
 
@@ -74,6 +75,7 @@ const CreateSpark = () => {
         interests: [],
         profilePic: null,
         selectedImages: [],
+        uploadedImages: [],
       });
     
       // useEffect to update formData when sparkProfile changes
@@ -107,6 +109,7 @@ const CreateSpark = () => {
             interests: sparkProfile.interests || [],
             profilePic: sparkProfile.profilePic || null,
             selectedImages: sparkProfile.selectedImages || [],
+            uploadedImages: sparkProfile.uploadedImages || [],
           }));
           //setSelectedImages(sparkProfile.selectedImages || []);
         }
@@ -114,6 +117,13 @@ const CreateSpark = () => {
 
   const [preview, setPreview] = useState(null);
 
+  ///HANDLE SUBMIT
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await editSparkProfile(formData);
+    //console.log("Profile updated", formData);
+  };
   
 
   const handleChange = (e) => {
@@ -173,26 +183,49 @@ const CreateSpark = () => {
     }
   };
 
+  // const handleFileChange = (e) => {
+  //   const file = e.target.files[0];
+  //   if (file) {
+  //     const reader = new FileReader();
+  //     reader.onloadend = () => {
+  //       setPreview(reader.result);
+  //       setFormData((prevState) => ({
+  //         ...prevState,
+  //         profilePic: reader.result,
+  //       }));
+  //     };
+  //     reader.readAsDataURL(file);
+  //   }
+  // };
+
+
   const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setPreview(reader.result);
-        setFormData((prevState) => ({
-          ...prevState,
-          profilePic: reader.result,
-        }));
-      };
-      reader.readAsDataURL(file);
+    const files = Array.from(e.target.files);
+    if (files.length + formData.profilePic.length > 7) {
+      alert("You can only upload up to 7 photos.");
+      return;
     }
+  
+    const newPhotos = files.map(file => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      return new Promise((resolve) => {
+        reader.onloadend = () => {
+          resolve(reader.result);
+        };
+      });
+    });
+
+
+    Promise.all(newPhotos).then((profilePic) => {
+      setFormData((prevState) => ({
+        ...prevState,
+        profilePic: [...prevState.profilePic, ...profilePic],
+      }));
+    });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    await editSparkProfile(formData);
-    //console.log("Profile updated", formData);
-  };
+
 
 //GENDER
 
@@ -638,6 +671,11 @@ const handlePronounsClick = (pronouns) => {
             {preview && (
               <Image src={preview} alt="Profile Picture Preview" boxSize="150px" mt={2} />
             )}
+            </FormControl>
+
+            <FormControl id="uploadedImages">
+            <FormLabel>Uploaded Images</FormLabel>
+            <CreateSparkPic />
             </FormControl>
             
 

@@ -60,7 +60,7 @@ const useSignUpWithEmailAndPassword = () => {
 					languages: [],
 					photos: [],
 					interests: [],
-					profilePic: null,
+					uploadedImages: [],
 					selectedImages: [],
 				}
 

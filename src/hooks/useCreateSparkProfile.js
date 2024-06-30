@@ -5,7 +5,7 @@ import { getDownloadURL, ref, uploadString } from "firebase/storage";
 import { firestore, storage } from "../firebase/firebase";
 import { doc, updateDoc } from "firebase/firestore";
 import useUserProfileStore from "../store/userProfileStore";
-import useSparkStore from "../store/sparkStore";
+import useSparkStore from "../store/sparkProfileStore";
 import useGetSparkProfileById from "./useGetSparkProfileById";
 
 const useCreateSparkProfile = () => {
@@ -61,8 +61,8 @@ const useCreateSparkProfile = () => {
 				religion: inputs.religion || sparkProfile?.religion || '',
 				pronouns: inputs.pronouns || sparkProfile?.pronouns || [],
 				languages: inputs.languages || sparkProfile?.languages || [],
-				photos: sparkProfile?.photos || [],
 				interests: inputs.interests || sparkProfile?.interests || [],
+				uploadedImages: inputs.uploadedImages || sparkProfile?.uploadedImages || [],
 				selectedImages: inputs.selectedImages || sparkProfile?.selectedImages || [],
 			};
 
