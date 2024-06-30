@@ -13,6 +13,7 @@ import {
   Text,
   Center,
   Spinner,
+  Flex,
 } from "@chakra-ui/react";
 import useAuthStore from "../../store/authStore";
 import useCreateSparkProfile from "../../hooks/useCreateSparkProfile";
@@ -26,6 +27,7 @@ import countryCodeToFlagEmoji from 'country-code-to-flag-emoji';
 import ReCAPTCHA from "react-google-recaptcha";
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import CreateSparkPic from "./CreateSparkPic";
+import useGetSparkImagesById from "../../hooks/useGetSparkImagesById";
 
 
 
@@ -37,11 +39,15 @@ const CreateSpark = () => {
 
   const scrollContainerRef = useRef(null);
 
+  const scrollContainerRefUploads = useRef(null);
+
   
   const { isUpdating, editSparkProfile } = useCreateSparkProfile();
   const { sparkProfile } = useGetSparkProfileById(authUser.uid);
 
   const { userPosts, isLoading: postsLoading } = useGetUserPostsById(authUser.uid);
+
+  const{ sparkImages, isLoading: imagesLoading } = useGetSparkImagesById(authUser.uid);
   //if (postsLoading) return <Spinner size="xl" />; // Adjust this based on your needs
 
   //const [selectedImages, setSelectedImages] = useState([]);
@@ -177,7 +183,16 @@ const CreateSpark = () => {
   const scroll = (direction) => {
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollBy({
-        left: direction === 'left' ? -100 : 100,
+        left: direction === 'left' ? -110 : 110,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const scrollUploads = (direction) => {
+    if (scrollContainerRefUploads.current) {
+      scrollContainerRefUploads.current.scrollBy({
+        left: direction === 'left' ? -110 : 110,
         behavior: 'smooth',
       });
     }
@@ -675,7 +690,96 @@ const handlePronounsClick = (pronouns) => {
 
             <FormControl id="uploadedImages">
             <FormLabel>Uploaded Images</FormLabel>
-            <CreateSparkPic />
+            <Box
+        mt={4}
+        position="relative"
+        overflow="hidden"
+        //height="310x" // Ensure this height accommodates exactly 2 rows
+        border="1px solid #ccc"
+        borderRadius="md"
+      >
+        <Button
+          position="absolute"
+          top="50%"
+          left="0"
+          transform="translateY(-50%)"
+          onClick={() => scrollUploads('left')}
+          zIndex="1"
+        >
+          <ChevronLeftIcon />
+        </Button>
+        <Box
+          ref={scrollContainerRefUploads}
+          display="flex"
+          flexWrap={2}
+          //display="grid"
+          //gridTemplateColumns="repeat(auto-fill, minmax(150px, 1fr))"
+          //gridTemplateRows="repeat(2, 110px)"
+          //maxHeight={{base: "23vw", md: "300px"}}
+          scrollBehavior="smooth"
+          height="100%"
+          gap={2}
+
+          overflowX="auto"
+          overflowY="hidden"
+          //whiteSpace="nowrap"
+          p={2}
+          px={2}
+          mx={10}
+          border="1px solid #ccc"
+          borderRadius="md"
+         
+        >
+          <Flex>
+            <Box 
+            cursor="pointer" 
+            width={{base: "20px", md: "20px"}} 
+            aspectRatio="1"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            mx={0}
+            pl="60px"
+            >
+          <CreateSparkPic />
+          </Box>
+          {!imagesLoading && sparkImages.map((pic) => (
+            // <Button
+            //   key={post.id}
+            //   onClick={() => handleImageClick(post.id)}
+            // >
+            <Box
+              key={pic.id}
+              //onClick={() => handleImageClick(post.id)}
+              cursor="pointer"
+              mx={2}
+              display="inline-block"
+            >
+              <Image
+                src={pic.imageURL}
+                //alt={`Post ${index + 1}`}
+                maxWidth={{base: "10vw", md: "100px"}}
+                maxHeight={{base: "auto", md: "auto"}}
+                borderRadius="md"
+                //border={formData.selectedImages.includes(post.id) ? "2px solid orange" : "none"}
+              />
+            </Box>
+            //</Button>
+          ))}
+          </Flex>
+        </Box>
+        <Button
+          position="absolute"
+          top="50%"
+          right="0"
+          transform="translateY(-50%)"
+          onClick={() => scrollUploads('right')}
+          zIndex="1"
+        >
+          <ChevronRightIcon />
+        </Button>
+      </Box>
+            
             </FormControl>
             
 

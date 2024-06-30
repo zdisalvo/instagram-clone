@@ -31,7 +31,7 @@ import { useLocation } from "react-router-dom";
 import { addDoc, arrayUnion, collection, doc, updateDoc } from "firebase/firestore";
 import { firestore, storage } from "../../firebase/firebase";
 import { getDownloadURL, ref, uploadString } from "firebase/storage";
-import {CreatePostLogo} from "../../assets/constants";
+import {SparkImageLogo} from "../../assets/constants";
 
 const CreateSparkPic = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -82,28 +82,29 @@ const CreateSparkPic = () => {
         <>
         <Tooltip
             hasArrow
-            label={"Create"}
-            placement='right'
-            ml={1}
+            placement='center'
+            ml={2}
             openDelay={500}
             display={{ base: "block", md: "none" }}
         >
             <Flex
                 alignItems={"center"}
-                gap={4}
-                _hover={{ bg: "whiteAlpha.400" }}
-                borderRadius={6}
-                p={2}
-                w={{ base: 10, md: "full" }}
+                gap={1}
+                //3_hover={{ bg: "whiteAlpha.400" }}
+                borderRadius={1}
+                p={0}
+                md={2}
+                //w={{ base: 2, md: "full" }}
                 justifyContent={{ base: "center", md: "flex-start" }}
                 onClick={onOpen}
             >
-                <CreatePostLogo />
-                <Box display={{ base: "none", md: "block" }}>Create</Box>
+                <SparkImageLogo />
+                
+                {/* <Box display={{ base: "none", md: "none" }}></Box> */}
             </Flex>
         </Tooltip>
 
-        <Modal isOpen={isOpen} onClose={onClose} size='xl'>
+        <Modal isOpen={isOpen} onClose={onClose} size='md'>
             <ModalOverlay />
 
             <ModalContent bg={"black"} border={"1px solid gray"}>
@@ -121,7 +122,12 @@ const CreateSparkPic = () => {
                     />
                     {selectedFile && (
                         <Flex mt={5} w={"full"} position={"relative"} justifyContent={"center"}>
-                            <Image src={selectedFile} alt='Selected img' />
+                            <Image src={selectedFile} 
+                                alt='Selected img' 
+                                boxSize={{base: "50vw", md: "200px"}} // Set the size to 100px
+                                objectFit="cover" // Ensure the image covers the box while maintaining aspect ratio
+                                borderRadius="md" // Optional: add rounded corners
+                            />
                             <CloseButton
                                 position={"absolute"}
                                 top={2}
@@ -136,7 +142,7 @@ const CreateSparkPic = () => {
 
                 <ModalFooter>
                     <Button mr={3} onClick={handleUploadImageCreation} isLoading={isLoading}>
-                        Post
+                        Add
                     </Button>
                 </ModalFooter>
             </ModalContent>
