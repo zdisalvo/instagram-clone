@@ -71,6 +71,7 @@ const CreateSpark = () => {
         languages: [],
         interests: [],
         profilePic: null,
+        selectedImages: [],
       });
     
       // useEffect to update formData when sparkProfile changes
@@ -103,6 +104,7 @@ const CreateSpark = () => {
             languages: sparkProfile.languages || [],
             interests: sparkProfile.interests || [],
             profilePic: sparkProfile.profilePic || null,
+            selectedImages: sparkProfile.selectedImages || [],
           }));
         }
       }, [sparkProfile]);
@@ -122,24 +124,46 @@ const CreateSpark = () => {
     }));
   };
 
-  const [selectedImages, setSelectedImages] = useState([]);
-
-
   const handleImageClick = (id) => {
-    setSelectedImages((prevSelectedImages) => {
-      if (prevSelectedImages.includes(id)) {
-        // Remove the image if it's already selected
-        return prevSelectedImages.filter((imgId) => imgId !== id);
-      } else if (prevSelectedImages.length < 5) {
-        // Add the image if less than 5 are selected
-        return [...prevSelectedImages, id];
+    setFormData((prevState) => {
+      const currentSelectedImages = [...prevState.selectedImages];
+      if (currentSelectedImages.includes(id)) {
+        // Remove the emoji if it's already selected
+        return { ...prevState, selectedImages: currentSelectedImages.filter((e) => e !== id) };
+      } else if (currentSelectedImages.length < 5) {
+        // Add the emoji if less than 7 are selected
+        return { ...prevState, selectedImages: [...currentSelectedImages, id] };
       } else {
-        return prevSelectedImages; // Do nothing if already 5 are selected
+        return prevState; // Do nothing if already 7 are selected
       }
     });
   };
 
+  // const [selectedImages, setSelectedImages] = useState([]);
 
+
+  // const handleImageClick = (id) => {
+  //   setSelectedImages((prevSelectedImages) => {
+  //     if (prevSelectedImages.includes(id)) {
+  //       // Remove the image if it's already selected
+  //       return prevSelectedImages.filter((imgId) => imgId !== id);
+  //     } else if (prevSelectedImages.length < 5) {
+  //       // Add the image if less than 5 are selected
+  //       return [...prevSelectedImages, id];
+  //     } else {
+  //       return prevSelectedImages; // Do nothing if already 5 are selected
+  //     }
+  //   });
+  // };
+
+  const scroll = (direction) => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: direction === 'left' ? -100 : 100,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -578,14 +602,7 @@ const handlePronounsClick = (pronouns) => {
     });
   };
 
-  const scroll = (direction) => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
-        left: direction === 'left' ? -100 : 100,
-        behavior: 'smooth',
-      });
-    }
-  };
+  
 
   
   
@@ -617,7 +634,7 @@ const handlePronounsClick = (pronouns) => {
         mt={4}
         position="relative"
         overflow="hidden"
-        height="220px" // Ensure this height accommodates exactly 2 rows
+        //height="310x" // Ensure this height accommodates exactly 2 rows
         border="1px solid #ccc"
         borderRadius="md"
       >
@@ -633,11 +650,12 @@ const handlePronounsClick = (pronouns) => {
         </Button>
         <Box
           ref={scrollContainerRef}
-          //display="flex"
-          display="grid"
-          gridTemplateColumns="repeat(auto-fill, minmax(150px, 1fr))"
-          gridTemplateRows="repeat(2, 110px)"
-          maxHeight={{base: "23vw", md: "250px"}}
+          display="flex"
+          flexWrap={2}
+          //display="grid"
+          //gridTemplateColumns="repeat(auto-fill, minmax(150px, 1fr))"
+          //gridTemplateRows="repeat(2, 110px)"
+          //maxHeight={{base: "23vw", md: "300px"}}
           scrollBehavior="smooth"
           height="100%"
           gap={2}
@@ -646,10 +664,11 @@ const handlePronounsClick = (pronouns) => {
           overflowY="hidden"
           //whiteSpace="nowrap"
           p={2}
-          px={{base: "5vw", md: "50px"}}
+          px={2}
+          mx={10}
           border="1px solid #ccc"
           borderRadius="md"
-          pr={10} // Adding right padding to prevent clipping of the last image
+         
         >
           {!postsLoading && userPosts.map((post, index) => (
             <Box
@@ -665,7 +684,7 @@ const handlePronounsClick = (pronouns) => {
                 maxWidth={{base: "10vw", md: "100px"}}
                 maxHeight={{base: "auto", md: "auto"}}
                 borderRadius="md"
-                border={selectedImages.includes(post.id) ? "2px solid orange" : "none"}
+                border={formData.selectedImages.includes(post.id) ? "2px solid orange" : "none"}
               />
             </Box>
           ))}
