@@ -56,10 +56,19 @@ import {
   
 	return (
         <CloseButton
+        size="sm"
         position="absolute"
         top={1}
         right={1}
         onClick={() => handleDeletePic(pic.id)}
+        bg="orange.300"
+        color="black"
+        _hover={{
+        bg: "orange.400"
+        }}
+        _active={{
+        bg: "orange.500"
+        }}
       />
 	);
   };

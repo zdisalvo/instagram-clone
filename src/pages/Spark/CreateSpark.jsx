@@ -694,7 +694,7 @@ const handlePronounsClick = (pronouns) => {
   };
 
   
-
+  const sortedImages = sparkImages.sort((a, b) => b.createdAt - a.createdAt);
   
   
   return (
@@ -780,7 +780,7 @@ const handlePronounsClick = (pronouns) => {
             >
           <CreateSparkPic onUpload={handleImageUpload}/>
           </Box>
-          {!imagesLoadingFromHook && sparkImages.map((pic) => (
+          {!imagesLoadingFromHook && sortedImages.map((pic) => (
             // <Button
             //   key={post.id}
             //   onClick={() => handleImageClick(post.id)}

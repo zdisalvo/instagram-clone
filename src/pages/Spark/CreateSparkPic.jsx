@@ -93,7 +93,9 @@ const CreateSparkPic = ({onUpload}) => {
             <Flex
                 alignItems={"center"}
                 gap={1}
-                //3_hover={{ bg: "whiteAlpha.400" }}
+                //hover={{ bg: "orange.400" }}
+                _hover={{ bg: "orange.400" }} // Color on hover
+                transition="color 0.3s" // Optional: smooth transition
                 borderRadius={1}
                 p={0}
                 md={2}
