@@ -33,7 +33,7 @@ import { firestore, storage } from "../../firebase/firebase";
 import { getDownloadURL, ref, uploadString } from "firebase/storage";
 import {SparkImageLogo} from "../../assets/constants";
 
-const CreateSparkPic = () => {
+const CreateSparkPic = ({onUpload}) => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
     //const [formData, setFormData] = useState({ uploadedImages: [] });
 	const imageRef = useRef(null);
@@ -44,9 +44,12 @@ const CreateSparkPic = () => {
 
 	const handleUploadImageCreation = async () => {
 		try {
-			await handleUploadPic(selectedFile);
+			const uploadedImage = await handleUploadPic(selectedFile);
 			onClose();
 			setSelectedFile(null);
+            if (onUpload) {
+                onUpload(uploadedImage);
+              }
 		} catch (error) {
 			showToast("Error", error.message, "error");
 		}
@@ -224,6 +227,8 @@ function useUploadSparkPic() {
 			if (sparkProfile.uid === authUser.uid) addPic({ ...newPic, id: picDocRef.id });
 
 			showToast("Success", "Image uploaded successfully", "success");
+            ////
+            return { ...newPic, id: picDocRef.id, imageURL: downloadURL };
 		} catch (error) {
 			showToast("Error", error.message, "error");
 		} finally {

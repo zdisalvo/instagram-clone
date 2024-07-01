@@ -21,7 +21,7 @@ import {
   import useSparkImageStore from "../../store/sparkImageStore";
 
   
-  const DeleteSparkPic = ({ pic}) => {
+  const DeleteSparkPic = ({ pic, onDelete}) => {
 	const sparkProfile = useSparkProfileStore((state) => state.sparkProfile);
 	const authUser = useAuthStore((state) => state.user);
 	const showToast = useShowToast();
@@ -45,6 +45,7 @@ import {
   
 		deletePic(pic.id);
 		decrementPicsCount(pic.id);
+        onDelete(pic.id); 
 		showToast("Success", "Pic deleted successfully", "success");
 	  } catch (error) {
 		showToast("Error", error.message, "error");

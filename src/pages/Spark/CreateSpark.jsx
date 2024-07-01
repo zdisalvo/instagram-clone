@@ -49,7 +49,27 @@ const CreateSpark = () => {
 
   const { userPosts, isLoading: postsLoading } = useGetUserPostsById(authUser.uid);
 
-  const{ sparkImages, isLoading: imagesLoading } = useGetSparkImagesById(authUser.uid);
+
+  const [sparkImages, setSparkImages] = useState([]);
+  const [imagesLoading, setImagesLoading] = useState(false);
+  const { sparkImages: fetchedImages, isLoading: imagesLoadingFromHook } = useGetSparkImagesById(authUser.uid);
+
+  //const{ sparkImages, isLoading: imagesLoading } = useGetSparkImagesById(authUser.uid);
+  
+  useEffect(() => {
+    if (fetchedImages) {
+      setSparkImages(fetchedImages);
+    }
+  }, [fetchedImages]);
+
+  const handleImageUpload = (newImage) => {
+    setSparkImages([...sparkImages, newImage]);
+  };
+
+  const handleDeleteImage = (imageId) => {
+    setSparkImages(sparkImages.filter(image => image.id !== imageId));
+  };
+  
   //if (postsLoading) return <Spinner size="xl" />; // Adjust this based on your needs
 
   //const [selectedImages, setSelectedImages] = useState([]);
@@ -180,6 +200,19 @@ const CreateSpark = () => {
   //       return prevSelectedImages; // Do nothing if already 5 are selected
   //     }
   //   });
+  // };
+
+  
+  //const scrollContainerRef = useRef(null);
+
+  // Function to handle image upload
+  // const handleImageUpload = (newImage) => {
+  //   setSparkImages([...sparkImages, newImage]);
+  // };
+
+  // // Function to handle image deletion
+  // const handleDeleteImage = (imageId) => {
+  //   setSparkImages(sparkImages.filter(image => image.id !== imageId));
   // };
 
   const scroll = (direction) => {
@@ -745,9 +778,9 @@ const handlePronounsClick = (pronouns) => {
             px="25px"
             mx="25px"
             >
-          <CreateSparkPic />
+          <CreateSparkPic onUpload={handleImageUpload}/>
           </Box>
-          {!imagesLoading && sparkImages.map((pic) => (
+          {!imagesLoadingFromHook && sparkImages.map((pic) => (
             // <Button
             //   key={post.id}
             //   onClick={() => handleImageClick(post.id)}
@@ -775,7 +808,7 @@ const handlePronounsClick = (pronouns) => {
                   right={1}
                   onClick={() => handleDeleteImage(pic.id)}
                 /> */}
-                <DeleteSparkPic pic={pic} key={pic.id} />
+                <DeleteSparkPic pic={pic} key={pic.id} id={pic.id} onDelete={handleDeleteImage}/>
                 
             </Box>
             //</Button>
