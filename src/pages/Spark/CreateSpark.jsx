@@ -767,6 +767,7 @@ const handlePronounsClick = (pronouns) => {
         >
           
           <Flex p={0} m={0}>
+            {sparkImages.length < 7 &&
             <Box 
             cursor="pointer" 
             width={{base: "20px", md: "20px"}} 
@@ -779,7 +780,7 @@ const handlePronounsClick = (pronouns) => {
             mx="25px"
             >
           <CreateSparkPic onUpload={handleImageUpload}/>
-          </Box>
+          </Box>}
           {!imagesLoadingFromHook && sortedImages.map((pic) => (
             // <Button
             //   key={post.id}
