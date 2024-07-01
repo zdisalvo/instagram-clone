@@ -14,6 +14,7 @@ import {
   Center,
   Spinner,
   Flex,
+  CloseButton,
 } from "@chakra-ui/react";
 import useAuthStore from "../../store/authStore";
 import useCreateSparkProfile from "../../hooks/useCreateSparkProfile";
@@ -28,6 +29,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import CreateSparkPic from "./CreateSparkPic";
 import useGetSparkImagesById from "../../hooks/useGetSparkImagesById";
+import DeleteSparkPic from "./DeleteSparkPic";
 
 
 
@@ -725,7 +727,7 @@ const handlePronounsClick = (pronouns) => {
           //whiteSpace="nowrap"
           p={2}
           px={2}
-          mx={13}
+          mx={10}
           border="1px solid #ccc"
           borderRadius="md"
          
@@ -739,9 +741,9 @@ const handlePronounsClick = (pronouns) => {
             display="flex"
             alignItems="center"
             justifyContent="center"
-            mx={0}
-            pl="60px"
-            
+            //mx={0}
+            px="25px"
+            mx="25px"
             >
           <CreateSparkPic />
           </Box>
@@ -756,7 +758,9 @@ const handlePronounsClick = (pronouns) => {
               cursor="pointer"
               mx={2}
               display="inline-block"
+              position="relative"
             >
+              
               <Image
                 src={pic.imageURL}
                 //alt={`Post ${index + 1}`}
@@ -765,6 +769,14 @@ const handlePronounsClick = (pronouns) => {
                 borderRadius="md"
                 //border={formData.selectedImages.includes(post.id) ? "2px solid orange" : "none"}
               />
+              {/* <CloseButton
+                  position="absolute"
+                  top={1}
+                  right={1}
+                  onClick={() => handleDeleteImage(pic.id)}
+                /> */}
+                <DeleteSparkPic pic={pic} key={pic.id} />
+                
             </Box>
             //</Button>
           ))}
