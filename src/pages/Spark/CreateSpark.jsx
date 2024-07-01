@@ -725,12 +725,13 @@ const handlePronounsClick = (pronouns) => {
           //whiteSpace="nowrap"
           p={2}
           px={2}
-          mx={10}
+          mx={13}
           border="1px solid #ccc"
           borderRadius="md"
          
         >
-          <Flex>
+          
+          <Flex p={0} m={0}>
             <Box 
             cursor="pointer" 
             width={{base: "20px", md: "20px"}} 
@@ -740,6 +741,7 @@ const handlePronounsClick = (pronouns) => {
             justifyContent="center"
             mx={0}
             pl="60px"
+            
             >
           <CreateSparkPic />
           </Box>
